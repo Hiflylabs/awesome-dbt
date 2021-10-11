@@ -25,3 +25,4 @@ A curated list of awesome dbt resources
 
 ## Testing
 - [dbt-expectations](https://github.com/calogica/dbt-expectations)
+- [re_data](https://www.getre.io/)
