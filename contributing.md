@@ -6,7 +6,7 @@ project you agree to abide by its terms.
 
 ---
 
-What kinds of contributions are expected
+## What kinds of contributions are expected
 
 Improving the list by adding/removing, reorganizing/reordering, labeling/reviewing open resources are all examples of helpful contributions. When in doubt you can always open a ticket or comment existing ones.
 
