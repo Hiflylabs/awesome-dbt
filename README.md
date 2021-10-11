@@ -1,4 +1,4 @@
-# awesome-dbt
+# Awesome dbt
 A curated list of awesome dbt resources 
 
 ### Learning
@@ -8,7 +8,7 @@ A curated list of awesome dbt resources
 - https://discourse.getdbt.com/t/your-essential-dbt-project-checklist/1377
 - https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/
 - https://discourse.getdbt.com/t/how-to-configure-your-dbt-repository-one-or-many/2121
-- 
+
 ### Orchestration
 - https://www.astronomer.io/blog/airflow-dbt-1
 
