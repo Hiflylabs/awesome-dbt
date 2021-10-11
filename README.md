@@ -6,7 +6,7 @@ A curated list of awesome dbt resources
 - [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/)
 - [dbt Fundamentals](https://courses.getdbt.com/collections)
 ## Resources
-- https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/
+- [dbt + Materialize: Streaming to a dbt project near you](https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/)
 - https://semistructured.substack.com/p/dbt-analytics-engineering-or-data-engineering
 - https://medium.com/validio/dbt-and-the-analytics-engineer-whats-the-hype-about-907eb86c4938
 - https://discourse.getdbt.com/t/your-essential-dbt-project-checklist/1377
