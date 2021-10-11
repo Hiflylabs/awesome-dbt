@@ -7,6 +7,8 @@ A curated list of awesome dbt resources
 - [dbt Fundamentals](https://courses.getdbt.com/collections)
 - [Learn DBT from Scratch](https://www.udemy.com/course/learn-dbt-from-scratch/)
 - [Your Essential dbt Project Checklist](https://discourse.getdbt.com/t/your-essential-dbt-project-checklist/1377)
+- [dbt for Data Transformation – Hands-on ](https://www.kdnuggets.com/2021/07/dbt-data-transformation-tutorial.html)
+- 
 
 ### Resources
 - [dbt + Materialize: Streaming to a dbt project near you](https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/)
