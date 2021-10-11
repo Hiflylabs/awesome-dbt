@@ -28,3 +28,4 @@ A curated list of awesome dbt resources
 - [dbt-expectations](https://github.com/calogica/dbt-expectations)
 - [re_data](https://www.getre.io/)
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149)
+- [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/)
