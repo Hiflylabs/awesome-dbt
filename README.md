@@ -3,7 +3,7 @@ A curated list of awesome dbt resources
 
 ### Learning
 - [Leveraging DBT as a Data Modeling tool](https://medium.com/analytics-and-data/leveraging-dbt-as-a-data-modeling-tool-b3caf78f4a3a)
-- https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/
+- [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/)
 
 ## Resources
 - https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/
