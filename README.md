@@ -15,7 +15,7 @@ A curated list of awesome dbt resources
 - https://discourse.getdbt.com/t/how-to-configure-your-dbt-repository-one-or-many/2121
 
 ### Orchestration
-- https://www.astronomer.io/blog/airflow-dbt-1
-
+- [Building a Scalable Analytics Architecture with Airflow and dbt](https://www.astronomer.io/blog/airflow-dbt-1)
+- [Auto-generating an Airflow DAG using the dbt manifest] (https://engineering.autotrader.co.uk/2021/09/15/auto-generated-airflow-dag-for-dbt.html)
 ## Deployment
 - https://www.startdataengineering.com/post/cicd-dbt/
