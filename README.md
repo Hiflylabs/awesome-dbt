@@ -13,6 +13,7 @@ A curated list of awesome dbt resources
 - [dbt + Materialize: Streaming to a dbt project near you](https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/)
 - [Who's really using dbt?](https://semistructured.substack.com/p/dbt-analytics-engineering-or-data-engineering)
 - [dbt and the Analytics Engineer — what’s the hype about](https://medium.com/validio/dbt-and-the-analytics-engineer-whats-the-hype-about-907eb86c4938)
+- [dbtvault](https://dbtvault.readthedocs.io/en/latest/)
 
 ### Orchestration
 - [Building a Scalable Analytics Architecture with Airflow and dbt](https://www.astronomer.io/blog/airflow-dbt-1)
