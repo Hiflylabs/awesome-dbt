@@ -34,5 +34,10 @@ A curated list of awesome dbt resources
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149)
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/)
 
+### Packages
+- [dbt-coves](https://pypi.org/project/dbt-coves/) 
+- [dbt-profiler](https://hub.getdbt.com/data-mie/dbt_profiler/latest/)
+- [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/)
+
 ### Visualization
 - [lightdash](https://github.com/lightdash/lightdash)
