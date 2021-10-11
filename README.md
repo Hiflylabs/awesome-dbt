@@ -21,13 +21,16 @@ A curated list of awesome dbt resources
 - [Dagster and dbt: Better Together](https://dagster.io/blog/dagster-dbt)
 - [Building a robust data pipeline with the dAG stack: dbt, Airflow, Great Expectations](https://airflowsummit.org/sessions/2021/building-a-robust-data-pipeline-with-the-dag-stack/)
 
-## Deployment
+### Deployment
 - [How to set up a dbt data-ops workflow, using dbt cloud and Snowflake](https://www.startdataengineering.com/post/cicd-dbt/)
 - [How to configure your dbt repository](https://discourse.getdbt.com/t/how-to-configure-your-dbt-repository-one-or-many/2121)
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure)
 
-## Testing
+### Testing
 - [dbt-expectations](https://github.com/calogica/dbt-expectations)
 - [re_data](https://www.getre.io/)
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149)
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/)
+
+### Visualization
+- [lightdash](https://github.com/lightdash/lightdash)
