@@ -6,11 +6,9 @@ project you agree to abide by its terms.
 
 ---
 
-Ensure your pull request adheres to the following guidelines:
+What kinds of contributions are expected
 
-- Make sure you take care of this
-- And this as well
-- And don't forget to check this
+Improving the list by adding/removing, reorganizing/reordering, labeling/reviewing open resources are all examples of helpful contributions. When in doubt you can always open a ticket or comment existing ones.
 
 Thank you for your suggestions!
 
