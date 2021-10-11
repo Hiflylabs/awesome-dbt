@@ -5,6 +5,8 @@ A curated list of awesome dbt resources
 - [Leveraging DBT as a Data Modeling tool](https://medium.com/analytics-and-data/leveraging-dbt-as-a-data-modeling-tool-b3caf78f4a3a)
 - [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/)
 - [dbt Fundamentals](https://courses.getdbt.com/collections)
+- [Learn DBT from Scratch](https://www.udemy.com/course/learn-dbt-from-scratch/)
+
 ## Resources
 - [dbt + Materialize: Streaming to a dbt project near you](https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/)
 - https://semistructured.substack.com/p/dbt-analytics-engineering-or-data-engineering
