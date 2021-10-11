@@ -41,3 +41,4 @@ A curated list of awesome dbt resources
 
 ### Visualization
 - [lightdash](https://github.com/lightdash/lightdash)
+- [superset](https://superset.apache.org/)
