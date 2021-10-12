@@ -46,7 +46,7 @@ A curated list of awesome dbt resources
 
 - [dbt-coves](https://pypi.org/project/dbt-coves/) - CLI tool for generating a scaffold for your dbt project
 - [dbt-profiler](https://hub.getdbt.com/data-mie/dbt_profiler/latest/) - data profiling and doc block generator 
-- [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/) - General macros libary. A must have.
+- [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/) - General macros library. A must have.
 
 ### Visualization
 
