@@ -35,6 +35,11 @@ A curated list of awesome dbt resources
 - [Deploying and Running dbt on Azure Container Instances](https://medium.com/hashmapinc/deploying-and-running-dbt-on-azure-container-instances-f6136f8ea74c)
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://rittmananalytics.com/blog/2019/6/11/continuous-integration-feature-branches-and-automated-build-tests-using-dbtcloud)
 - [Best Practices for Optimizing Your dbt and Snowflake Deployment](https://resources.snowflake.com/white-paper/best-practices-for-optimizing-your-dbt-and-snowflake-deployment)
+- [How to review an analytics pull request](https://blog.getdbt.com/how-to-review-an-analytics-pull-request/)
+
+## Tools
+
+- [vscode-dbt-power-user](https://github.com/innoverio/vscode-dbt-power-user)
 
 ### Testing
 
@@ -48,6 +53,8 @@ A curated list of awesome dbt resources
 - [dbt-coves](https://pypi.org/project/dbt-coves/) - CLI tool for generating a scaffold for your dbt project
 - [dbt-profiler](https://hub.getdbt.com/data-mie/dbt_profiler/latest/) - data profiling and doc block generator 
 - [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/) - General macros library. A must have.
+- [dbt_audit_helper](https://github.com/dbt-labs/dbt-audit-helper/) - Macros for data audits that compare columns values and schemas between tables
+- [dbt-ml-preprocessing](https://github.com/omnata-labs/dbt-ml-preprocessing)
 
 ### Visualization
 
