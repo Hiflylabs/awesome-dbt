@@ -34,6 +34,11 @@ A curated list of awesome dbt resources
 - [How to Deploy dbt to Production using GitHub Actions](https://towardsdatascience.com/how-to-deploy-dbt-to-production-using-github-action-778bf6a1dff6)
 - [Deploying and Running dbt on Azure Container Instances](https://medium.com/hashmapinc/deploying-and-running-dbt-on-azure-container-instances-f6136f8ea74c)
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://rittmananalytics.com/blog/2019/6/11/continuous-integration-feature-branches-and-automated-build-tests-using-dbtcloud)
+- [How to review an analytics pull request](https://blog.getdbt.com/how-to-review-an-analytics-pull-request/)
+
+## Tools
+
+- [vscode-dbt-power-user](https://github.com/innoverio/vscode-dbt-power-user)
 
 ### Testing
 
@@ -47,7 +52,8 @@ A curated list of awesome dbt resources
 - [dbt-coves](https://pypi.org/project/dbt-coves/) - CLI tool for generating a scaffold for your dbt project
 - [dbt-profiler](https://hub.getdbt.com/data-mie/dbt_profiler/latest/) - data profiling and doc block generator 
 - [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/) - General macros library. A must have.
-
+- [dbt-ml-preprocessing](https://github.com/omnata-labs/dbt-ml-preprocessing)
+- 
 ### Visualization
 
 - [lightdash](https://github.com/lightdash/lightdash) - Open source Looker alternative with deep dbt integration
