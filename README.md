@@ -11,6 +11,8 @@ A curated list of awesome dbt resources
 - [Your Essential dbt Project Checklist](https://discourse.getdbt.com/t/your-essential-dbt-project-checklist/1377)
 - [dbt for Data Transformation – Hands-on ](https://www.kdnuggets.com/2021/07/dbt-data-transformation-tutorial.html) Yet another tutorial for using dbt Cloud
 - [Start Modeling Data](https://dataschool.com/sql-optimization/start-modeling-data/) - Configuring Bigquery with your dbt project
+- [Accelerating Data Teams with dbt & Snowflake](https://quickstarts.snowflake.com/guide/data_engineering_with_dbt/index.html?index=..%2F..index#0) - dbt & Snowflake workshop on financial data
+- [Refactoring SQL for Modularity](https://courses.getdbt.com/courses/refactoring-sql-for-modularity) - Another dbt labs offered free course on dbt refactoring and CTE supercharging
 
 ### Resources
 
@@ -18,6 +20,8 @@ A curated list of awesome dbt resources
 - [Who's really using dbt?](https://semistructured.substack.com/p/dbt-analytics-engineering-or-data-engineering)
 - [dbt and the Analytics Engineer — what’s the hype about](https://medium.com/validio/dbt-and-the-analytics-engineer-whats-the-hype-about-907eb86c4938)
 - [dbtvault](https://dbtvault.readthedocs.io/en/latest/) - Package for generating and executing ETL for Data Vault 2.0 on Snowflake
+- [dbt-tips](https://github.com/erika-e/dbt-tips) - Excellent companion to your dbt practice with rich collection of tips
+
 
 ### Orchestration
 
@@ -36,10 +40,16 @@ A curated list of awesome dbt resources
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://rittmananalytics.com/blog/2019/6/11/continuous-integration-feature-branches-and-automated-build-tests-using-dbtcloud)
 - [Best Practices for Optimizing Your dbt and Snowflake Deployment](https://resources.snowflake.com/white-paper/best-practices-for-optimizing-your-dbt-and-snowflake-deployment)
 - [How to review an analytics pull request](https://blog.getdbt.com/how-to-review-an-analytics-pull-request/)
+- [Best Practices for Optimizing Your dbt and Snowflake Deployment](https://resources.snowflake.com/white-paper/best-practices-for-optimizing-your-dbt-and-snowflake-deployment)
+- [Performing a blue/green deploy of your dbt project on Snowflake](https://discourse.getdbt.com/t/performing-a-blue-green-deploy-of-your-dbt-project-on-snowflake/1349) - A very tidy way to run dbt in production
+- [How we sped up our CI runs by 10x using Slim CI](https://discourse.getdbt.com/t/how-we-sped-up-our-ci-runs-by-10x-using-slim-ci/2603)
+- [Beware of DBT Incremental Updates Against Snowflake External Tables](https://dm03514.medium.com/beware-of-dbt-incremental-updates-against-snowflake-external-tables-beeda513e748) - Things you should be aware of when using external tables with dbt
+- [Doing More With Less: Using DBT to load data from AWS S3 to Snowflake via External Tables](https://medium.com/slateco-blog/doing-more-with-less-usingdbt-to-load-data-from-aws-s3-to-snowflake-via-external-tables-a699d290b93f) - An alternative guide to set up your dbt-external-tables workflow
 
 ## Tools
 
 - [vscode-dbt-power-user](https://github.com/innoverio/vscode-dbt-power-user)
+- [How we set up our computers for working on dbt projects](https://discourse.getdbt.com/t/how-we-set-up-our-computers-for-working-on-dbt-projects/243)
 
 ### Testing
 
@@ -55,6 +65,7 @@ A curated list of awesome dbt resources
 - [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/) - General macros library. A must have.
 - [dbt_audit_helper](https://github.com/dbt-labs/dbt-audit-helper/) - Macros for data audits that compare columns values and schemas between tables
 - [dbt-ml-preprocessing](https://github.com/omnata-labs/dbt-ml-preprocessing)
+- [dbt-external-tables](https://github.com/dbt-labs/dbt-external-tables)
 
 ### Visualization
 
