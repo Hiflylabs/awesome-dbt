@@ -66,6 +66,7 @@ A curated list of awesome dbt resources
 - [dbt_audit_helper](https://github.com/dbt-labs/dbt-audit-helper/) - Macros for data audits that compare columns values and schemas between tables
 - [dbt-ml-preprocessing](https://github.com/omnata-labs/dbt-ml-preprocessing)
 - [dbt-external-tables](https://github.com/dbt-labs/dbt-external-tables)
+- [fal](https://github.com/fal-ai/fal) - fal enables you to run python scripts directly from your dbt project.
 
 ### Visualization
 
