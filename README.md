@@ -13,6 +13,8 @@ A curated list of awesome dbt resources
 - [Start Modeling Data](https://dataschool.com/sql-optimization/start-modeling-data/) - Configuring Bigquery with your dbt project
 - [Accelerating Data Teams with dbt & Snowflake](https://quickstarts.snowflake.com/guide/data_engineering_with_dbt/index.html?index=..%2F..index#0) - dbt & Snowflake workshop on financial data
 - [Refactoring SQL for Modularity](https://courses.getdbt.com/courses/refactoring-sql-for-modularity) - Another dbt labs offered free course on dbt refactoring and CTE supercharging
+- [Spotify User Analytics](https://github.com/ftupas/dbt-spotify-analytics) - Sample dbt project with Spotify user data
+- [dbt Style Guide](https://github.com/dbt-labs/corp/blob/master/dbt_style_guide.md)
 
 ### Resources
 
@@ -21,7 +23,8 @@ A curated list of awesome dbt resources
 - [dbt and the Analytics Engineer — what’s the hype about](https://medium.com/validio/dbt-and-the-analytics-engineer-whats-the-hype-about-907eb86c4938)
 - [dbtvault](https://dbtvault.readthedocs.io/en/latest/) - Package for generating and executing ETL for Data Vault 2.0 on Snowflake
 - [dbt-tips](https://github.com/erika-e/dbt-tips) - Excellent companion to your dbt practice with rich collection of tips
-
+- [Analyzing Fishtown’s dbt project performance with artifacts](https://discourse.getdbt.com/t/analyzing-fishtowns-dbt-project-performance-with-artifacts/2214)
+- [Coalesce 2020](https://youtube.com/playlist?list=PL0QYlrC86xQmPf9QUceFdOarYcv3ETSsz) - Annual dbt conference full of fascinating use-cases.
 
 ### Orchestration
 
@@ -67,6 +70,9 @@ A curated list of awesome dbt resources
 - [dbt-ml-preprocessing](https://github.com/omnata-labs/dbt-ml-preprocessing)
 - [dbt-external-tables](https://github.com/dbt-labs/dbt-external-tables)
 - [fal](https://github.com/fal-ai/fal) - run python scripts directly from your dbt project
+- [dbt-codegen](https://github.com/dbt-labs/dbt-codegen) - Macros that generate dbt code, and log it to the command line.
+- [dbt-init](https://github.com/dbt-labs/dbt-init) - Create a project and populate as much of the dbt project as possible.
+- [dbt-artifacts](https://github.com/tailsdotcom/dbt_artifacts) - This package builds a mart of tables from dbt artifacts loaded into a table.
 
 ### Visualization
 
