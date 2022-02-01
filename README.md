@@ -56,6 +56,7 @@ A curated list of awesome dbt resources
 
 - [vscode-dbt-power-user](https://github.com/innoverio/vscode-dbt-power-user)
 - [How we set up our computers for working on dbt projects](https://discourse.getdbt.com/t/how-we-set-up-our-computers-for-working-on-dbt-projects/243)
+- [fzf-dbt](https://github.com/Infused-Insight/fzf-dbt) - Search dbt models interactively from terminal 
 
 ### Testing
 
