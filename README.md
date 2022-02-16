@@ -1,6 +1,4 @@
-# Awesome dbt
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">
+# Awesome dbt [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">
 
 [<img src="dbt-logo.png" align="right" width="200">](https://www.getdbt.com/)
 
@@ -23,6 +21,8 @@ Happy contributing!
 - [Packages](#packages)
 - [Community](#community)
 - [Sample Projects](#sample-projects)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Get Started
 
@@ -41,7 +41,7 @@ Helping hand on setting up integrations and implementing best practices.
 - [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/) - Primer on how you should properly set up and configure your dbt workflow.
 - [dbt for Data Transformation – Hands-on](https://www.kdnuggets.com/2021/07/dbt-data-transformation-tutorial.html) - Yet another tutorial for using dbt Cloud.
 - [Start Modeling Data](https://dataschool.com/sql-optimization/start-modeling-data/) - Configuring Bigquery with your dbt project.
-- [Accelerating Data Teams with dbt & Snowflake](https://quickstarts.snowflake.com/guide/data_engineering_with_dbt/index.html?index=..%2F..index#0) - dbt & Snowflake workshop on financial data.
+- [Accelerating Data Teams with dbt & Snowflake](https://quickstarts.snowflake.com/guide/data_engineering_with_dbt/index.html?index=..%2F..index#0) - A dbt & Snowflake workshop on financial data.
 - [Creating a dev environment quickly on Snowflake](https://discourse.getdbt.com/t/creating-a-dev-environment-quickly-on-snowflake/1151) - Setting up teh integraton with Snowflake.
 - [How to set up a dbt data-ops workflow, using dbt cloud and Snowflake](https://www.startdataengineering.com/post/cicd-dbt/) - Leverage GitHub Actions to set up CI/CD with dbt Core.
 - [How to configure your dbt repository](https://discourse.getdbt.com/t/how-to-configure-your-dbt-repository-one-or-many/2121) - Mono-repo or not mono-repo?
@@ -162,7 +162,7 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
 ## Contributors
 
-Thanks for all the great resources! Can't see your avatar? Check [here](https://github.com/Hiflylabs/awesome-dbt/blob/main/contributing.md) how you can contribute!
+Thanks for all the great resources! Can't see your avatar? Check the contribution guide on how you can submit your resources to the community!
 
 <a href="https://github.com/Hiflylabs/awesome-dbt/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Hiflylabs/awesome-dbt" />
