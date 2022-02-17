@@ -1,3 +1,4 @@
+<!--lint disable awesome-heading-->
 # Awesome dbt [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">
 
 [<img src="dbt-logo.png" align="right" width="200">](https://www.getdbt.com/)
