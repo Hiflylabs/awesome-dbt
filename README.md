@@ -110,6 +110,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 - [Clean your warehouse of old and deprecated models](https://discourse.getdbt.com/t/clean-your-warehouse-of-old-and-deprecated-models-snowflake/1547) - Clean out warehouse models which are not existent in the project.
 - [dbt-tips](https://github.com/erika-e/dbt-tips) - Excellent companion to your dbt practice with rich collection of tips.
 - [dbt-tags](https://link.medium.com/l33DGL9sFlb) - Understanding the scopes of dbt tags.
+- [Pre-commit hooks](https://github.com/offbi/pre-commit-dbt) - Pre-commit hooks for checking data integity before schema change commit.
 
 ## Packages
 
@@ -127,7 +128,6 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-artifacts](https://github.com/tailsdotcom/dbt_artifacts) - This package builds a mart of tables from dbt artifacts loaded into a table.
 - [dbt-erdiagram-generator](https://github.com/intellishore/dbt-erdiagram-generator) - This packages generate ERD diagrams from a dbt project.
 - [Terraform-dbt Cloud Module](https://github.com/GtheSheep/terraform-provider-dbt-cloud) - IAC in dbt Cloud via Terraform.
-- [Pre-commit hooks](https://github.com/offbi/pre-commit-dbt) - Pre-commit hooks for checking data integity before schema change commit.
 - [dbt2looker](https://github.com/lightdash/dbt2looker) - Generate Looker views for dbt models.
 - [dbt-coverage](https://github.com/slidoapp/dbt-coverage) - Checks dbt docs and tests coverage.
 - [dbt-meta-testing](https://github.com/tnightengale/dbt-meta-testing) - Yet another coverage testing.
