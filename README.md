@@ -60,6 +60,7 @@ Collection of known data integrations with dbt
 - [Lightdash](https://github.com/lightdash/lightdash) - Open source Looker alternative with deep dbt integration.
 - [Superset](https://superset.apache.org/) - Open source visualization layer for your Modern Data Stack.
 - [Dagster and dbt: Better Together](https://dagster.io/blog/dagster-dbt) - Getting started with the dagster-dbt library.
+- [fal](https://github.com/fal-ai/fal) - Add multi-language support (Python) to your dbt project.
 
 ## User Stories
 
@@ -125,7 +126,7 @@ Community-developed packages to extend default macros and toolset.
 - [dbt_audit_helper](https://github.com/dbt-labs/dbt-audit-helper/) - Macros for data audits that compare columns values and schemas between tables.
 - [dbt-ml-preprocessing](https://github.com/omnata-labs/dbt-ml-preprocessing) - A SQL port of python's scikit-learn preprocessing module, provided as cross-database dbt macros.
 - [dbt-external-tables](https://github.com/dbt-labs/dbt-external-tables) - Macros to stage your external sources.
-- [fal](https://github.com/fal-ai/fal) - Run python scripts directly from your dbt project.
+- [dbt-feature-store](https://github.com/fal-ai/dbt_feature_store) - Macros to build a feature store right within your dbt project.
 - [dbt-codegen](https://github.com/dbt-labs/dbt-codegen) - Macros that generate dbt code, and log it to the command line.
 - [dbt-init](https://github.com/dbt-labs/dbt-init) - Create a project and populate as much of the dbt project as possible.
 - [dbt-artifacts](https://github.com/tailsdotcom/dbt_artifacts) - This package builds a mart of tables from dbt artifacts loaded into a table.
