@@ -11,18 +11,18 @@ Happy contributing!
 
 ## Contents
 
-- [Get Started](#get-started)
-- [How To](#how-to)
-- [Integrations](#integrations)
-- [User Stories](#user-stories)
-- [Data Quality](#data-quality)
-- [CI/CD](#cicd)
-- [Orchestration](#orchestration)
-- [Utilities](#utilities)
-- [Packages](#packages)
-- [Community](#community)
-- [Sample Projects](#sample-projects)
-- [Contributors](#contributors)
+  - [Get Started](#get-started)
+  - [How To](#how-to)
+  - [Integrations](#integrations)
+  - [User Stories](#user-stories)
+  - [Data Quality](#data-quality)
+  - [CI/CD](#cicd)
+  - [Orchestration](#orchestration)
+  - [Utilities](#utilities)
+  - [Packages](#packages)
+  - [Community](#community)
+  - [Sample Projects](#sample-projects)
+  - [Contributors](#contributors)
 
 ## Get Started
 
@@ -38,6 +38,7 @@ Courses from where you can get started with Analytics Engineering.
 
 Helping hand on setting up integrations and implementing best practices.
 
+- [How we structure our dbt projects](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355) - How the dbt team structures its dbt projects. 
 - [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/) - Primer on how you should properly set up and configure your dbt workflow.
 - [dbt for Data Transformation – Hands-on](https://www.kdnuggets.com/2021/07/dbt-data-transformation-tutorial.html) - Yet another tutorial for using dbt Cloud.
 - [Start Modeling Data](https://dataschool.com/sql-optimization/start-modeling-data/) - Configuring Bigquery with your dbt project.
@@ -54,6 +55,8 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
+- [Model synchronization from dbt to Metabase.](https://github.com/gouline/dbt-metabase)
+- [Soda](https://docs.soda.io/soda/integrate-dbt.html) - Integration of Soda's data observability platform and dbt.
 - [Supported Adapters](https://docs.getdbt.com/docs/available-adapters) - Offically supported database adapters.
 - [Lightdash](https://github.com/lightdash/lightdash) - Open source Looker alternative with deep dbt integration.
 - [Superset](https://superset.apache.org/) - Open source visualization layer for your Modern Data Stack.
