@@ -55,7 +55,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
-- [Model synchronization from dbt to Metabase.](https://github.com/gouline/dbt-metabase)
+- [Dbt + Machine Learning: What makes a great baton pass?](https://docs.getdbt.com/blog/maching-learning-dbt-baton-pass) - Landscape of ML utilities around dbt.
 - [Soda](https://docs.soda.io/soda/integrate-dbt.html) - Integration of Soda's data observability platform and dbt.
 - [Supported Adapters](https://docs.getdbt.com/docs/available-adapters) - Offically supported database adapters.
 - [Lightdash](https://github.com/lightdash/lightdash) - Open source Looker alternative with deep dbt integration.
@@ -122,6 +122,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-metabase](https://github.com/gouline/dbt-metabase) - Model synchronization from dbt to Metabase.
 - [dbt-coves](https://pypi.org/project/dbt-coves/) - CLI tool for generating a scaffold for your dbt project.
 - [dbt-profiler](https://hub.getdbt.com/data-mie/dbt_profiler/latest/) - Data profiling and doc block generator.
 - [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/) - General macros library. A must have.
