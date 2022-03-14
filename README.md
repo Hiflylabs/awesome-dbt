@@ -126,6 +126,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt_metrics](https://github.com/dbt-labs/dbt_metrics) - Macros to support secondary calculations and generate business metrics.
 - [dbt-metabase](https://github.com/gouline/dbt-metabase) - Model synchronization from dbt to Metabase.
 - [dbt-coves](https://pypi.org/project/dbt-coves/) - CLI tool for generating a scaffold for your dbt project.
 - [dbt-profiler](https://hub.getdbt.com/data-mie/dbt_profiler/latest/) - Data profiling and doc block generator.
