@@ -27,6 +27,7 @@ Happy contributing!
 
 Courses from where you can get started with Analytics Engineering.
 
+- [Zero to Hero dbt](https://dbtlearn.com/) - Complete course covering both theory & practice through real-world Airbnb use-case. 
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) - Data engineering course on cutting edge tools including dbt.
 - [Analytics Engineering with dbt](https://corise.com/course/analytics-engineering-with-dbt) - Paid course offered by co:rise covering the basics of dbt.
 - [dbt Fundamentals](https://courses.getdbt.com/collections) - Official free course offered by dbt. Excellent for learning the basics of dbt Cloud.
