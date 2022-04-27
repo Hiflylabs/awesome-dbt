@@ -58,7 +58,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 - [Raycast](https://www.raycast.com/zsombor-flds/dbtcloud) - Raycast integration to monitor dbt Cloud Jobs.
-- [Metaplane](https://www.metaplane.dev/?ref=producthunt) - Data Observaibility layer on top of your dbt + BI project.
+- [Metaplane](https://www.metaplane.dev/) - Data Observaibility layer on top of your dbt + BI project.
 - [Dbt + Machine Learning: What makes a great baton pass?](https://docs.getdbt.com/blog/maching-learning-dbt-baton-pass) - Landscape of ML utilities around dbt.
 - [Soda](https://docs.soda.io/soda/integrate-dbt.html) - Integration of Soda's data observability platform and dbt.
 - [Supported Adapters](https://docs.getdbt.com/docs/available-adapters) - Offically supported database adapters.
@@ -66,6 +66,7 @@ Collection of known data integrations with dbt
 - [Superset](https://superset.apache.org/) - Open source visualization layer for your Modern Data Stack.
 - [Dagster and dbt: Better Together](https://dagster.io/blog/dagster-dbt) - Getting started with the dagster-dbt library.
 - [fal](https://github.com/fal-ai/fal) - Add multi-language support (Python) to your dbt project.
+- [Privacy Dynamics](https://www.privacydynamics.io) - Anonymize data in your dbt project.
 
 ## User Stories
 
@@ -115,6 +116,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 Useful tools and extensions to bump up your analytics engineer worklow.
 
 - [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter that supports dbt and Jinja templating.
+- [sqlfmt](https://github.com/tconbeer/sqlfmt) - sqlfmt formats your dbt SQL code so you don't have to
 - [Build Data Access Layer on dbt](https://github.com/supasheet/dal) - Package to build GraphQL API on top of your dbt project.
 - [Run changed models based on Git status](https://discourse.getdbt.com/t/tips-and-tricks-about-working-with-dbt/287/2) - Handy bash function to run changed models since last commit.
 - [How we set up our computers for working on dbt projects](https://discourse.getdbt.com/t/how-we-set-up-our-computers-for-working-on-dbt-projects/243) - Things I wish I would have known when started working with dbt. Tools and hacks to improve developing experience.
@@ -153,6 +155,7 @@ Community-developed packages to extend default macros and toolset.
 - [dbtvault](https://dbtvault.readthedocs.io/en/latest/) - Package for generating and executing ETL for Data Vault 2.0 on Snowflake.
 - [dbt-invoke](https://github.com/Dashlane/dbt-invoke) - CLI for creating, updating, and deleting dbt property files.
 - [dbt-unit-testing](https://github.com/EqualExperts/dbt-unit-testing) -  Package which contains macros to support unit testing.
+- [dbt-privacy](https://github.com/pvcy/dbt-privacy) - Macros to make it easier to protect your customers' data
 
 ## Community
 
@@ -189,4 +192,3 @@ Thanks for all the great resources! Can't see your avatar? Check the contributio
 <a href="https://github.com/Hiflylabs/awesome-dbt/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Hiflylabs/awesome-dbt" />
 </a>
-
