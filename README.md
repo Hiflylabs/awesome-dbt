@@ -57,7 +57,7 @@ Helping hand on setting up integrations and implementing best practices.
 ## Integrations
 
 Collection of known data integrations with dbt
-
+- [Raycast](https://www.raycast.com/zsombor-flds/dbtcloud) - Raycast integration to monitor dbt Cloud Jobs.
 - [Metaplane](https://www.metaplane.dev/?ref=producthunt) - Data Observaibility layer on top of your dbt + BI project.
 - [Dbt + Machine Learning: What makes a great baton pass?](https://docs.getdbt.com/blog/maching-learning-dbt-baton-pass) - Landscape of ML utilities around dbt.
 - [Soda](https://docs.soda.io/soda/integrate-dbt.html) - Integration of Soda's data observability platform and dbt.
