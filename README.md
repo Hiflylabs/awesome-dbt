@@ -94,7 +94,7 @@ Best-practices and extensions of the testing framework.
 ## CI/CD
 
 Make the best out of your product quality and seamless delivery.
-
+- [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) A Github action for exporting dbt model docs to a Notion database. 
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure) - Setting up CI/CD for a Big Query Stack using Azure Pipelines.
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://rittmananalytics.com/blog/2019/6/11/continuous-integration-feature-branches-and-automated-build-tests-using-dbtcloud) - Great and detailed blogpost on setting up Slim CI in dbt Cloud.
 - [How to review an analytics pull request](https://blog.getdbt.com/how-to-review-an-analytics-pull-request/) - Checkpoints to consider when reviewing an analytics engineer PR.
