@@ -99,6 +99,7 @@ Best-practices and extensions of the testing framework.
 ## CI/CD
 
 Make the best out of your product quality and seamless delivery.
+
 - [Slim CI/CD with Bitbucket Pipeliens](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
 - [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database. 
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure) - Setting up CI/CD for a Big Query Stack using Azure Pipelines.
@@ -121,7 +122,6 @@ Resources to manage and maintain dependencies in modern data pipelines.
 Useful tools and extensions to bump up your analytics engineer worklow.
 
 - [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
-- [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - Github Action to export dbt docs to Notion.
 - [sqlfmt](https://github.com/tconbeer/sqlfmt) - This tool formats your dbt SQL code so you don't have to.
 - [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter that supports dbt and Jinja templating.
 - [Build Data Access Layer on dbt](https://github.com/supasheet/dal) - Package to build GraphQL API on top of your dbt project.
