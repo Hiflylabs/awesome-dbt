@@ -27,6 +27,7 @@ Happy contributing!
 
 Courses from where you can get started with Analytics Engineering.
 
+- [Analytics Engineering Glossary](https://docs.getdbt.com/glossary) - Living collection of terms & concepts commonly used in the data industry by dbt Labs.
 - [Zero to Hero dbt](https://dbtlearn.com/) - Complete course covering both theory & practice through real-world Airbnb use-case. 
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) - Data engineering course on cutting edge tools including dbt.
 - [Analytics Engineering with dbt](https://corise.com/course/analytics-engineering-with-dbt) - Paid course offered by co:rise covering the basics of dbt.
@@ -118,6 +119,9 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer worklow.
+
+- [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
+- [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - Github Action to export dbt docs to Notion.
 - [sqlfmt](https://github.com/tconbeer/sqlfmt) - This tool formats your dbt SQL code so you don't have to.
 - [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter that supports dbt and Jinja templating.
 - [Build Data Access Layer on dbt](https://github.com/supasheet/dal) - Package to build GraphQL API on top of your dbt project.
@@ -136,6 +140,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt_constraints](https://github.com/Snowflake-Labs/dbt_constraints) - Generate database constraints based on the tests in a dbt project.
 - [dbt-date](https://github.com/calogica/dbt-date) - Date logic and calendar functionality.
 - [dbt-privacy](https://github.com/pvcy/dbt-privacy) - Macros to make it easier to protect your customers' data.
 - [dbt-fivetran-utils](https://github.com/fivetran/dbt_fivetran_utils) - General macros and helpers.
@@ -166,6 +171,9 @@ Community-developed packages to extend default macros and toolset.
 
 Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow analytics engineers and forums of contact.
 
+- [Metadata Weekly](https://metadataweekly.substack.com) - Weekly substack about metadata, the metrics layer and MDS.
+- [Data & Analytics Events in 2022](https://atlanhq.notion.site/atlanhq/Data-Analytics-Events-in-2022-7abf9f3daf8d42358234c6a00b43f1a6) - Great curated list of upcoming data analytics conferences.
+- [Data Council Austin 2022](https://youtube.com/playlist?list=PLAesBe-zAQmEod2ARZjjAHmGFoGcjaXK6) - Worldwide community driven analytics conference with a handful of talks fitting to the dbt stack.
 - [Discourse v2](https://github.com/dbt-labs/docs.getdbt.com/discussions) - Revamped and ported hub of main discussions for the community.
 - [Coalesce 2021](https://youtube.com/playlist?list=PL0QYlrC86xQnNXXXL7WPRTULbMgh_Sry3) - Second iteration of the analytics engineer conference.
 - [Coalesce 2020](https://youtube.com/playlist?list=PL0QYlrC86xQmPf9QUceFdOarYcv3ETSsz) - Annual dbt conference full of fascinating use-cases.
