@@ -59,7 +59,7 @@ Helping hand on setting up integrations and implementing best practices.
 ## Integrations
 
 Collection of known data integrations with dbt
-- [Cube](https://cube.dev/blog/dbt-metrics-meet-cube?ref=awesome-dbt) - APIs, Caching, and Access Control on top of dbt Metrics
+- [Cube](https://cube.dev/blog/dbt-metrics-meet-cube?ref=awesome-dbt) - APIs, Caching, and Access Control on top of dbt Metrics.
 - [FlexIt Analytics](https://learn.flexitanalytics.com/docs/dbt/) - Business Intelligence platform with deep dbt Cloud and CLI integration.
 - [Raycast](https://www.raycast.com/zsombor-flds/dbtcloud) - Raycast integration to monitor dbt Cloud Jobs.
 - [Metaplane](https://www.metaplane.dev/) - Data Observaibility layer on top of your dbt + BI project.
