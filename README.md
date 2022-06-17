@@ -121,6 +121,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer worklow.
+- [dbt-yaml-check](https://github.com/k-aranke/dbt-yaml-check) - Checks that columns defined in YAML also exist in SQL. 
 - [data-diff](https://github.com/datafold/data-diff) - CLI tool to diff rows across two different databases.
 - [looker-gen](https://github.com/aaronbannin/looker-gen) - Generate lookml from dbt.
 - [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
