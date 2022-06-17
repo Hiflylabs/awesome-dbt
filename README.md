@@ -122,6 +122,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [looker-gen](https://github.com/aaronbannin/looker-gen) - Generate lookml from dbt.
 - [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
 - [sqlfmt](https://github.com/tconbeer/sqlfmt) - This tool formats your dbt SQL code so you don't have to.
 - [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter that supports dbt and Jinja templating.
