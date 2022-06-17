@@ -37,6 +37,7 @@ Courses from where you can get started with Analytics Engineering.
 
 ## How To
 
+- [Automatically generate ERD](https://github.com/dbt-labs/docs.getdbt.com/discussions/1541) - Automatically generate ERDs and display in your docs site.
 Helping hand on setting up integrations and implementing best practices.
 - [Business Intelligence Standards](https://github.com/flexanalytics/dbt-business-intelligence) - Best practices in Business Intelligence standards for integrating with dbt.
 - [Jinja cheatsheet](https://github.com/zsombor-flds/dbt-jinja-cheatsheet) - Jinja cheatsheet for dbt development.
@@ -121,7 +122,9 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer worklow.
-
+- [dbt-yaml-check](https://github.com/k-aranke/dbt-yaml-check) - Checks that columns defined in YAML also exist in SQL. 
+- [data-diff](https://github.com/datafold/data-diff) - CLI tool to diff rows across two different databases.
+- [looker-gen](https://github.com/aaronbannin/looker-gen) - Generate lookml from dbt.
 - [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
 - [sqlfmt](https://github.com/tconbeer/sqlfmt) - This tool formats your dbt SQL code so you don't have to.
 - [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter that supports dbt and Jinja templating.
@@ -141,6 +144,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-project-evaluator](https://github.com/dbt-labs/dbt-project-evaluator) - This package highlights areas of a dbt project that are misaligned with dbt Labs' best practices.
 - [dbt_constraints](https://github.com/Snowflake-Labs/dbt_constraints) - Generate database constraints based on the tests in a dbt project.
 - [dbt-date](https://github.com/calogica/dbt-date) - Date logic and calendar functionality.
 - [dbt-privacy](https://github.com/pvcy/dbt-privacy) - Macros to make it easier to protect your customers' data.
