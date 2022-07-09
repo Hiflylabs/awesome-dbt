@@ -37,6 +37,8 @@ Courses from where you can get started with Analytics Engineering.
 
 ## How To
 
+Demonstrations of how to bring the most out of you dbt experience.
+
 - [Automatically generate ERDs and display in your docs site](https://github.com/dbt-labs/docs.getdbt.com/discussions/1541) - Generate ERD by leveraging the dbt_contraints package.
 - [Dry running our data warehouse using BigQuery and dbt](https://engineering.autotrader.co.uk/2022/04/06/dry-running-our-data-warehouse-using-bigquery-and-dbt.html) - Use dbt & BigQuery dry run jobs to validate our 1000+ models in under 30 seconds
 - [Automatically generate ERD](https://github.com/dbt-labs/docs.getdbt.com/discussions/1541) - Automatically generate ERDs and display in your docs site.
