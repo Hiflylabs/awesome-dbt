@@ -37,8 +37,10 @@ Courses from where you can get started with Analytics Engineering.
 
 ## How To
 
-- [Automatically generate ERD](https://github.com/dbt-labs/docs.getdbt.com/discussions/1541) - Automatically generate ERDs and display in your docs site.
 Helping hand on setting up integrations and implementing best practices.
+
+- [Dry running our data warehouse using BigQuery and dbt](https://engineering.autotrader.co.uk/2022/04/06/dry-running-our-data-warehouse-using-bigquery-and-dbt.html) - Use dbt & BigQuery dry run jobs to validate our 1000+ models in under 30 seconds.
+- [Automatically generate ERD](https://github.com/dbt-labs/docs.getdbt.com/discussions/1541) - Automatically generate ERDs and display in your docs site.
 - [Business Intelligence Standards](https://github.com/flexanalytics/dbt-business-intelligence) - Best practices in Business Intelligence standards for integrating with dbt.
 - [Jinja cheatsheet](https://github.com/zsombor-flds/dbt-jinja-cheatsheet) - Jinja cheatsheet for dbt development.
 - [Test SQL Pipelines against Production Clones using DBT and Snowflake](https://medium.com/airtribe/test-sql-pipelines-against-production-clones-using-dbt-and-snowflake-2f8293722dd4) - Leverage Snowflake Zero-copy-clones to run slim ci checks.
@@ -77,6 +79,7 @@ Collection of known data integrations with dbt
 
 Use-cases and user stories implemented by the community members using components of the MDS with dbt.
 
+- [How HomeToGo connected dbt and Superset to make metadata more accessible and reduce analytical overhead](https://engineering.hometogo.com/how-hometogo-connected-dbt-and-superset-to-make-metadata-more-accessible-and-reduce-analytical-2223af539cc6) - A dbt<>Superset connector that leverages Superset's API capabilities and dbt's manifest.
 - [Self-service Business Intelligence](https://medium.com/p/3b7e24a92e27) - Eliminate the need for a data modeling semantic layer in BI.
 - [Leveraging DBT as a Data Modeling tool](https://medium.com/analytics-and-data/leveraging-dbt-as-a-data-modeling-tool-b3caf78f4a3a) - Reflection on one-year usage of dbt.
 - [dbt + Materialize: Streaming to a dbt project near you](https://blog.getdbt.com/dbt-materialize-streaming-to-a-dbt-project-near-you/) - How to own your real-time transformation workflows like batch-based alternatives.
@@ -102,7 +105,7 @@ Best-practices and extensions of the testing framework.
 
 Make the best out of your product quality and seamless delivery.
 
-- [Slim CI/CD with Bitbucket Pipeliens](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
+- [Slim CI/CD with Bitbucket Pipelines](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
 - [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database. 
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure) - Setting up CI/CD for a Big Query Stack using Azure Pipelines.
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://rittmananalytics.com/blog/2019/6/11/continuous-integration-feature-branches-and-automated-build-tests-using-dbtcloud) - Great and detailed blogpost on setting up Slim CI in dbt Cloud.
@@ -122,8 +125,8 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer worklow.
-- [dbt-yaml-check](https://github.com/k-aranke/dbt-yaml-check) - Checks that columns defined in YAML also exist in SQL. 
-- [data-diff](https://github.com/datafold/data-diff) - CLI tool to diff rows across two different databases.
+
+- [pytest-dbt-core](https://github.com/godatadriven/pytest-dbt-core) - Pytest dbt core is a pytest plugin for testing your dbt projects.
 - [looker-gen](https://github.com/aaronbannin/looker-gen) - Generate lookml from dbt.
 - [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
 - [sqlfmt](https://github.com/tconbeer/sqlfmt) - This tool formats your dbt SQL code so you don't have to.
@@ -144,6 +147,8 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-yaml-check](https://github.com/k-aranke/dbt-yaml-check) - Checks that columns defined in YAML also exist in SQL.
+- [data-diff](https://github.com/datafold/data-diff) - A command-line tool and Python library to efficiently diff rows across two different databases.
 - [dbt-project-evaluator](https://github.com/dbt-labs/dbt-project-evaluator) - This package highlights areas of a dbt project that are misaligned with dbt Labs' best practices.
 - [dbt_constraints](https://github.com/Snowflake-Labs/dbt_constraints) - Generate database constraints based on the tests in a dbt project.
 - [dbt-date](https://github.com/calogica/dbt-date) - Date logic and calendar functionality.
@@ -196,6 +201,9 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [GitLab Data Team](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt) - Gitlab's open source dbt project.
+- [attribution-playbook](https://github.com/dbt-labs/attribution-playbook) - A worked example to demonstrate how to model customer attribution.
+- [mrr-playbook](https://github.com/dbt-labs/mrr-playbook) - A worked example to demonstrate how to model subscription revenue.
 - [Use dbt inside Visual Studio Code development containers](https://github.com/davidgasquez/dbt-devcontainer) - Set up your dbt environment with pre-installed extensions.
 - [dag-stack](https://github.com/spbail/dag-stack) - Dbt-Airflow-GreatExpectations Stack.
 - [Jaffle Shop](https://github.com/dbt-labs/jaffle_shop) - A self-contained dbt project for testing purposes.
