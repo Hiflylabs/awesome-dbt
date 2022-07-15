@@ -27,6 +27,7 @@ Happy contributing!
 
 Courses from where you can get started with Analytics Engineering.
 
+- [DBT in a real world scenario, A Beginner DBT tutorial](https://tipseason.com/dbt-tutorial-real-world-scenario-guide) - A beginner tutorial to Understand dbt with a real world example. 
 - [Analytics Engineering Glossary](https://docs.getdbt.com/glossary) - Living collection of terms & concepts commonly used in the data industry by dbt Labs.
 - [Zero to Hero dbt](https://dbtlearn.com/) - Complete course covering both theory & practice through real-world Airbnb use-case. 
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) - Data engineering course on cutting edge tools including dbt.
@@ -35,9 +36,6 @@ Courses from where you can get started with Analytics Engineering.
 - [Refactoring SQL for Modularity](https://courses.getdbt.com/courses/refactoring-sql-for-modularity) - Another dbt labs offered free course on dbt refactoring and CTE supercharging.
 - [Learn DBT from Scratch](https://www.udemy.com/course/learn-dbt-from-scratch/) - Guides you through a setup paired with Snowflake (decorated with extras).
 
-Tutorials: 
-
-- [DBT in a real world scenario, A Beginner DBT tutorial](https://tipseason.com/dbt-tutorial-real-world-scenario-guide) - A beginner tutorial to Understand dbt with a real world example. 
 
 ## How To
 
