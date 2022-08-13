@@ -10,18 +10,20 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 Happy contributing!
 
 ## Contents
-- [Get Started](#get-started)
-- [How To](#how-to)
-- [Integrations](#integrations)
-- [User Stories](#user-stories)
-- [Data Quality](#data-quality)
-- [CI/CD](#cicd)
-- [Orchestration](#orchestration)
-- [Utilities](#utilities)
-- [Packages](#packages)
-- [Community](#community)
-- [Sample Projects](#sample-projects)
-- [Contributors](#contributors)
+- [Awesome dbt ![Awesome](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">](#awesome-dbt---)
+  - [Contents](#contents)
+  - [Get Started](#get-started)
+  - [How To](#how-to)
+  - [Integrations](#integrations)
+  - [User Stories](#user-stories)
+  - [Data Quality](#data-quality)
+  - [CI/CD](#cicd)
+  - [Orchestration](#orchestration)
+  - [Utilities](#utilities)
+  - [Packages](#packages)
+  - [Community](#community)
+  - [Sample Projects](#sample-projects)
+  - [Contributors](#contributors)
 
 ## Get Started
 
@@ -184,6 +186,8 @@ Community-developed packages to extend default macros and toolset.
 
 Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow analytics engineers and forums of contact.
 
+- [Locally Optimistic](https://locallyoptimistic.com/about/) - A Slack community of aspiring analytics leaders discussing and sharing lessons learned and challenges from their experiences in using data.
+- [DataTalks.Club](https://datatalks.club/) - Global online community of data enthusiasts. Podcasts and blogs, etc. are distributed with high frequency.
 - [Metadata Weekly](https://metadataweekly.substack.com) - Weekly substack about metadata, the metrics layer and MDS.
 - [Data & Analytics Events in 2022](https://atlanhq.notion.site/atlanhq/Data-Analytics-Events-in-2022-7abf9f3daf8d42358234c6a00b43f1a6) - Great curated list of upcoming data analytics conferences.
 - [Data Council Austin 2022](https://youtube.com/playlist?list=PLAesBe-zAQmEod2ARZjjAHmGFoGcjaXK6) - Worldwide community driven analytics conference with a handful of talks fitting to the dbt stack.
