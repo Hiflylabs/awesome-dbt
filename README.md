@@ -201,7 +201,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 - [dbt Slack](https://www.getdbt.com/community/) - Energy-filled hub of analytics engineers (Highly recommended).
 - [r/dataengineering](https://www.reddit.com/r/dataengineering/) - Subreddit of data engineering topics.
 - [Drill to Detail Podcast](https://rittmananalytics.com/drilltodetail) - Special guests discussing big data, business intelligence, modern data stack.
-- [Locally Optimistic](https://locallyoptimistic.com/about/) - A Slack community of aspiring analytics leaders discussing and sharing lessons learned and challenges from their experiences in using data.
+- [Locally Optimistic](https://locallyoptimistic.com/about/) - A Slack community of aspiring analytics leaders discussing learned from their experiences in using data.
 - [DataTalks.Club](https://datatalks.club/) - Global online community of data enthusiasts. Podcasts and blogs, etc. are distributed with high frequency.
 
 ## Sample Projects
