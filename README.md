@@ -10,18 +10,20 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 Happy contributing!
 
 ## Contents
-- [Get Started](#get-started)
-- [How To](#how-to)
-- [Integrations](#integrations)
-- [User Stories](#user-stories)
-- [Data Quality](#data-quality)
-- [CI/CD](#cicd)
-- [Orchestration](#orchestration)
-- [Utilities](#utilities)
-- [Packages](#packages)
-- [Community](#community)
-- [Sample Projects](#sample-projects)
-- [Contributors](#contributors)
+- [Awesome dbt ![Awesome](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">](#awesome-dbt---)
+  - [Contents](#contents)
+  - [Get Started](#get-started)
+  - [How To](#how-to)
+  - [Integrations](#integrations)
+  - [User Stories](#user-stories)
+  - [Data Quality](#data-quality)
+  - [CI/CD](#cicd)
+  - [Orchestration](#orchestration)
+  - [Utilities](#utilities)
+  - [Packages](#packages)
+  - [Community](#community)
+  - [Sample Projects](#sample-projects)
+  - [Contributors](#contributors)
 
 ## Get Started
 
@@ -199,6 +201,8 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 - [dbt Slack](https://www.getdbt.com/community/) - Energy-filled hub of analytics engineers (Highly recommended).
 - [r/dataengineering](https://www.reddit.com/r/dataengineering/) - Subreddit of data engineering topics.
 - [Drill to Detail Podcast](https://rittmananalytics.com/drilltodetail) - Special guests discussing big data, business intelligence, modern data stack.
+- [Locally Optimistic](https://locallyoptimistic.com/about/) - A Slack community of aspiring analytics leaders discussing and sharing lessons learned and challenges from their experiences in using data.
+- [DataTalks.Club](https://datatalks.club/) - Global online community of data enthusiasts. Podcasts and blogs, etc. are distributed with high frequency.
 
 ## Sample Projects
 
