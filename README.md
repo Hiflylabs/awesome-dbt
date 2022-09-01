@@ -76,6 +76,7 @@ Collection of known data integrations with dbt
 - [Dagster and dbt: Better Together](https://dagster.io/blog/dagster-dbt) - Getting started with the dagster-dbt library.
 - [fal](https://github.com/fal-ai/fal) - Add multi-language support (Python) to your dbt project.
 - [Privacy Dynamics](https://www.privacydynamics.io) - Anonymize data in your dbt project.
+- [prefect-dbt](https://github.com/PrefectHQ/prefect-dbt) - Collection of Prefect integrations for working with dbt with your Prefect flows.
 
 ## User Stories
 
