@@ -130,6 +130,8 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbtc](https://github.com/dpguthrie/dbtc) - Unaffiliated python interface to various dbt Cloud API endpoints.
+- [dbt-osmosis](https://github.com/z3z1ma/dbt-osmosis) - Enhance the developer experience significantly with workbench, output diffs, and YAML management.
 - [pytest-dbt-core](https://github.com/godatadriven/pytest-dbt-core) - Pytest dbt core is a pytest plugin for testing your dbt projects.
 - [looker-gen](https://github.com/aaronbannin/looker-gen) - Generate lookml from dbt.
 - [dbtenv](https://github.com/brooklyn-data/dbtenv) - A version manager for dbt.
