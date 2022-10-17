@@ -10,18 +10,20 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 Happy contributing!
 
 ## Contents
-- [Get Started](#get-started)
-- [How To](#how-to)
-- [Integrations](#integrations)
-- [User Stories](#user-stories)
-- [Data Quality](#data-quality)
-- [CI/CD](#cicd)
-- [Orchestration](#orchestration)
-- [Utilities](#utilities)
-- [Packages](#packages)
-- [Community](#community)
-- [Sample Projects](#sample-projects)
-- [Contributors](#contributors)
+- [Awesome dbt ![Awesome](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">](#awesome-dbt---)
+  - [Contents](#contents)
+  - [Get Started](#get-started)
+  - [How To](#how-to)
+  - [Integrations](#integrations)
+  - [User Stories](#user-stories)
+  - [Data Quality](#data-quality)
+  - [CI/CD](#cicd)
+  - [Orchestration](#orchestration)
+  - [Utilities](#utilities)
+  - [Packages](#packages)
+  - [Community](#community)
+  - [Sample Projects](#sample-projects)
+  - [Contributors](#contributors)
 
 ## Get Started
 
@@ -218,6 +220,7 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
 - [Spotify User Analytics](https://github.com/ftupas/dbt-spotify-analytics) - Sample dbt project with Spotify user data.
 - [dbt-github-workflow](https://github.com/slve/dbt-github-workflow) - Deploy BigQuery + Airflow.
 - [airflow-dbt-demo](https://github.com/astronomer/airflow-dbt-demo) - Demonstration of Airflow integration.
+- [aws athena x dbt](https://kiwamizamurai.github.io/posts/2022-08-25/) - How to build a small and modern data infrastructure.
 
 ## Contributors
 
