@@ -10,18 +10,18 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 Happy contributing!
 
 ## Contents
-  - [Get Started](#get-started)
-  - [How To](#how-to)
-  - [Integrations](#integrations)
-  - [User Stories](#user-stories)
-  - [Data Quality](#data-quality)
-  - [CI/CD](#cicd)
-  - [Orchestration](#orchestration)
-  - [Utilities](#utilities)
-  - [Packages](#packages)
-  - [Community](#community)
-  - [Sample Projects](#sample-projects)
-  - [Contributors](#contributors)
+- [Get Started](#get-started)
+- [How To](#how-to)
+- [Integrations](#integrations)
+- [User Stories](#user-stories)
+- [Data Quality](#data-quality)
+- [CI/CD](#cicd)
+- [Orchestration](#orchestration)
+- [Utilities](#utilities)
+- [Packages](#packages)
+- [Community](#community)
+- [Sample Projects](#sample-projects)
+- [Contributors](#contributors)
 
 ## Get Started
 
