@@ -10,7 +10,6 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 Happy contributing!
 
 ## Contents
-- [Awesome dbt ![Awesome](https://awesome.re) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">](#awesome-dbt---)
   - [Contents](#contents)
   - [Get Started](#get-started)
   - [How To](#how-to)
