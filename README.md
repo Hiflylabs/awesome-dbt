@@ -10,7 +10,6 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 Happy contributing!
 
 ## Contents
-  - [Contents](#contents)
   - [Get Started](#get-started)
   - [How To](#how-to)
   - [Integrations](#integrations)
