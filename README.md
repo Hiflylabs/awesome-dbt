@@ -223,6 +223,12 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
 - [dbt-github-workflow](https://github.com/slve/dbt-github-workflow) - Deploy BigQuery + Airflow.
 - [airflow-dbt-demo](https://github.com/astronomer/airflow-dbt-demo) - Demonstration of Airflow integration.
 - [aws athena x dbt](https://kiwamizamurai.github.io/posts/2022-08-25/) - How to build a small and modern data infrastructure.
+- dbt on AWS ![image](https://user-images.githubusercontent.com/1023748/206618801-52fb35ab-bcb3-4ba5-9986-23498f03f70c.png) - Data Build Tool (dbt) for Effective Data Transformation on AWS
+  - [Part 1 – Redshift](https://cevo.com.au/post/dbt-on-aws-part-1/)
+  - [Part 2 – Glue](https://cevo.com.au/post/dbt-on-aws-part-2/)
+  - [Part 3 – EMR on EC2](https://cevo.com.au/post/dbt-on-aws-part-3/)
+  - [Part 4 – EMR on EKS](https://cevo.com.au/post/dbt-on-aws-part-4/)
+  - [Part 5 – Athena](https://cevo.com.au/post/dbt-on-aws-part-5/)
 
 ## Contributors
 
