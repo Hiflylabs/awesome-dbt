@@ -138,6 +138,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [cookiecutter-dbt](https://github.com/datacoves/cookiecutter-dbt) - Cookiecutter template for dbt projects.
 - [turbovault4dbt](https://github.com/ScalefreeCOM/turbovault4dbt) - TurboVault4dbt is an open source tool that automatically generates dbt models according to datavault4dbt-templates.
 - [dbt-container-skeleton](https://github.com/gnilrets/dbt-container-skeleton) - All the basics to get a nice containerized dbt development environment.
 - [oliver-twist](https://github.com/autotraderuk/oliver-twist) - DAG auditing tool that audits the DBT DAG and generates a summary report.
