@@ -40,6 +40,9 @@ Courses from where you can get started with Analytics Engineering.
 
 Helping hand on setting up integrations and implementing best practices.
 
+- [Configuring Snowflake warehouse sizes in dbt](https://select.dev/posts/configuring-snowflake-warehouse-sizes-in-dbt) - How to use dbt with Snowflake to allow specific warehouses to be chosen down to the model level. 
+- [BigQuery Ingestion-Time Partitioning and Partition Copy With dbt](https://medium.com/teads-engineering/bigquery-ingestion-time-partitioning-and-partition-copy-with-dbt-cc8a00f373e3) - Combining ingestion-time partitioning and partition copy is a great way to achieve better performance for your models.
+- [Power up your data quality with grouped checks](https://docs.getdbt.com/blog/grouping-data-tests) - How to use grouped checkes in dbt-utils to keep our data "on track".
 - [Dry running our data warehouse using BigQuery and dbt](https://engineering.autotrader.co.uk/2022/04/06/dry-running-our-data-warehouse-using-bigquery-and-dbt.html) - Use dbt & BigQuery dry run jobs to validate our 1000+ models in under 30 seconds.
 - [Automatically generate ERD](https://github.com/dbt-labs/docs.getdbt.com/discussions/1541) - Automatically generate ERDs and display in your docs site.
 - [Business Intelligence Standards](https://github.com/flexanalytics/dbt-business-intelligence) - Best practices in Business Intelligence standards for integrating with dbt.
@@ -83,6 +86,9 @@ Collection of known data integrations with dbt
 
 Use-cases and user stories implemented by the community members using components of the MDS with dbt.
 
+- [Building an extension framework for dbt](https://medium.com/data-monzo/building-an-extension-framework-for-dbt-654ca99495da) - How Monzo built an extension framework for dbt.
+- [Why I moved my dbt workloads to GitHub and saved over $65,000](https://medium.com/@datajuls/why-i-moved-my-dbt-workloads-to-github-and-saved-over-65-000-759b37486001) - Save by replacing dbt Cloud with GitHub Actions.
+- [“Is This You?” Entity Matching in the Modern Data Stack with Large Language models](https://towardsdatascience.com/is-this-you-entity-matching-in-the-modern-data-stack-with-large-language-models-19a730373b26) - An experiment in productionizing LLMs.
 - [How HomeToGo connected dbt and Superset to make metadata more accessible and reduce analytical overhead](https://engineering.hometogo.com/how-hometogo-connected-dbt-and-superset-to-make-metadata-more-accessible-and-reduce-analytical-2223af539cc6) - A dbt<>Superset connector that leverages Superset's API capabilities and dbt's manifest.
 - [Self-service Business Intelligence](https://medium.com/p/3b7e24a92e27) - Eliminate the need for a data modeling semantic layer in BI.
 - [Leveraging DBT as a Data Modeling tool](https://medium.com/analytics-and-data/leveraging-dbt-as-a-data-modeling-tool-b3caf78f4a3a) - Reflection on one-year usage of dbt.
@@ -110,6 +116,7 @@ Best-practices and extensions of the testing framework.
 
 Make the best out of your product quality and seamless delivery.
 
+- [Autoscaling CI](https://docs.getdbt.com/blog/intelligent-slim-ci#watch-it-in-action) - The intelligent Slim CI.
 - [Slim CI/CD with Bitbucket Pipelines](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
 - [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database. 
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure) - Setting up CI/CD for a Big Query Stack using Azure Pipelines.
@@ -131,6 +138,13 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [cookiecutter-dbt](https://github.com/datacoves/cookiecutter-dbt) - Cookiecutter template for dbt projects.
+- [turbovault4dbt](https://github.com/ScalefreeCOM/turbovault4dbt) - TurboVault4dbt is an open source tool that automatically generates dbt models according to datavault4dbt-templates.
+- [dbt-container-skeleton](https://github.com/gnilrets/dbt-container-skeleton) - All the basics to get a nice containerized dbt development environment.
+- [oliver-twist](https://github.com/autotraderuk/oliver-twist) - DAG auditing tool that audits the DBT DAG and generates a summary report.
+- [dbt-sql-formatter](https://github.com/dbt-labs/dbt-sql-formatter) - Makes your sql less bad.
+- [dbterd](https://github.com/datnguye/dbterd) - CLI to generate DBML file from dbt manifest.json.
+- [dbt-cue](https://github.com/gilcrest/dbt-cue) - Generate dbt yml files using the CUE language.
 - [VSC - Wizard for dbt Core](https://marketplace.visualstudio.com/items?itemName=Fivetran.dbt-language-server) - This extension accelerates your first-time environment setup with dbt Core, and optimizes your continual development of transformation pipelines.
 - [dbt-artifacts-parser](https://github.com/yu-iskw/dbt-artifacts-parser) -  It enables us to deal with catalog.json, manifest.json, run-results.json and sources.json as python objects.
 - [GitHub Action: Cancel Running CI Job](https://github.com/Stevedow99/dbt-cloud-cancel-running-ci-job-action) -  This allows to always have the newest code commit running in the CI job without having to wait for the stale job runs to finish.
@@ -157,6 +171,10 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Yet another package to monitor Snowflake usage.
+- [usagedata](https://github.com/anjane-tech/usagedata) - Provides insights on the database/table level usage informations from Snowflake.
+- [dbt_ml](https://github.com/kristeligt-dagblad/dbt_ml) - Package for dbt that allows users to train, audit and use BigQuery ML models.
+- [ddbt](https://github.com/monzo/ddbt) - This repo represents my attempt to build a fast version of DBT which gets very slow on large projects (3000+ data models). This project attempts to be a direct drop in replacement for DBT at the command line.
 - [dbt-snowflake-monitoring](https://github.com/get-select/dbt-snowflake-monitoring) - A dbt package to help you monitor Snowflake performance and costs.
 - [datavault4dbt](https://github.com/ScalefreeCOM/datavault4dbt) - Macros for staging and creation of all DataVault-Entities you need, to build your own DataVault2.0 solution.
 - [DDO](https://github.com/marco-roy/DDO) - Perform DataOps & administrative CI/CD on your data warehouse.
@@ -217,6 +235,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [Data-aware orchestration](https://github.com/jonathanneo/data-aware-orchestration) - Dagster's ability to create a global dependency graph between different dbt projects. 
 - [GitLab Data Team](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt) - Gitlab's open source dbt project.
 - [attribution-playbook](https://github.com/dbt-labs/attribution-playbook) - A worked example to demonstrate how to model customer attribution.
 - [mrr-playbook](https://github.com/dbt-labs/mrr-playbook) - A worked example to demonstrate how to model subscription revenue.
