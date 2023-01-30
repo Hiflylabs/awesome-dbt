@@ -138,6 +138,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [oliver-twist](https://github.com/autotraderuk/oliver-twist) - DAG auditing tool that audits the DBT DAG and generates a summary report.
 - [dbt-sql-formatter](https://github.com/dbt-labs/dbt-sql-formatter) - Makes your sql less bad.
 - [dbterd](https://github.com/datnguye/dbterd) - CLI to generate DBML file from dbt manifest.json.
 - [dbt-cue](https://github.com/gilcrest/dbt-cue) - Generate dbt yml files using the CUE language.
