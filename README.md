@@ -116,6 +116,7 @@ Best-practices and extensions of the testing framework.
 
 Make the best out of your product quality and seamless delivery.
 
+- [Autoscaling CI](https://docs.getdbt.com/blog/intelligent-slim-ci#watch-it-in-action) - The intelligent Slim CI.
 - [Slim CI/CD with Bitbucket Pipelines](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
 - [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database. 
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure) - Setting up CI/CD for a Big Query Stack using Azure Pipelines.
