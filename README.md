@@ -138,6 +138,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbterd](https://github.com/datnguye/dbterd) - CLI to generate DBML file from dbt manifest.json.
 - [dbt-cue](https://github.com/gilcrest/dbt-cue) - Generate dbt yml files using the CUE language.
 - [VSC - Wizard for dbt Core](https://marketplace.visualstudio.com/items?itemName=Fivetran.dbt-language-server) - This extension accelerates your first-time environment setup with dbt Core, and optimizes your continual development of transformation pipelines.
 - [dbt-artifacts-parser](https://github.com/yu-iskw/dbt-artifacts-parser) -  It enables us to deal with catalog.json, manifest.json, run-results.json and sources.json as python objects.
