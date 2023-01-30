@@ -171,6 +171,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [ddbt](https://github.com/monzo/ddbt) - This repo represents my attempt to build a fast version of DBT which gets very slow on large projects (3000+ data models). This project attempts to be a direct drop in replacement for DBT at the command line.
 - [dbt-snowflake-monitoring](https://github.com/get-select/dbt-snowflake-monitoring) - A dbt package to help you monitor Snowflake performance and costs.
 - [datavault4dbt](https://github.com/ScalefreeCOM/datavault4dbt) - Macros for staging and creation of all DataVault-Entities you need, to build your own DataVault2.0 solution.
 - [DDO](https://github.com/marco-roy/DDO) - Perform DataOps & administrative CI/CD on your data warehouse.
