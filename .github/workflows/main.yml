@@ -3,18 +3,21 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  Awesome_Lint:
+  Awesome-PR-Check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: Set up Ruby 2.6
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
+
       - name: Linter
         run: npx awesome-lint
+
       - name: Link Checker
         run: |
           ruby .github/osia_convert.rb
