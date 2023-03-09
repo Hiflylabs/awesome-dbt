@@ -1,4 +1,4 @@
-name: awesome lint
+name: awesome pr check
 on:
   pull_request:
     branches: [main]
