@@ -40,6 +40,7 @@ Courses from where you can get started with Analytics Engineering.
 
 Helping hand on setting up integrations and implementing best practices.
 
+- [dbt Docs as Static Website](https://medium.com/hiflylabs/dbt-docs-as-a-static-website-c50a5b306514) - How to host dbt docs as a static website on GCP using GitHub Actions.
 - [dbt Monorepo Workflow](https://www.loom.com/share/3b4f2d1d209444f1bff75bf4aac2fe1c) - How to get started with the team dbt workflow.
 - [Configuring Snowflake warehouse sizes in dbt](https://select.dev/posts/configuring-snowflake-warehouse-sizes-in-dbt) - How to use dbt with Snowflake to allow specific warehouses to be chosen down to the model level. 
 - [BigQuery Ingestion-Time Partitioning and Partition Copy With dbt](https://medium.com/teads-engineering/bigquery-ingestion-time-partitioning-and-partition-copy-with-dbt-cc8a00f373e3) - Combining ingestion-time partitioning and partition copy is a great way to achieve better performance for your models.
