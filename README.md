@@ -178,6 +178,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt_linreg](https://github.com/dwreeves/dbt_linreg) - Linear regression in SQL using dbt.
 - [dbt-snowflake-query-tags](https://github.com/get-select/dbt-snowflake-query-tags) - Automatically tag dbt-issued queries with informative metadata.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Yet another package to monitor Snowflake usage.
 - [usagedata](https://github.com/anjane-tech/usagedata) - Provides insights on the database/table level usage informations from Snowflake.
@@ -220,6 +221,7 @@ Community-developed packages to extend default macros and toolset.
 
 Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow analytics engineers and forums of contact.
 
+- [State of Analytics Engineering 2023](https://www.getdbt.com/state-of-analytics-engineering-2023/?mn=gWlJaysu_LpdqLTox0JXl6LHyaPHE5lKxcKh.yF0aSpyD38bsL9D9) - A survey of pains, gains, and areas of investment for global data teams.
 - [dbt Labs Tiktok](https://www.tiktok.com/@dbtlabs) - Official TikTok channel of dbt Labs.
 - [Locally Optimistic](https://locallyoptimistic.com/about/) - A Slack community of aspiring analytics leaders discussing and sharing lessons learned and challenges from their experiences in using data.
 - [DataTalks.Club](https://datatalks.club/) - Global online community of data enthusiasts. Podcasts and blogs, etc. are distributed with high frequency.
@@ -243,6 +245,8 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [Analytics Engineer Survey 2023](https://github.com/dbt-labs/analytics-engineering-survey/tree/main) - Repo containing data and dbt template of the survey.
+- [Tracking the Fake GitHub Star Black Market with Dagster, dbt and BigQuery](https://dagster.io/blog/fake-stars) - Explore the topic of fake GitHub stars.
 - [Data-aware orchestration](https://github.com/jonathanneo/data-aware-orchestration) - Dagster's ability to create a global dependency graph between different dbt projects. 
 - [GitLab Data Team](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt) - Gitlab's open source dbt project.
 - [attribution-playbook](https://github.com/dbt-labs/attribution-playbook) - A worked example to demonstrate how to model customer attribution.
