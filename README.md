@@ -142,6 +142,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbt-model-finder](https://dbt-model-finder.streamlit.app/) - A Streamlit web app to find currently running dbt models.
 - [dbtc Explorer](https://dpguthrie-dbtc-streamlit-home-yy7c0b.streamlit.app/Admin_API) - A Streamlit web app to explore the dbt Cloud API.
 - [dbt-feature-flags](https://github.com/z3z1ma/dbt-feature-flags) - Feature Flags in dbt models.
 - [dbtpal](https://github.com/PedramNavid/dbtpal) - A Neovim plugin for dbt model editing.
