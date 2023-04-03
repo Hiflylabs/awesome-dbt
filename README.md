@@ -179,6 +179,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-excel](https://dbt-excel.com/) - A dbt adapter for working with Excel.
 - [dbt_linreg](https://github.com/dwreeves/dbt_linreg) - Linear regression in SQL using dbt.
 - [dbt-snowflake-query-tags](https://github.com/get-select/dbt-snowflake-query-tags) - Automatically tag dbt-issued queries with informative metadata.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Yet another package to monitor Snowflake usage.
