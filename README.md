@@ -249,6 +249,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [Cloud Cost Monitoring](https://github.com/randypitcherii/cloud_cost_monitoring) - A dbt project to monitor cloud costs.
 - [Analytics Engineer Survey 2023](https://github.com/dbt-labs/analytics-engineering-survey/tree/main) - Repo containing data and dbt template of the survey.
 - [Tracking the Fake GitHub Star Black Market with Dagster, dbt and BigQuery](https://dagster.io/blog/fake-stars) - Explore the topic of fake GitHub stars.
 - [Data-aware orchestration](https://github.com/jonathanneo/data-aware-orchestration) - Dagster's ability to create a global dependency graph between different dbt projects. 
