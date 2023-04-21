@@ -27,9 +27,10 @@ Happy contributing!
 
 Courses from where you can get started with Analytics Engineering.
 
-- [dbt in a real world scenario, A Beginner dbt tutorial](https://tipseason.com/dbt-tutorial-real-world-scenario-guide) - A beginner tutorial to understand dbt with a real world example. 
+- [Mastering dbt: Beginner to Pro](https://www.udemy.com/course/mastering-dbt-data-build-tool-bootcamp/?referralCode=FFF494163B7B9E5E846F) - Paid Udemy course that covers theory, building a dbt project from scratch, and deploying to dbt Cloud.
+- [dbt in a real world scenario, A Beginner dbt tutorial](https://tipseason.com/dbt-tutorial-real-world-scenario-guide) - A beginner tutorial to understand dbt with a real world example.
 - [Analytics Engineering Glossary](https://docs.getdbt.com/glossary) - Living collection of terms & concepts commonly used in the data industry by dbt Labs.
-- [Zero to Hero dbt](https://dbtlearn.com/) - Complete course covering both theory & practice through real-world Airbnb use-case. 
+- [Zero to Hero dbt](https://dbtlearn.com/) - Complete course covering both theory & practice through real-world Airbnb use-case.
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) - Data engineering course on cutting edge tools including dbt.
 - [Analytics Engineering with dbt](https://corise.com/course/analytics-engineering-with-dbt) - Paid course offered by co:rise covering the basics of dbt.
 - [dbt Fundamentals](https://courses.getdbt.com/collections) - Official free course offered by dbt. Excellent for learning the basics of dbt Cloud.
@@ -42,7 +43,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 - [dbt Docs as a Static Website](https://medium.com/hiflylabs/dbt-docs-as-a-static-website-c50a5b306514) - How to deploy dbt docs as a static website with App Engine and GitHub Actions.
 - [dbt Monorepo Workflow](https://www.loom.com/share/3b4f2d1d209444f1bff75bf4aac2fe1c) - How to get started with the team dbt workflow.
-- [Configuring Snowflake warehouse sizes in dbt](https://select.dev/posts/configuring-snowflake-warehouse-sizes-in-dbt) - How to use dbt with Snowflake to allow specific warehouses to be chosen down to the model level. 
+- [Configuring Snowflake warehouse sizes in dbt](https://select.dev/posts/configuring-snowflake-warehouse-sizes-in-dbt) - How to use dbt with Snowflake to allow specific warehouses to be chosen down to the model level.
 - [BigQuery Ingestion-Time Partitioning and Partition Copy With dbt](https://medium.com/teads-engineering/bigquery-ingestion-time-partitioning-and-partition-copy-with-dbt-cc8a00f373e3) - Combining ingestion-time partitioning and partition copy is a great way to achieve better performance for your models.
 - [Power up your data quality with grouped checks](https://docs.getdbt.com/blog/grouping-data-tests) - How to use grouped checkes in dbt-utils to keep our data "on track".
 - [Dry running our data warehouse using BigQuery and dbt](https://engineering.autotrader.co.uk/2022/04/06/dry-running-our-data-warehouse-using-bigquery-and-dbt.html) - Use dbt & BigQuery dry run jobs to validate our 1000+ models in under 30 seconds.
@@ -50,7 +51,7 @@ Helping hand on setting up integrations and implementing best practices.
 - [Business Intelligence Standards](https://github.com/flexanalytics/dbt-business-intelligence) - Best practices in Business Intelligence standards for integrating with dbt.
 - [Jinja cheatsheet](https://github.com/zsombor-flds/dbt-jinja-cheatsheet) - Jinja cheatsheet for dbt development.
 - [Test SQL Pipelines against Production Clones using DBT and Snowflake](https://medium.com/airtribe/test-sql-pipelines-against-production-clones-using-dbt-and-snowflake-2f8293722dd4) - Leverage Snowflake Zero-copy-clones to run slim ci checks.
-- [How we structure our dbt projects](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355) - How the dbt team structures its dbt projects. 
+- [How we structure our dbt projects](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355) - How the dbt team structures its dbt projects.
 - [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/) - Primer on how you should properly set up and configure your dbt workflow.
 - [dbt for Data Transformation – Hands-on](https://www.kdnuggets.com/2021/07/dbt-data-transformation-tutorial.html) - Yet another tutorial for using dbt Cloud.
 - [Start Modeling Data](https://dataschool.com/sql-optimization/start-modeling-data/) - Configuring Bigquery with your dbt project.
@@ -62,7 +63,7 @@ Helping hand on setting up integrations and implementing best practices.
 - [How to Deploy dbt to Production using GitHub Actions](https://towardsdatascience.com/how-to-deploy-dbt-to-production-using-github-action-778bf6a1dff6)
 - [Doing More With Less: Using DBT to load data from AWS S3 to Snowflake via External Tables](https://medium.com/slateco-blog/doing-more-with-less-usingdbt-to-load-data-from-aws-s3-to-snowflake-via-external-tables-a699d290b93f) - An alternative guide to set up your dbt-external-tables workflow.
 - [Best Practices for your dbt Style Guide](https://airbyte.com/blog/best-practices-dbt-style-guide?utm_content=bufferd2cd7&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer) - Standards for well organized base layer with Airbyte ingestion.
-- [Tips and Tricks about working with dbt](https://discourse.getdbt.com/t/tips-and-tricks-about-working-with-dbt/287) - Tips from community members. 
+- [Tips and Tricks about working with dbt](https://discourse.getdbt.com/t/tips-and-tricks-about-working-with-dbt/287) - Tips from community members.
 - [Writing Unit Tests for dbt](https://www.equalexperts.com/blog/our-thinking/writing-unit-tests-for-dbt-with-tdd/) - An overview about the package dbt-unit-testing.
 
 ## Integrations
@@ -124,7 +125,7 @@ Make the best out of your product quality and seamless delivery.
 
 - [Autoscaling CI](https://docs.getdbt.com/blog/intelligent-slim-ci#watch-it-in-action) - The intelligent Slim CI.
 - [Slim CI/CD with Bitbucket Pipelines](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
-- [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database. 
+- [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database.
 - [Anatomy of A Pipeline: CI/CD For a dbt Data Warehouse on Google Big Query Using Azure Pipelines](https://analysis.backhand.tech/Data-Ops/ci-cd-for-dbt-big-query-on-azure) - Setting up CI/CD for a Big Query Stack using Azure Pipelines.
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://rittmananalytics.com/blog/2019/6/11/continuous-integration-feature-branches-and-automated-build-tests-using-dbtcloud) - Great and detailed blogpost on setting up Slim CI in dbt Cloud.
 - [How to review an analytics pull request](https://blog.getdbt.com/how-to-review-an-analytics-pull-request/) - Checkpoints to consider when reviewing an analytics engineer PR.
@@ -257,7 +258,7 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
 - [Cloud Cost Monitoring](https://github.com/randypitcherii/cloud_cost_monitoring) - A dbt project to monitor cloud costs.
 - [Analytics Engineer Survey 2023](https://github.com/dbt-labs/analytics-engineering-survey/tree/main) - Repo containing data and dbt template of the survey.
 - [Tracking the Fake GitHub Star Black Market with Dagster, dbt and BigQuery](https://dagster.io/blog/fake-stars) - Explore the topic of fake GitHub stars.
-- [Data-aware orchestration](https://github.com/jonathanneo/data-aware-orchestration) - Dagster's ability to create a global dependency graph between different dbt projects. 
+- [Data-aware orchestration](https://github.com/jonathanneo/data-aware-orchestration) - Dagster's ability to create a global dependency graph between different dbt projects.
 - [GitLab Data Team](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt) - Gitlab's open source dbt project.
 - [attribution-playbook](https://github.com/dbt-labs/attribution-playbook) - A worked example to demonstrate how to model customer attribution.
 - [mrr-playbook](https://github.com/dbt-labs/mrr-playbook) - A worked example to demonstrate how to model subscription revenue.
