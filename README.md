@@ -113,6 +113,7 @@ Best-practices and extensions of the testing framework.
 - [Elementary](https://github.com/elementary-data/elementary) - A dbt package that provides data anomaly detection as dbt tests.
 - [Environment-dependent Unit Testing in dbt](https://medium.com/codex/environment-dependent-unit-testing-in-dbt-c081a0a5ff1e) - Guide on how to run unit tests in dbt dynamically.
 - [dbt-expectations](https://github.com/calogica/dbt-expectations) - Port between dbt and great_expectations to extend out-of-the-box tests.
+- [dq-tools](https://github.com/infinitelambda/dq-tools) - Make simple storing test results and visualisation of these in a BI dashboard leveraging 6 Data Quality KPIs
 - [re_data](https://www.getre.io/) - A dbt package for montioring metrics and detect anomalies.
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149) - Suggestions on testing your data powered by the community.
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/) - Unit test using source defer and generic custom tests.
@@ -143,6 +144,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [fst: flow state tool](https://github.com/sungchun12/fst) - A tool to help you stay in flow state while developing dbt models.
 - [dbt_tld](https://github.com/GJMcClintock/dbt_tld) - A self-updating dbt library that will maintain a list of current IANA/ICANN recognized top level domains.
 - [dbt-model-finder](https://dbt-model-finder.streamlit.app/) - A Streamlit web app to find currently running dbt models.
 - [dbtc Explorer](https://dpguthrie-dbtc-streamlit-home-yy7c0b.streamlit.app/Admin_API) - A Streamlit web app to explore the dbt Cloud API.
@@ -219,6 +221,7 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-meta-testing](https://github.com/tnightengale/dbt-meta-testing) - Yet another coverage testing.
 - [dbt-superset-lineage](https://github.com/slidoapp/dbt-superset-lineage) - Push and pull metadata between dbt to Superset.
 - [dbtvault](https://dbtvault.readthedocs.io/en/latest/) - Package for generating and executing ETL for Data Vault 2.0.
+- [dq-vault](https://github.com/infinitelambda/dq-vault) - Data Quality Observation of Data Vault layer
 - [dbt-invoke](https://github.com/Dashlane/dbt-invoke) - CLI for creating, updating, and deleting dbt property files.
 - [dbt-unit-testing](https://github.com/EqualExperts/dbt-unit-testing) -  Package which contains macros to support unit testing.
 
