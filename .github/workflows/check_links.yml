@@ -1,4 +1,4 @@
-name: Check links
+name: Ruby
 
 on:
   push:
@@ -20,4 +20,4 @@ jobs:
     - name: Checks
       run: |
         gem install awesome_bot
-        awesome_bot --allow-ssl -a 3302,307
+        awesome_bot -a 302,307
