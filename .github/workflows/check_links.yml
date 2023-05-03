@@ -20,4 +20,4 @@ jobs:
     - name: Checks URLs
       run: |
         gem install awesome_bot
-        awesome_bot README.md -a 302,307,403
+        awesome_bot README.md -a 301,302,303,307,403,443
