@@ -189,6 +189,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-fabric](https://github.com/datarootsio/dbt-fabric) - A dbt adapter for working with Microsoft Fabric Data Warehouses.
 - [dq-vault](https://github.com/infinitelambda/dq-vault) - Data Quality Observation of Data Vault layer.
 - [dbt-translate](https://github.com/datnguye/dbt-translate) - Translate numbers into words.
 - [dbt-excel](https://dbt-excel.com/) - A dbt adapter for working with Excel.
