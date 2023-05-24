@@ -192,6 +192,7 @@ Community-developed packages to extend default macros and toolset.
 - [dq-vault](https://github.com/infinitelambda/dq-vault) - Data Quality Observation of Data Vault layer.
 - [dbt-translate](https://github.com/datnguye/dbt-translate) - Translate numbers into words.
 - [dbt-excel](https://dbt-excel.com/) - A dbt adapter for working with Excel.
+- [dbt-fabric](https://github.com/datarootsio/dbt-fabric) - A dbt adapter for working with Microsoft Fabric Data Warehouses
 - [dbt_linreg](https://github.com/dwreeves/dbt_linreg) - Linear regression in SQL using dbt.
 - [dbt-snowflake-query-tags](https://github.com/get-select/dbt-snowflake-query-tags) - Automatically tag dbt-issued queries with informative metadata.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Yet another package to monitor Snowflake usage.
