@@ -266,6 +266,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets) - E2E dbt project for scraping and transforming football data from Transfermarkt.
 - [dbt_github_archive_bigquery](https://github.com/preset-io/dbt_github_archive_bigquery) - dbt project for GitHub Archive data on BigQuery.
 - [dbt_workspace](https://github.com/randypitcherii/dbt_workspace) - A workspace template for dbt demos.
 - [Cloud Cost Monitoring](https://github.com/randypitcherii/cloud_cost_monitoring) - A dbt project to monitor cloud costs.
