@@ -151,6 +151,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbt-lineagex](https://github.com/sfu-db/dbt-lineagex) - A Column Level Lineage Graph for dbt.
 - [Jinjat](https://jinjat.com/) - Low-code application framework that turns your dbt projects into web apps.
 - [fst: flow state tool](https://github.com/sungchun12/fst) - A tool to help you stay in flow state while developing dbt models.
 - [dbt_tld](https://github.com/GJMcClintock/dbt_tld) - A self-updating dbt library that will maintain a list of current IANA/ICANN recognized top level domains.
@@ -265,6 +266,8 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets) - E2E dbt project for scraping and transforming football data from Transfermarkt.
+- [dbt_github_archive_bigquery](https://github.com/preset-io/dbt_github_archive_bigquery) - dbt project for GitHub Archive data on BigQuery.
 - [dbt_workspace](https://github.com/randypitcherii/dbt_workspace) - A workspace template for dbt demos.
 - [Cloud Cost Monitoring](https://github.com/randypitcherii/cloud_cost_monitoring) - A dbt project to monitor cloud costs.
 - [Analytics Engineer Survey 2023](https://github.com/dbt-labs/analytics-engineering-survey/tree/main) - Repo containing data and dbt template of the survey.
