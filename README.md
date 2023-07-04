@@ -153,7 +153,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 - [dbt-meshify](https://github.com/dbt-labs/dbt-meshify) - A dbt-core plugin that automates the management and creation of dbt groups, contracts, access, and versions.
 - [dbot](https://github.com/dbt-labs/dbot) - An LLM-powered chatbot with the added context of the dbt knowledge base.
-- [dbt-snapshot-analytics](https://github.com/data-drift/dbt-snapshot-analytics) - Get insight from a dbt snapshot on your metric quality
+- [dbt-snapshot-analytics](https://github.com/data-drift/dbt-snapshot-analytics) - Get insight from a dbt snapshot on your metric quality.
 - [dbt-lineagex](https://github.com/sfu-db/dbt-lineagex) - A Column Level Lineage Graph for dbt.
 - [Jinjat](https://jinjat.com/) - Low-code application framework that turns your dbt projects into web apps.
 - [fst: flow state tool](https://github.com/sungchun12/fst) - A tool to help you stay in flow state while developing dbt models.
@@ -271,7 +271,7 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
 - [f1-data-pipeline](https://github.com/InosRahul/f1-data-pipeline) - F1 Data Pipeline.
 - [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets) - E2E dbt project for scraping and transforming football data from Transfermarkt.
-- [dbt_github_archive_bigquery](https://github.com/preset-io/dbt_github_archive_bigquery) - dbt project for GitHub Archive data on BigQuery.
+- [dbt_github_archive_bigquery](https://github.com/preset-io/dbt_github_archive_bigquery) - A dbt project for GitHub Archive data on BigQuery.
 - [dbt_workspace](https://github.com/randypitcherii/dbt_workspace) - A workspace template for dbt demos.
 - [Cloud Cost Monitoring](https://github.com/randypitcherii/cloud_cost_monitoring) - A dbt project to monitor cloud costs.
 - [Analytics Engineer Survey 2023](https://github.com/dbt-labs/analytics-engineering-survey/tree/main) - Repo containing data and dbt template of the survey.
