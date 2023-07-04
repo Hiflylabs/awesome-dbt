@@ -151,6 +151,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbt-snapshot-analytics](https://github.com/data-drift/dbt-snapshot-analytics) - Get insight from a dbt snapshot on your metric quality
 - [dbt-lineagex](https://github.com/sfu-db/dbt-lineagex) - A Column Level Lineage Graph for dbt.
 - [Jinjat](https://jinjat.com/) - Low-code application framework that turns your dbt projects into web apps.
 - [fst: flow state tool](https://github.com/sungchun12/fst) - A tool to help you stay in flow state while developing dbt models.
