@@ -157,6 +157,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dlt(data load tool)](https://dlthub.com/) - The open-source Python library for data loading. 
 - [Turntable VSCode extension](https://www.turntable.so/extension) - A handy docs composer and column-level lineage.
 - [dbt-loom](https://github.com/nicholasyager/dbt-loom) - A dbt-core plugin to weave together multi-project dbt-core deployments.
 - [dbt-meshify](https://github.com/dbt-labs/dbt-meshify) - A dbt-core plugin that automates the management and creation of dbt groups, contracts, access, and versions.
