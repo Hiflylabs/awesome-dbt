@@ -202,6 +202,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-timescaledb](https://github.com/sdebruyn/dbt-timescaledb) -  The TimescaleDB adapter plugin for dbt.
 - [dbt-fake](https://github.com/leogodin217/dbt-fake) - Daily updated fake data for dbt learning and projects.
 - [dbt_cloud_run_cost](https://github.com/danthelion/dbt_cloud_run_cost) - Package to calculate dbt Cloud usage-based cost.
 - [dbt-reconfigured](https://github.com/TheGrowthEngineeringCompany/dbt-reconfigured) - A dbt package containing reconfigured macros.
