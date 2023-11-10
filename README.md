@@ -76,7 +76,7 @@ Helping hand on setting up integrations and implementing best practices.
 Collection of known data integrations with dbt
 
 - [modal-dbt](https://github.com/trouze/modal-dbt) - This repo gives some code to run dbt jobs/actions using modal which is a serverless application framework.
-- [Grai](https://docs.grai.io/integrations/dbt) - Expose warehouse dbt tests in CI to upstream data consumers so production changes never break the warehouse.
+- [Grai](https://docs.grai.io/integrations/etl/dbt) - Expose warehouse dbt tests in CI to upstream data consumers so production changes never break the warehouse.
 - [Datafold](https://docs.datafold.com/os_diff/dbt_integration/) - Gives a quick print out summary of changes so you can move fast and (not) break stuff!
 - [Raycast dbt Metadata](https://github.com/b-per/raycast-dbt-cloud-metadata) - Queries the dbt Cloud API to return some useful information about your models (number of tests, time they took to run etc…).
 - [Cube](https://cube.dev/blog/dbt-metrics-meet-cube?ref=awesome-dbt) - APIs, Caching, and Access Control on top of dbt Metrics.
@@ -202,6 +202,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-timescaledb](https://github.com/sdebruyn/dbt-timescaledb) -  The TimescaleDB adapter plugin for dbt.
 - [dbt-fake](https://github.com/leogodin217/dbt-fake) - Daily updated fake data for dbt learning and projects.
 - [dbt_cloud_run_cost](https://github.com/danthelion/dbt_cloud_run_cost) - Package to calculate dbt Cloud usage-based cost.
 - [dbt-reconfigured](https://github.com/TheGrowthEngineeringCompany/dbt-reconfigured) - A dbt package containing reconfigured macros.
