@@ -69,7 +69,7 @@ Helping hand on setting up integrations and implementing best practices.
 - [Tips and Tricks about working with dbt](https://discourse.getdbt.com/t/tips-and-tricks-about-working-with-dbt/287) - Tips from community members.
 - [Best Practices for your dbt Style Guide](https://airbyte.com/blog/best-practices-dbt-style-guide?utm_content=bufferd2cd7&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer) - Standards for well organized base layer with Airbyte ingestion.
 - [Writing Unit Tests for dbt](https://www.equalexperts.com/blog/our-thinking/writing-unit-tests-for-dbt-with-tdd/) - An overview about the package dbt-unit-testing.
-- [How to create Kimball dimensional models with dbt](https://docs.getdbt.com/blog/kimball-dimensional-model) - A step by step guide on how to build Kimball dimensional models with dbt. 
+- [How to create Kimball dimensional models with dbt](https://docs.getdbt.com/blog/kimball-dimensional-model) - A step by step guide on how to build Kimball dimensional models with dbt.
 
 ## Integrations
 
@@ -155,7 +155,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
-- [dlt(data load tool)](https://dlthub.com/) - The open-source Python library for data loading. 
+- [dlt(data load tool)](https://dlthub.com/) - The open-source Python library for data loading.
 - [Turntable VSCode extension](https://www.turntable.so/extension) - A handy docs composer and column-level lineage.
 - [dbt-loom](https://github.com/nicholasyager/dbt-loom) - A dbt-core plugin to weave together multi-project dbt-core deployments.
 - [dbt-meshify](https://github.com/dbt-labs/dbt-meshify) - A dbt-core plugin that automates the management and creation of dbt groups, contracts, access, and versions.
@@ -202,6 +202,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-ibis](https://github.com/binste/dbt-ibis) - Write your dbt models using [Ibis](https://ibis-project.org/), the portable Python dataframe library.
 - [dbt-timescaledb](https://github.com/sdebruyn/dbt-timescaledb) -  The TimescaleDB adapter plugin for dbt.
 - [dbt-fake](https://github.com/leogodin217/dbt-fake) - Daily updated fake data for dbt learning and projects.
 - [dbt_cloud_run_cost](https://github.com/danthelion/dbt_cloud_run_cost) - Package to calculate dbt Cloud usage-based cost.
