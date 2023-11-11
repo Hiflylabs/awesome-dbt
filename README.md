@@ -75,6 +75,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
+- [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
 - [modal-dbt](https://github.com/trouze/modal-dbt) - This repo gives some code to run dbt jobs/actions using modal which is a serverless application framework.
 - [Grai](https://docs.grai.io/integrations/etl/dbt) - Expose warehouse dbt tests in CI to upstream data consumers so production changes never break the warehouse.
 - [Datafold](https://docs.datafold.com/os_diff/dbt_integration/) - Gives a quick print out summary of changes so you can move fast and (not) break stuff!
