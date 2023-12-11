@@ -75,6 +75,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
+- [Auto Alert - diqu](https://diqu.iflambda.com/latest/) - Automate and streamline the alerting/ notification process for dbt test results using this versatile CLI companion tool. Receive detailed alerts & test metadata seamlessly on various platforms, promoting improved collaboration on dbt project issues 🐞🚀.
 - [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
 - [modal-dbt](https://github.com/trouze/modal-dbt) - This repo gives some code to run dbt jobs/actions using modal which is a serverless application framework.
 - [Grai](https://docs.grai.io/integrations/etl/dbt) - Expose warehouse dbt tests in CI to upstream data consumers so production changes never break the warehouse.
