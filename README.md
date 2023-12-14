@@ -94,6 +94,7 @@ Collection of known data integrations with dbt
 - [fal](https://github.com/fal-ai/fal) - Add multi-language support (Python) to your dbt project.
 - [Privacy Dynamics](https://www.privacydynamics.io) - Anonymize data in your dbt project.
 - [prefect-dbt](https://github.com/PrefectHQ/prefect-dbt) - Collection of Prefect integrations for working with dbt with your Prefect flows.
+- [Acryl DataHub](https://datahubproject.io/docs/generated/ingestion/sources/dbt/) - A unified data catalog, governance, and observability platform. Use it to view models, docs, test results, and column-level lineage across your dbt projects and downstream dashboards.
 
 ## User Stories
 
