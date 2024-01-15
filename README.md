@@ -158,6 +158,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbterd](https://github.com/datnguye/dbterd) - CLI to generate Diagram-as-a-code file (DBML, Mermaid, PlantUML, GraphViz, D2) from dbt artifact.
 - [dbt-exposures-crawler](https://github.com/voi-oss/dbt-exposures-crawler) - Automate the creation of dbt exposures from different sources.
 - [dlt(data load tool)](https://dlthub.com/) - The open-source Python library for data loading.
 - [Turntable VSCode extension](https://www.turntable.so/extension) - A handy docs composer and column-level lineage.
