@@ -206,6 +206,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-assertions](https://github.com/AxelThevenot/dbt-assertions) - Package to assert rows in-line with dbt macros.
 - [dbt-ibis](https://github.com/binste/dbt-ibis) - Write your dbt models using [Ibis](https://ibis-project.org/), the portable Python dataframe library.
 - [dbt-timescaledb](https://github.com/sdebruyn/dbt-timescaledb) -  The TimescaleDB adapter plugin for dbt.
 - [dbt-fake](https://github.com/leogodin217/dbt-fake) - Daily updated fake data for dbt learning and projects.
