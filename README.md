@@ -206,6 +206,9 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-testgen](https://github.com/kgmcquate/dbt-testgen) - Generate dbt tests based on sample data.
+- [dbt_otel_export](https://github.com/irvingpop/dbt_otel_export) - Takes dbt runs and turns them into OpenTelemetry traces.
+- [dbt-assertions](https://github.com/AxelThevenot/dbt-assertions) - Package to assert rows in-line with dbt macros.
 - [dbt-ibis](https://github.com/binste/dbt-ibis) - Write your dbt models using [Ibis](https://ibis-project.org/), the portable Python dataframe library.
 - [dbt-timescaledb](https://github.com/sdebruyn/dbt-timescaledb) -  The TimescaleDB adapter plugin for dbt.
 - [dbt-fake](https://github.com/leogodin217/dbt-fake) - Daily updated fake data for dbt learning and projects.
@@ -284,6 +287,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [NBA_Data_Modeling](https://github.com/jpooksy/NBA_Data_Modeling) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
 - [awesome-public-dbt-projects](https://github.com/InfuseAI/awesome-public-dbt-projects) - A curated list of awesome public dbt projects.
 - [mdsinabox](https://github.com/matsonj/mdsinabox) - MDS in a box deployed anywhere.
 - [gee_production_gatekeepers](https://github.com/nszoni/gee_production_gatekeepers) - A demonstration of production gatekeepers in Snowflake and BigQuery.
