@@ -75,6 +75,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
+- [dbt-streamdeck](https://github.com/nicholasyager/dbt-streamdeck) - Stream Deck plugin enables you to view the status of models and jobs as actions in your Stream Deck.
 - [Auto Alert - diqu](https://diqu.iflambda.com/latest/) - Automate and streamline the alerting/ notification process for dbt test results using this versatile CLI companion tool. Receive detailed alerts & test metadata seamlessly on various platforms, promoting improved collaboration on dbt project issues 🐞🚀.
 - [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
 - [modal-dbt](https://github.com/trouze/modal-dbt) - This repo gives some code to run dbt jobs/actions using modal which is a serverless application framework.
