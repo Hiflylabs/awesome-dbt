@@ -212,7 +212,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 Community-developed packages to extend default macros and toolset.
 
 - [dbt-data-diff](https://github.com/infinitelambda/dbt-data-diff) - Data-diff solution for dbt-ers with Snowflake.
-- [dbt-tags](https://github.com/infinitelambda/dbt-tags) - Tag-based masking policies management in Snowflake
+- [dbt-tags](https://github.com/infinitelambda/dbt-tags) - Tag-based masking policies management in Snowflake.
 - [dbt-testgen](https://github.com/kgmcquate/dbt-testgen) - Generate dbt tests based on sample data.
 - [dbt_otel_export](https://github.com/irvingpop/dbt_otel_export) - Takes dbt runs and turns them into OpenTelemetry traces.
 - [dbt-assertions](https://github.com/AxelThevenot/dbt-assertions) - Package to assert rows in-line with dbt macros.
