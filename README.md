@@ -202,7 +202,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 - [dbt Style Guide](https://github.com/dbt-labs/corp/blob/main/dbt_style_guide.md) - Developing styleguide often referred in PR templates.
 - [Clean your warehouse of old and deprecated models](https://discourse.getdbt.com/t/clean-your-warehouse-of-old-and-deprecated-models/1547) - Clean out warehouse models which are not existent in the project.
 - [dbt-tips](https://github.com/erika-e/dbt-tips) - Excellent companion to your dbt practice with rich collection of tips.
-- [dbt-tags](https://yu-ishikawa.medium.com/understanding-the-scopes-of-dbt-tags-691d0286f3aa) - Understanding the scopes of dbt tags.
+- [Understanding the scopes of dbt tags](https://yu-ishikawa.medium.com/understanding-the-scopes-of-dbt-tags-691d0286f3aa) - Understanding the scopes of dbt tags.
 - [Pre-commit hooks](https://github.com/dbt-checkpoint/dbt-checkpoint) - Pre-commit hooks for checking data integity before schema change commit.
 
 ## Packages
