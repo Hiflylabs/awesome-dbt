@@ -296,6 +296,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [datafold-dbt-ci-advanced](https://github.com/elliotgunn/datafold-dbt-ci-advanced) - Add 4 more integrations to your dbt CI pipeline: Slim CI, pre-commit hooks, Data Diffs, and Slack notifications.
 - [NBA_Data_Modeling](https://github.com/jpooksy/NBA_Data_Modeling) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
 - [awesome-public-dbt-projects](https://github.com/InfuseAI/awesome-public-dbt-projects) - A curated list of awesome public dbt projects.
 - [mdsinabox](https://github.com/matsonj/mdsinabox) - MDS in a box deployed anywhere.
