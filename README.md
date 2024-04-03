@@ -268,8 +268,8 @@ Community-developed packages to extend default macros and toolset.
 
 Useful code snippets and templates to speed up your dbt development.
 
-- [Trange Join](https://gist.github.com/gnilrets/48886b4c8945dde1da13547c2373df73) - dbt Snapshot Join.
-- [ERD for dbt in dbtdiagram](https://gist.github.com/pcreux/b2e4a288b272fb17a36d319734fbb8ee) - Generate an ERD via dbdiagram.io from a dbt project.
+- [trange_join](https://gist.github.com/gnilrets/48886b4c8945dde1da13547c2373df73) - Macro to join dbt snapshots.
+- [dbt_to_dbdiagram](https://gist.github.com/pcreux/b2e4a288b272fb17a36d319734fbb8ee) - Generate an ERD via dbdiagram.io from a dbt project.
 
 ## Community
 
