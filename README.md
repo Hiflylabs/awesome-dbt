@@ -225,7 +225,7 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-fabric](https://github.com/datarootsio/dbt-fabric) - A dbt adapter for working with Microsoft Fabric Data Warehouses.
 - [dq-vault](https://github.com/infinitelambda/dq-vault) - Data Quality Observation of Data Vault layer.
 - [dbt-translate](https://github.com/datnguye/dbt-translate) - Translate numbers into words.
-- [dbt-excel](https://dbt-excel.com/) - A dbt adapter for working with Excel.
+- [dbt-excel](https://github.com/godatadriven/dbt-excel) - A dbt adapter for working with Excel.
 - [dbt_linreg](https://github.com/dwreeves/dbt_linreg) - Linear regression in SQL using dbt.
 - [dbt-snowflake-query-tags](https://github.com/get-select/dbt-snowflake-query-tags) - Automatically tag dbt-issued queries with informative metadata.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Yet another package to monitor Snowflake usage.
@@ -268,8 +268,8 @@ Community-developed packages to extend default macros and toolset.
 
 Useful code snippets and templates to speed up your dbt development.
 
-- [trange_join](https://gist.github.com/gnilrets/48886b4c8945dde1da13547c2373df73) - dbt Snapshot Join.
-- [dbt_to_dbdiagram](https://gist.github.com/pcreux/b2e4a288b272fb17a36d319734fbb8ee) - Generate an ERD via dbdiagram.io from a dbt project.
+- [Trange Join](https://gist.github.com/gnilrets/48886b4c8945dde1da13547c2373df73) - dbt Snapshot Join.
+- [ERD for dbt in dbtdiagram](https://gist.github.com/pcreux/b2e4a288b272fb17a36d319734fbb8ee) - Generate an ERD via dbdiagram.io from a dbt project.
 
 ## Community
 
@@ -301,7 +301,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
 - [datafold-dbt-ci-advanced](https://github.com/elliotgunn/datafold-dbt-ci-advanced) - Add 4 more integrations to your dbt CI pipeline: Slim CI, pre-commit hooks, Data Diffs, and Slack notifications.
-- [NBA_Data_Modeling](https://github.com/jpooksy/NBA_Data_Modeling) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
+- [NBA_Data_Modeling](https://github.com/jpooksy/paradime-dbt-nba-challenge) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
 - [awesome-public-dbt-projects](https://github.com/InfuseAI/awesome-public-dbt-projects) - A curated list of awesome public dbt projects.
 - [mdsinabox](https://github.com/matsonj/mdsinabox) - MDS in a box deployed anywhere.
 - [gee_production_gatekeepers](https://github.com/nszoni/gee_production_gatekeepers) - A demonstration of production gatekeepers in Snowflake and BigQuery.
