@@ -19,6 +19,7 @@ Happy contributing!
 - [Orchestration](#orchestration)
 - [Utilities](#utilities)
 - [Packages](#packages)
+- [Snippets](#snippets)
 - [Community](#community)
 - [Sample Projects](#sample-projects)
 - [Contributors](#contributors)
@@ -259,6 +260,12 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-invoke](https://github.com/Dashlane/dbt-invoke) - CLI for creating, updating, and deleting dbt property files.
 - [dbt-unit-testing](https://github.com/EqualExperts/dbt-unit-testing) -  Package which contains macros to support unit testing.
 
+## Snippets
+
+Useful code snippets and templates to speed up your dbt development.
+
+- [trange_join](https://gist.github.com/gnilrets/48886b4c8945dde1da13547c2373df73) - dbt Snapshot Join.
+- [dbt_to_dbdiagram](https://gist.github.com/pcreux/b2e4a288b272fb17a36d319734fbb8ee) - Generate an ERD via dbdiagram.io from a dbt project.
 
 ## Community
 
