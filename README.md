@@ -19,6 +19,7 @@ Happy contributing!
 - [Orchestration](#orchestration)
 - [Utilities](#utilities)
 - [Packages](#packages)
+- [Snippets](#snippets)
 - [Community](#community)
 - [Sample Projects](#sample-projects)
 - [Contributors](#contributors)
@@ -159,6 +160,8 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbt-llm-tools](https://github.com/pragunbhutani/dbt-llm-tools) - RAG based LLM chatbot for dbt projects.
+- [turboYAML](https://github.com/fredbrowne/turboYAML) - An AI-powered CLI tool for converting dbt SQL files to YAML using OpenAI.
 - [datapilot](https://github.com/AltimateAI/datapilot) - AI teammate for engineers to ensure best practices in their SQL.
 - [dbt-exposures-crawler](https://github.com/voi-oss/dbt-exposures-crawler) - Automate the creation of dbt exposures from different sources.
 - [dlt(data load tool)](https://dlthub.com/) - The open-source Python library for data loading.
@@ -201,13 +204,15 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 - [dbt Style Guide](https://github.com/dbt-labs/corp/blob/main/dbt_style_guide.md) - Developing styleguide often referred in PR templates.
 - [Clean your warehouse of old and deprecated models](https://discourse.getdbt.com/t/clean-your-warehouse-of-old-and-deprecated-models/1547) - Clean out warehouse models which are not existent in the project.
 - [dbt-tips](https://github.com/erika-e/dbt-tips) - Excellent companion to your dbt practice with rich collection of tips.
-- [dbt-tags](https://yu-ishikawa.medium.com/understanding-the-scopes-of-dbt-tags-691d0286f3aa) - Understanding the scopes of dbt tags.
+- [Understanding the scopes of dbt tags](https://yu-ishikawa.medium.com/understanding-the-scopes-of-dbt-tags-691d0286f3aa) - Understanding the scopes of dbt tags.
 - [Pre-commit hooks](https://github.com/dbt-checkpoint/dbt-checkpoint) - Pre-commit hooks for checking data integity before schema change commit.
 
 ## Packages
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-data-diff](https://github.com/infinitelambda/dbt-data-diff) - Data-diff solution for dbt-ers with Snowflake.
+- [dbt-tags](https://github.com/infinitelambda/dbt-tags) - Tag-based masking policies management in Snowflake.
 - [dbt-testgen](https://github.com/kgmcquate/dbt-testgen) - Generate dbt tests based on sample data.
 - [dbt_otel_export](https://github.com/irvingpop/dbt_otel_export) - Takes dbt runs and turns them into OpenTelemetry traces.
 - [dbt-assertions](https://github.com/AxelThevenot/dbt-assertions) - Package to assert rows in-line with dbt macros.
@@ -220,7 +225,7 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-fabric](https://github.com/datarootsio/dbt-fabric) - A dbt adapter for working with Microsoft Fabric Data Warehouses.
 - [dq-vault](https://github.com/infinitelambda/dq-vault) - Data Quality Observation of Data Vault layer.
 - [dbt-translate](https://github.com/datnguye/dbt-translate) - Translate numbers into words.
-- [dbt-excel](https://dbt-excel.com/) - A dbt adapter for working with Excel.
+- [dbt-excel](https://github.com/godatadriven/dbt-excel) - A dbt adapter for working with Excel.
 - [dbt_linreg](https://github.com/dwreeves/dbt_linreg) - Linear regression in SQL using dbt.
 - [dbt-snowflake-query-tags](https://github.com/get-select/dbt-snowflake-query-tags) - Automatically tag dbt-issued queries with informative metadata.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Yet another package to monitor Snowflake usage.
@@ -259,6 +264,12 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-invoke](https://github.com/Dashlane/dbt-invoke) - CLI for creating, updating, and deleting dbt property files.
 - [dbt-unit-testing](https://github.com/EqualExperts/dbt-unit-testing) -  Package which contains macros to support unit testing.
 
+## Snippets
+
+Useful code snippets and templates to speed up your dbt development.
+
+- [trange_join](https://gist.github.com/gnilrets/48886b4c8945dde1da13547c2373df73) - Macro to join dbt snapshots.
+- [dbt_to_dbdiagram](https://gist.github.com/pcreux/b2e4a288b272fb17a36d319734fbb8ee) - Generate an ERD via dbdiagram.io from a dbt project.
 
 ## Community
 
@@ -289,7 +300,8 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
-- [NBA_Data_Modeling](https://github.com/jpooksy/NBA_Data_Modeling) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
+- [datafold-dbt-ci-advanced](https://github.com/elliotgunn/datafold-dbt-ci-advanced) - Add 4 more integrations to your dbt CI pipeline: Slim CI, pre-commit hooks, Data Diffs, and Slack notifications.
+- [NBA_Data_Modeling](https://github.com/jpooksy/paradime-dbt-nba-challenge) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
 - [awesome-public-dbt-projects](https://github.com/InfuseAI/awesome-public-dbt-projects) - A curated list of awesome public dbt projects.
 - [mdsinabox](https://github.com/matsonj/mdsinabox) - MDS in a box deployed anywhere.
 - [gee_production_gatekeepers](https://github.com/nszoni/gee_production_gatekeepers) - A demonstration of production gatekeepers in Snowflake and BigQuery.
