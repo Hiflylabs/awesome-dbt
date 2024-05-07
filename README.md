@@ -133,7 +133,8 @@ Best-practices and extensions of the testing framework.
 - [re_data](https://www.getre.io/) - A dbt package for montioring metrics and detect anomalies.
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149) - Suggestions on testing your data powered by the community.
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/) - Unit test using source defer and generic custom tests.
-
+- [DataKitchen Open Source Data Observability](https://github.com/DataKitchen/data-observability-installer) - Data breaks. Servers break. dbt and other tools break. Observability and alerting across and down your data estate. Save time with simple, fast data quality test generation and execution. 
+ 
 ## CI/CD
 
 Make the best out of your product quality and seamless delivery.
