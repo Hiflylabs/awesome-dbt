@@ -43,6 +43,7 @@ Courses from where you can get started with Analytics Engineering.
 
 Helping hand on setting up integrations and implementing best practices.
 
+- [Best Practices for Leveraging Amazon Redshift and dbt](https://d1.awsstatic.com/products/Redshift/Amazon-Redshift-dBT-Best-Practices_paper.pdf) - An overivew of best practices on how to integrate dbt with Redshift, that includes information about performance tunning and dbt code optimizations.
 - [dbt Jinja Functions Cheat Sheet - Datacoves](https://datacoves.com/post/dbt-jinja-functions-cheat-sheet) - Jinja Functions Cheat Sheet that covers the Jinja additions in dbt Core.
 - [Discovery API use-cases](https://docs.getdbt.com/docs/dbt-cloud-apis/discovery-use-cases-and-examples) - Use-cases and examples for the dbt Cloud Discovery API.
 - [dbt Docs as a Static Website](https://medium.com/hiflylabs/dbt-docs-as-a-static-website-c50a5b306514) - How to deploy dbt docs as a static website with App Engine and GitHub Actions.
