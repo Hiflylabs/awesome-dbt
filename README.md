@@ -160,6 +160,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [diff2docs](https://diff2docs.replit.app/) - Turn your diff into docs with the help of GPT-4o.
 - [dbt-command-center](https://github.com/montara-io/dbt-command-center) - A local web application that provides a user-friendly interface to monitor and manage dbt runs.
 - [dbt-score](https://github.com/PicnicSupermarket/dbt-score) - Linter for dbt metadata.
 - [dbt-llm-tools](https://github.com/pragunbhutani/dbt-llm-tools) - RAG based LLM chatbot for dbt projects.
