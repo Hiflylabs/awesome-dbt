@@ -140,6 +140,7 @@ Best-practices and extensions of the testing framework.
 
 Make the best out of your product quality and seamless delivery.
 
+- [dbt-ci-cd](https://github.com/bruno-szdl/dbt-ci-cd) - This setup is designed to demonstrate and implement best practices for testing and deploying dbt models.
 - [How to Create CI/CD Pipelines for dbt Core](https://paulfry999.medium.com/v0-4-pre-chatgpt-how-to-create-ci-cd-pipelines-for-dbt-core-88e68ab506dd) - This post dives into the use of CI/CD for dbt Core, providing insights on dbt Cloud's Slim CI CICD job pattern and how to implement this using dbt Core.
 - [Slim CI/CD with Bitbucket Pipelines](https://docs.getdbt.com/blog/slim-ci-cd-with-bitbucket-pipelines) - How to setup slim CI on Bitbucket.
 - [dbt-docs-to-notion](https://github.com/marketplace/actions/dbt-docs-to-notion) - A GitHub action for exporting dbt model docs to a Notion database.
@@ -162,6 +163,10 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [tdb](https://github.com/gwenwindflower/tbd) - A sweet and speedy code generator for dbt.
+- [diff2docs](https://diff2docs.replit.app/) - Turn your diff into docs with the help of GPT-4o.
+- [dbt-command-center](https://github.com/montara-io/dbt-command-center) - A local web application that provides a user-friendly interface to monitor and manage dbt runs.
+- [dbt-score](https://github.com/PicnicSupermarket/dbt-score) - Linter for dbt metadata.
 - [dbt-llm-tools](https://github.com/pragunbhutani/dbt-llm-tools) - RAG based LLM chatbot for dbt projects.
 - [turboYAML](https://github.com/fredbrowne/turboYAML) - An AI-powered CLI tool for converting dbt SQL files to YAML using OpenAI.
 - [datapilot](https://github.com/AltimateAI/datapilot) - AI teammate for engineers to ensure best practices in their SQL.
@@ -213,6 +218,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-dag-monitoring](https://github.com/techindicium/dbt-dag-monitoring) - A dbt package for monitoring airflow DAGs and tasks.
 - [dbt-data-diff](https://github.com/infinitelambda/dbt-data-diff) - Data-diff solution for dbt-ers with Snowflake.
 - [dbt-tags](https://github.com/infinitelambda/dbt-tags) - Tag-based masking policies management in Snowflake.
 - [dbt-testgen](https://github.com/kgmcquate/dbt-testgen) - Generate dbt tests based on sample data.
