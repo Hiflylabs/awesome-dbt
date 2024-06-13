@@ -160,6 +160,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [dbt-score](https://github.com/PicnicSupermarket/dbt-score) - Linter for dbt metadata.
 - [dbt-llm-tools](https://github.com/pragunbhutani/dbt-llm-tools) - RAG based LLM chatbot for dbt projects.
 - [turboYAML](https://github.com/fredbrowne/turboYAML) - An AI-powered CLI tool for converting dbt SQL files to YAML using OpenAI.
 - [datapilot](https://github.com/AltimateAI/datapilot) - AI teammate for engineers to ensure best practices in their SQL.
