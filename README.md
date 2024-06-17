@@ -28,6 +28,7 @@ Happy contributing!
 
 Courses from where you can get started with Analytics Engineering.
 
+- [Accelerating and Scaling dbt for the Enterprise](https://www.phdata.io/blog/accelerating-and-scaling-dbt-for-the-enterprise/) - Guide for large scale dbt projects. .
 - [The Ultimate Guide to dbt](https://count.co/canvas/JpkaYdqr9oN) - A comprehensive canvas guide to dbt, from the basics to advanced topics.
 - [dbt in a real world scenario, A Beginner dbt tutorial](https://tipseason.com/dbt-tutorial-real-world-scenario-guide/) - A beginner tutorial to understand dbt with a real world example.
 - [Mastering dbt: Beginner to Pro](https://www.udemy.com/course/mastering-dbt-data-build-tool-bootcamp/?referralCode=FFF494163B7B9E5E846F) - Paid Udemy course that covers theory, building a dbt project from scratch, and deploying to dbt Cloud.
