@@ -340,7 +340,7 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
   - [Part 3 – EMR on EC2](https://jaehyeon.me/blog/2022-10-19-dbt-on-aws-part-3-emr-ec2/)
   - [Part 4 – EMR on EKS](https://jaehyeon.me/blog/2022-11-01-dbt-on-aws-part-4-emr-eks/)
   - [Part 5 – Athena](https://jaehyeon.me/blog/2022-12-06-dbt-on-aws-part-5-athena/)
-
+- [Make Open Data](https://github.com/make-open-data/make-open-data/) -  A production grade ELT with tests, documentation and CI/CD (GHA) about french open data (housing, demography, geography, etc). Can be used to learn with voluminous and ambiguous data. Contributions are welcome.
 ## Contributors
 
 Thanks for all the great resources! Can't see your avatar? Check the contribution guide on how you can submit your resources to the community!
