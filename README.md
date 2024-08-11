@@ -219,6 +219,8 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 ## Packages
 
 Community-developed packages to extend default macros and toolset.
+
+- [dbt-snow-mask](https://github.com/entechlog/dbt-snow-mask) A dbt package for Snowflake Dynamic Data Masking.
 - [dbt-incremental-stream](https://github.com/arnoN7/dbt-incremental-stream) - A dbt package for Snowflake Streams.
 - [dbt-dag-monitoring](https://github.com/techindicium/dbt-dag-monitoring) - A dbt package for monitoring airflow DAGs and tasks.
 - [dbt-data-diff](https://github.com/infinitelambda/dbt-data-diff) - Data-diff solution for dbt-ers with Snowflake.
