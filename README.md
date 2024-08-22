@@ -194,7 +194,6 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 - [dbt-sql-formatter](https://github.com/dbt-labs/dbt-sql-formatter) - Makes your sql less bad.
 - [dbterd](https://github.com/datnguye/dbterd) - CLI to generate DBML file from dbt manifest.json.
 - [dbt-cue](https://github.com/gilcrest/dbt-cue) - Generate dbt yml files using the CUE language.
-- [VSC - Wizard for dbt Core](https://marketplace.visualstudio.com/items?itemName=Fivetran.dbt-language-server) - This extension accelerates your first-time environment setup with dbt Core, and optimizes your continual development of transformation pipelines.
 - [dbt-artifacts-parser](https://github.com/yu-iskw/dbt-artifacts-parser) -  It enables us to deal with catalog.json, manifest.json, run-results.json and sources.json as python objects.
 - [GitHub Action: Cancel Running CI Job](https://github.com/Stevedow99/dbt-cloud-cancel-running-ci-job-action) -  This allows to always have the newest code commit running in the CI job without having to wait for the stale job runs to finish.
 - [dbtc](https://github.com/dpguthrie/dbtc) - Unaffiliated python interface to various dbt Cloud API endpoints.
