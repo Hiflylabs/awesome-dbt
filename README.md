@@ -150,6 +150,7 @@ Make the best out of your product quality and seamless delivery.
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://blog.rittmananalytics.com/continuous-integration-and-automated-analytics-test-pipelines-using-dbt-and-dbtcloud-c4517f40b874) - Great and detailed blogpost on setting up Slim CI in dbt Cloud.
 - [Performing a blue/green deploy of your dbt project on Snowflake](https://discourse.getdbt.com/t/performing-a-blue-green-deploy-of-your-dbt-project-on-snowflake/1349) - A very tidy and fail-safe way to run dbt in production by using two parallel production enviromnents.
 - [How we speed up our CI runs by 10x using Slim CI](https://discourse.getdbt.com/t/how-we-sped-up-our-ci-runs-by-10x-using-slim-ci/2603) - Limit data in long-running CI checks to improve developing experience.
+- [DBT CI/CD Demo with BigQuery and GitHub Actions](https://jaehyeon.me/blog/2024-09-05-dbt-cicd-demo/) - A demo CI/CD implementation using GitHub Actions, including [slim CI](https://docs.getdbt.com/reference/node-selection/defer) and [unit tests](https://docs.getdbt.com/docs/build/unit-tests).
 
 ## Orchestration
 
@@ -345,6 +346,14 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
   - [Part 4 – EMR on EKS](https://jaehyeon.me/blog/2022-11-01-dbt-on-aws-part-4-emr-eks/)
   - [Part 5 – Athena](https://jaehyeon.me/blog/2022-12-06-dbt-on-aws-part-5-athena/)
 - [Make Open Data](https://github.com/make-open-data/make-open-data/) -  A production grade ELT with tests, documentation and CI/CD (GHA) about french open data (housing, demography, geography, etc). Can be used to learn with voluminous and ambiguous data. Contributions are welcome.
+- Data Build Tool (dbt) Pizza Shop Demo - A series of posts that illustrate data modeling and Airflow integration, targeting multiple data warehouses.
+  - [Part 1 Modelling on PostgreSQL](https://jaehyeon.me/blog/2024-01-18-dbt-pizza-shop-1/)
+  - [Part 2 ETL on PostgreSQL via Airflow](https://jaehyeon.me/blog/2024-01-25-dbt-pizza-shop-2/)
+  - [Part 3 Modelling on BigQuery](https://jaehyeon.me/blog/2024-02-08-dbt-pizza-shop-3/)
+  - [Part 4 ETL on BigQuery via Airflow](https://jaehyeon.me/blog/2024-02-22-dbt-pizza-shop-4/)
+  - [Part 5 Modelling on Amazon Athena](https://jaehyeon.me/blog/2024-03-07-dbt-pizza-shop-5/)
+  - [Part 6 ETL on Amazon Athena via Airflow](https://jaehyeon.me/blog/2024-03-14-dbt-pizza-shop-6/)
+
 ## Contributors
 
 Thanks for all the great resources! Can't see your avatar? Check the contribution guide on how you can submit your resources to the community!
