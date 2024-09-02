@@ -296,7 +296,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 - [Data & Analytics Events in 2022](https://atlanhq.notion.site/atlanhq/Data-Analytics-Events-in-2022-7abf9f3daf8d42358234c6a00b43f1a6) - Great curated list of upcoming data analytics conferences.
 - [Data Council Austin 2022](https://www.youtube.com/playlist?list=PLAesBe-zAQmEod2ARZjjAHmGFoGcjaXK6) - Worldwide community driven analytics conference with a handful of talks fitting to the dbt stack.
 - [Discourse v2](https://github.com/dbt-labs/docs.getdbt.com/discussions) - Revamped and ported hub of main discussions for the community.
-- [Coalesce conference recordings](https://coalesce.getdbt.com/on-demand) - Recordings of Coalesce conferenfes from 2022 and after.
+- [Coalesce conference recordings](https://coalesce.getdbt.com/on-demand) - Recordings of Coalesce conferenfes from 2022 and after.
 - [Coalesce 2021](https://www.youtube.com/playlist?list=PL0QYlrC86xQnNXXXL7WPRTULbMgh_Sry3) - Second iteration of the analytics engineer conference.
 - [Coalesce 2020](https://www.youtube.com/playlist?list=PL0QYlrC86xQmPf9QUceFdOarYcv3ETSsz) - Annual dbt conference full of fascinating use-cases.
 - [dbt meetups](https://www.meetup.com/en-AU/pro/dbt/) - List of community led dbt meetups.
@@ -308,7 +308,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 - [dbt Slack](https://www.getdbt.com/community) - Energy-filled hub of analytics engineers (Highly recommended).
 - [r/dataengineering](https://www.reddit.com/r/dataengineering/) - Subreddit of data engineering topics.
 - [Drill to Detail Podcast](https://www.rittmananalytics.com/drilltodetail) - Special guests discussing big data, business intelligence, modern data stack.
-- [#dbtips](https://dbtips.substack.com) - Newsletter about dbt, with tips and tutorials on various topics.
+- [#dbtips](https://dbtips.substack.com) - Newsletter about dbt, with tips and tutorials on various topics.
 
 ## Sample Projects
 
