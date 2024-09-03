@@ -37,8 +37,8 @@ Courses from where you can get started with Analytics Engineering.
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) - Data engineering course on cutting edge tools including dbt.
 - [Analytics Engineering with dbt](https://uplimit.com/course/analytics-engineering-with-dbt) - Paid course offered by Uplimit covering the basics of dbt.
 - [Advanced dbt](https://uplimit.com/course/advanced-dbt) - Another paid course by Uplimit covering the advanced dbt topics.
-- [dbt Fundamentals](https://courses.getdbt.com/collections) - Official free course offered by dbt. Excellent for learning the basics of dbt Cloud.
-- [Refactoring SQL for Modularity](https://courses.getdbt.com/courses/refactoring-sql-for-modularity) - Another dbt labs offered free course on dbt refactoring and CTE supercharging.
+- [dbt Fundamentals](https://learn.getdbt.com/catalog) - Official free course offered by dbt. Excellent for learning the basics of dbt Cloud.
+- [Refactoring SQL for Modularity](https://learn.getdbt.com/courses/refactoring-sql-for-modularity) - Another dbt labs offered free course on dbt refactoring and CTE supercharging.
 - [Learn DBT from Scratch](https://www.udemy.com/course/learn-dbt-from-scratch/) - Guides you through a setup paired with Snowflake (decorated with extras).
 
 ## How To
@@ -150,6 +150,7 @@ Make the best out of your product quality and seamless delivery.
 - [Continuous Integration and Automated Build Testing with dbtCloud](https://blog.rittmananalytics.com/continuous-integration-and-automated-analytics-test-pipelines-using-dbt-and-dbtcloud-c4517f40b874) - Great and detailed blogpost on setting up Slim CI in dbt Cloud.
 - [Performing a blue/green deploy of your dbt project on Snowflake](https://discourse.getdbt.com/t/performing-a-blue-green-deploy-of-your-dbt-project-on-snowflake/1349) - A very tidy and fail-safe way to run dbt in production by using two parallel production enviromnents.
 - [How we speed up our CI runs by 10x using Slim CI](https://discourse.getdbt.com/t/how-we-sped-up-our-ci-runs-by-10x-using-slim-ci/2603) - Limit data in long-running CI checks to improve developing experience.
+- [DBT CI/CD Demo with BigQuery and GitHub Actions](https://jaehyeon.me/blog/2024-09-05-dbt-cicd-demo/) - A demo CI/CD implementation using GitHub Actions, including [slim CI](https://docs.getdbt.com/reference/node-selection/defer) and [unit tests](https://docs.getdbt.com/docs/build/unit-tests).
 
 ## Orchestration
 
@@ -219,7 +220,7 @@ Useful tools and extensions to bump up your analytics engineer worklow.
 
 Community-developed packages to extend default macros and toolset.
 
-- [dbt-snow-mask](https://github.com/entechlog/dbt-snow-mask) A dbt package for Snowflake Dynamic Data Masking.
+- [dbt-snow-mask](https://github.com/entechlog/dbt-snow-mask) - A dbt package for Snowflake Dynamic Data Masking.
 - [dbt-incremental-stream](https://github.com/arnoN7/dbt-incremental-stream) - A dbt package for Snowflake Streams.
 - [dbt-dag-monitoring](https://github.com/techindicium/dbt-dag-monitoring) - A dbt package for monitoring airflow DAGs and tasks.
 - [dbt-data-diff](https://github.com/infinitelambda/dbt-data-diff) - Data-diff solution for dbt-ers with Snowflake.
@@ -295,7 +296,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 - [Data & Analytics Events in 2022](https://atlanhq.notion.site/atlanhq/Data-Analytics-Events-in-2022-7abf9f3daf8d42358234c6a00b43f1a6) - Great curated list of upcoming data analytics conferences.
 - [Data Council Austin 2022](https://www.youtube.com/playlist?list=PLAesBe-zAQmEod2ARZjjAHmGFoGcjaXK6) - Worldwide community driven analytics conference with a handful of talks fitting to the dbt stack.
 - [Discourse v2](https://github.com/dbt-labs/docs.getdbt.com/discussions) - Revamped and ported hub of main discussions for the community.
-- [Coalesce conference recordings](https://coalesce.getdbt.com/on-demand) – Recordings of Coalesce conferenfes from 2022 and after.
+- [Coalesce conference recordings](https://coalesce.getdbt.com/on-demand) - Recordings of Coalesce conferenfes from 2022 and after.
 - [Coalesce 2021](https://www.youtube.com/playlist?list=PL0QYlrC86xQnNXXXL7WPRTULbMgh_Sry3) - Second iteration of the analytics engineer conference.
 - [Coalesce 2020](https://www.youtube.com/playlist?list=PL0QYlrC86xQmPf9QUceFdOarYcv3ETSsz) - Annual dbt conference full of fascinating use-cases.
 - [dbt meetups](https://www.meetup.com/en-AU/pro/dbt/) - List of community led dbt meetups.
@@ -307,7 +308,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 - [dbt Slack](https://www.getdbt.com/community) - Energy-filled hub of analytics engineers (Highly recommended).
 - [r/dataengineering](https://www.reddit.com/r/dataengineering/) - Subreddit of data engineering topics.
 - [Drill to Detail Podcast](https://www.rittmananalytics.com/drilltodetail) - Special guests discussing big data, business intelligence, modern data stack.
-- [#dbtips](https://dbtips.substack.com) – Newsletter about dbt, with tips and tutorials on various topics.
+- [#dbtips](https://dbtips.substack.com) - Newsletter about dbt, with tips and tutorials on various topics.
 
 ## Sample Projects
 
@@ -345,6 +346,14 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
   - [Part 4 – EMR on EKS](https://jaehyeon.me/blog/2022-11-01-dbt-on-aws-part-4-emr-eks/)
   - [Part 5 – Athena](https://jaehyeon.me/blog/2022-12-06-dbt-on-aws-part-5-athena/)
 - [Make Open Data](https://github.com/make-open-data/make-open-data/) -  A production grade ELT with tests, documentation and CI/CD (GHA) about french open data (housing, demography, geography, etc). Can be used to learn with voluminous and ambiguous data. Contributions are welcome.
+- Data Build Tool (dbt) Pizza Shop Demo - A series of posts that illustrate data modeling and Airflow integration, targeting multiple data warehouses.
+  - [Part 1 Modelling on PostgreSQL](https://jaehyeon.me/blog/2024-01-18-dbt-pizza-shop-1/)
+  - [Part 2 ETL on PostgreSQL via Airflow](https://jaehyeon.me/blog/2024-01-25-dbt-pizza-shop-2/)
+  - [Part 3 Modelling on BigQuery](https://jaehyeon.me/blog/2024-02-08-dbt-pizza-shop-3/)
+  - [Part 4 ETL on BigQuery via Airflow](https://jaehyeon.me/blog/2024-02-22-dbt-pizza-shop-4/)
+  - [Part 5 Modelling on Amazon Athena](https://jaehyeon.me/blog/2024-03-07-dbt-pizza-shop-5/)
+  - [Part 6 ETL on Amazon Athena via Airflow](https://jaehyeon.me/blog/2024-03-14-dbt-pizza-shop-6/)
+
 ## Contributors
 
 Thanks for all the great resources! Can't see your avatar? Check the contribution guide on how you can submit your resources to the community!
