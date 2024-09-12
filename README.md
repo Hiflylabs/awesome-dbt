@@ -84,7 +84,7 @@ Collection of known data integrations with dbt
 - [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
 - [modal-dbt](https://github.com/trouze/modal-dbt) - This repo gives some code to run dbt jobs/actions using modal which is a serverless application framework.
 - [Grai](https://docs.grai.io/integrations/etl/dbt) - Expose warehouse dbt tests in CI to upstream data consumers so production changes never break the warehouse.
-- [Datafold](https://docs.datafold.com/os_diff/dbt_integration) - Gives a quick print out summary of changes so you can move fast and (not) break stuff!
+- [Datafold](https://docs.datafold.com/data-diff/what-is-data-diff) - Gives a quick print out summary of changes so you can move fast and (not) break stuff!
 - [Raycast dbt Metadata](https://github.com/b-per/raycast-dbt-cloud-metadata) - Queries the dbt Cloud API to return some useful information about your models (number of tests, time they took to run etc…).
 - [Cube](https://cube.dev/blog/dbt-metrics-meet-cube?ref=awesome-dbt) - APIs, Caching, and Access Control on top of dbt Metrics.
 - [FlexIt Analytics](https://learn.flexitanalytics.com/docs/dbt/) - Business Intelligence platform with deep dbt Cloud and CLI integration.
