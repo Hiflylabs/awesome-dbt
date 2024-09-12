@@ -151,6 +151,7 @@ Make the best out of your product quality and seamless delivery.
 - [Performing a blue/green deploy of your dbt project on Snowflake](https://discourse.getdbt.com/t/performing-a-blue-green-deploy-of-your-dbt-project-on-snowflake/1349) - A very tidy and fail-safe way to run dbt in production by using two parallel production enviromnents.
 - [How we speed up our CI runs by 10x using Slim CI](https://discourse.getdbt.com/t/how-we-sped-up-our-ci-runs-by-10x-using-slim-ci/2603) - Limit data in long-running CI checks to improve developing experience.
 - [DBT CI/CD Demo with BigQuery and GitHub Actions](https://jaehyeon.me/blog/2024-09-05-dbt-cicd-demo/) - A demo CI/CD implementation using GitHub Actions, including [slim CI](https://docs.getdbt.com/reference/node-selection/defer) and [unit tests](https://docs.getdbt.com/docs/build/unit-tests).
+- [Guide to Running DBT in Production](https://jaehyeon.me/blog/2024-09-13-dbt-guide/) - A guide to implementing a complete CI/CD process for a *dbt* project. The [defer](https://docs.getdbt.com/reference/node-selection/defer) feature (for slim CI) and [unit tests](https://docs.getdbt.com/docs/build/unit-tests) are used for continous integration (CI). For continuous delivery (CD), automatic deployment is advised in lower environments, and the [Write-Audit-Publish](https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/) pattern using the [dbt clone](https://docs.getdbt.com/reference/commands/clone) feature is introduced for higher environments. 
 
 ## Orchestration
 
