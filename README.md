@@ -84,7 +84,7 @@ Collection of known data integrations with dbt
 - [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
 - [modal-dbt](https://github.com/trouze/modal-dbt) - This repo gives some code to run dbt jobs/actions using modal which is a serverless application framework.
 - [Grai](https://docs.grai.io/integrations/etl/dbt) - Expose warehouse dbt tests in CI to upstream data consumers so production changes never break the warehouse.
-- [Datafold](https://docs.datafold.com/os_diff/dbt_integration/) - Gives a quick print out summary of changes so you can move fast and (not) break stuff!
+- [Datafold](https://docs.datafold.com/os_diff/dbt_integration) - Gives a quick print out summary of changes so you can move fast and (not) break stuff!
 - [Raycast dbt Metadata](https://github.com/b-per/raycast-dbt-cloud-metadata) - Queries the dbt Cloud API to return some useful information about your models (number of tests, time they took to run etc…).
 - [Cube](https://cube.dev/blog/dbt-metrics-meet-cube?ref=awesome-dbt) - APIs, Caching, and Access Control on top of dbt Metrics.
 - [FlexIt Analytics](https://learn.flexitanalytics.com/docs/dbt/) - Business Intelligence platform with deep dbt Cloud and CLI integration.
@@ -151,7 +151,7 @@ Make the best out of your product quality and seamless delivery.
 - [Performing a blue/green deploy of your dbt project on Snowflake](https://discourse.getdbt.com/t/performing-a-blue-green-deploy-of-your-dbt-project-on-snowflake/1349) - A very tidy and fail-safe way to run dbt in production by using two parallel production enviromnents.
 - [How we speed up our CI runs by 10x using Slim CI](https://discourse.getdbt.com/t/how-we-sped-up-our-ci-runs-by-10x-using-slim-ci/2603) - Limit data in long-running CI checks to improve developing experience.
 - [DBT CI/CD Demo with BigQuery and GitHub Actions](https://jaehyeon.me/blog/2024-09-05-dbt-cicd-demo/) - A demo CI/CD implementation using GitHub Actions, including [slim CI](https://docs.getdbt.com/reference/node-selection/defer) and [unit tests](https://docs.getdbt.com/docs/build/unit-tests).
-- [Guide to Running DBT in Production](https://jaehyeon.me/blog/2024-09-13-dbt-guide/) - A guide to implementing a complete CI/CD process for a *dbt* project. The [defer](https://docs.getdbt.com/reference/node-selection/defer) feature (for slim CI) and [unit tests](https://docs.getdbt.com/docs/build/unit-tests) are used for continous integration (CI). For continuous delivery (CD), automatic deployment is advised in lower environments, and the [Write-Audit-Publish](https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/) pattern using the [dbt clone](https://docs.getdbt.com/reference/commands/clone) feature is introduced for higher environments. 
+- [Guide to Running DBT in Production](https://jaehyeon.me/blog/2024-09-13-dbt-guide/) - A guide to implementing a complete CI/CD process for a *dbt* project. The **defer** feature (for slim CI) and **unit tests** are used for continous integration (CI). For continuous delivery (CD), automatic deployment is advised in lower environments, and the [Write-Audit-Publish](https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/) pattern using the **dbt clone** feature is introduced for higher environments. 
 
 ## Orchestration
 
