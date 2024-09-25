@@ -321,7 +321,6 @@ Sample projects which work out-of-the box. Reflect use-cases publicly available.
 - [awesome-public-dbt-projects](https://github.com/InfuseAI/awesome-public-dbt-projects) - A curated list of awesome public dbt projects.
 - [mdsinabox](https://github.com/matsonj/mdsinabox) - MDS in a box deployed anywhere.
 - [gee_production_gatekeepers](https://github.com/nszoni/gee_production_gatekeepers) - A demonstration of production gatekeepers in Snowflake and BigQuery.
-- [dbt-beyond-the-basics](https://github.com/pgoslatara/dbt-beyond-the-basics) - A repository demonstrating advanced use cases of dbt in multiple areas.
 - [mdsfest-opensource-mds](https://github.com/dagster-io/mdsfest-opensource-mds) - Demo project for open source MDS.
 - [f1-data-pipeline](https://github.com/InosRahul/f1-data-pipeline) - F1 Data Pipeline.
 - [transfermarkt-datasets](https://github.com/dcaribou/transfermarkt-datasets) - E2E dbt project for scraping and transforming football data from Transfermarkt.
