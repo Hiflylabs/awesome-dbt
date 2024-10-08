@@ -238,6 +238,8 @@ Community-developed packages to extend default macros and toolset.
 - [dbt-reconfigured](https://github.com/TheGrowthEngineeringCompany/dbt-reconfigured) - A dbt package containing reconfigured macros.
 - [dbt-census-utils](https://github.com/sutrolabs/dbt_census_utils) - A collection of dbt macros for working with Census data.
 - [dbt-fabric](https://github.com/microsoft/dbt-fabric) - A dbt adapter for working with Microsoft Fabric Data Warehouses.
+- [dbt-fabricspark](https://github.com/microsoft/dbt-fabricspark) - A code package from Microsoft for enabling dbt to work with Synapse Spark in Microsoft Fabric.
+- [dbt-fabricsparknb](https://insight-services-apac.github.io/APAC-Capability-DAI-DbtFabricSparkNb/) - Dbt Fabric Spark Notebook Generator by Insight based on/forked form dbt-fabricspark by Microsoft.
 - [dq-vault](https://github.com/infinitelambda/dq-vault) - Data Quality Observation of Data Vault layer.
 - [dbt-translate](https://github.com/datnguye/dbt-translate) - Translate numbers into words.
 - [dbt-excel](https://github.com/godatadriven/dbt-excel) - A dbt adapter for working with Excel.
