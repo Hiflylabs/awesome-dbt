@@ -168,6 +168,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer worklow.
 
+- [metaplane cli](https://github.com/metaplane/cli) - Various tools for working with data stacks.
 - [dbt-column-lineage-extractor](https://github.com/canva-public/dbt-column-lineage-extractor) - Extract column level linage from dbt projects.
 - [tdb](https://github.com/gwenwindflower/tbd) - A sweet and speedy code generator for dbt.
 - [diff2docs](https://diff2docs.replit.app/) - Turn your diff into docs with the help of GPT-4o.
