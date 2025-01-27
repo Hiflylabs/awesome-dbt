@@ -323,6 +323,7 @@ Conferences, meetups, dicussions, newsletters, podcasts, etc. led by fellow anal
 
 Sample projects which work out-of-the box. Reflect use-cases publicly available.
 
+- [dbt-snowflake-template](https://github.com/collinrlenon/dbt-snowflake-template) - Production-ready template deploying dbt project to Snowflake using GH Actions.
 - [datafold-dbt-ci-advanced](https://github.com/elliotgunn/datafold-dbt-ci-advanced) - Add 4 more integrations to your dbt CI pipeline: Slim CI, pre-commit hooks, Data Diffs, and Slack notifications.
 - [NBA_Data_Modeling](https://github.com/jpooksy/paradime-dbt-nba-challenge) - Using the official NBA API, this repo explains how to ingest, store, transform, and serve insights.
 - [awesome-public-dbt-projects](https://github.com/InfuseAI/awesome-public-dbt-projects) - A curated list of awesome public dbt projects.
