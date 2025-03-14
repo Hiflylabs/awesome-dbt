@@ -57,7 +57,6 @@ Helping hand on setting up integrations and implementing best practices.
 - [Jinja cheatsheet](https://github.com/zsombor-flds/dbt-jinja-cheatsheet) - Jinja cheatsheet for dbt development.
 - [Test SQL Pipelines against Production Clones using DBT and Snowflake](https://medium.com/airtribe/test-sql-pipelines-against-production-clones-using-dbt-and-snowflake-2f8293722dd4) - Leverage Snowflake Zero-copy-clones to run slim ci checks.
 - [How we structure our dbt projects](https://discourse.getdbt.com/t/how-we-used-to-structure-our-dbt-projects/355) - How the dbt team structures its dbt projects.
-- [How we structure our dbt projects](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355) - How the dbt team structures its dbt projects.
 - [dbt guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/dbt-guide/) - Primer on how you should properly set up and configure your dbt workflow.
 - [dbt for Data Transformation – Hands-on](https://www.kdnuggets.com/2021/07/dbt-data-transformation-tutorial.html) - Yet another tutorial for using dbt Cloud.
 - [Start Modeling Data](https://dataschool.com/sql-optimization/start-modeling-data/) - Configuring Bigquery with your dbt project.
