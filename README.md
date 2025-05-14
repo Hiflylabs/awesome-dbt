@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hiflylabs-awesome-dbt-badge.png)](https://mseep.ai/app/hiflylabs-awesome-dbt)
+
 <!--lint disable awesome-heading-->
 # Awesome dbt [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome#readme) <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Hiflylabs/awesome-dbt"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Hiflylabs/awesome-dbt">
 
