@@ -167,6 +167,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer worklow.
+- [docbt](https://github.com/aleenprd/docbt) - Documentation Build Tool - Generate YAML documentation for dbt models with optional AI assistance. Built with Streamlit for an intuitive and familiar web interface.
 - [dbt-colibri]([https://github.com/godatadriven/dbt-bouncer](https://github.com/b-ned/dbt-colibri)) - Self hostable column-level lineage for dbt core projects.
 - [dbt-bouncer](https://github.com/godatadriven/dbt-bouncer) - Tool to configure and enforce conventions for your dbt project. 
 - [dbt-column-lineage](https://github.com/tomoki-takahashi-oisix/dbt-column-lineage) - Tool to visualize the colulmn level lineage of dbt models.
