@@ -228,6 +228,7 @@ Useful tools and extensions to bump up your analytics engineer workflow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt_semantic_view/](https://hub.getdbt.com/Snowflake-Labs/dbt_semantic_view/) This package lets you materialize Semantic Views via dbt and reference them from downstream models.
 - [dbt-ml-inline-preprocessing](https://github.com/Matts52/dbt-ml-inline-preprocessing) - Feature Engineering in dbt.
 - [dbt-snow-mask](https://github.com/entechlog/dbt-snow-mask) - A dbt package for Snowflake Dynamic Data Masking.
 - [dbt-incremental-stream](https://github.com/arnoN7/dbt-incremental-stream) - A dbt package for Snowflake Streams.
