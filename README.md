@@ -263,7 +263,7 @@ Community-developed packages to extend default macros and toolset.
 - [data-diff](https://github.com/datafold/data-diff) - A command-line tool and Python library to efficiently diff rows across two different databases.
 - [dbt-project-evaluator](https://github.com/dbt-labs/dbt-project-evaluator) - This package highlights areas of a dbt project that are misaligned with dbt Labs' best practices.
 - [dbt_constraints](https://github.com/Snowflake-Labs/dbt_constraints) - Generate database constraints based on the tests in a dbt project.
-- [dbt-date](https://github.com/calogica/dbt-date) - Date logic and calendar functionality.
+- [dbt-date](https://github.com/godatadriven/dbt-date) - Date logic and calendar functionality.
 - [dbt-privacy](https://github.com/pvcy/dbt-privacy) - Macros to make it easier to protect your customers' data.
 - [dbt-fivetran-utils](https://github.com/fivetran/dbt_fivetran_utils) - General macros and helpers.
 - [dbt_metrics](https://github.com/dbt-labs/dbt_metrics) - Macros to support secondary calculations and generate business metrics.
