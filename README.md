@@ -224,6 +224,8 @@ Useful tools and extensions to bump up your analytics engineer workflow.
 - [Understanding the scopes of dbt tags](https://yu-ishikawa.medium.com/understanding-the-scopes-of-dbt-tags-691d0286f3aa) - Understanding the scopes of dbt tags.
 - [Pre-commit hooks](https://github.com/dbt-checkpoint/dbt-checkpoint) - Pre-commit hooks for checking data integity before schema change commit.
 - [dbt-Workbench](https://github.com/rezer-bleede/dbt-Workbench) - An open UI for dbt providing model browsing, lineage visualization, run orchestration, documentation, environment management — without vendor lock-in. Designed for local, on‑prem, and air‑gapped deployments.
+- [metadv](https://github.com/data-diving/metadv) - Python library for generating models from a declarative YAML configuration. It supports multiple data modeling approaches including Data Vault 2.0, Anchor Modeling, and Dimensional Modeling, with template packages for popular dbt libraries.
+- [dbt-ui](https://github.com/data-diving/dbt-ui) - A modern web-based user interface for dbt-core projects
 
 ## Packages
 
@@ -288,6 +290,7 @@ Community-developed packages to extend default macros and toolset.
 - [dbtvault](https://dbtvault.readthedocs.io/en/latest/) - Package for generating and executing ETL for Data Vault 2.0.
 - [dbt-invoke](https://github.com/Dashlane/dbt-invoke) - CLI for creating, updating, and deleting dbt property files.
 - [dbt-unit-testing](https://github.com/EqualExperts/dbt-unit-testing) -  Package which contains macros to support unit testing.
+- [dbt_diving](https://github.com/data-diving/dbt_diving) - A free to use dbt package with helper macros
 
 ## Snippets
 
