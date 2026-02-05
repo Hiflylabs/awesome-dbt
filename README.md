@@ -79,6 +79,7 @@ Collection of known data integrations with dbt
 
 - [dbt-cli-mcp](https://github.com/MammothGrowth/dbt-cli-mcp) - MCP for dbt CLI.
 - [dbt MCP Server](https://github.com/dbt-labs/dbt-mcp/tree/main) - MCP tools to interact with dbt.
+- [dbt-agent-skills](https://github.com/dbt-labs/dbt-agent-skills/tree/main) - A curated collection of agent skills, built and maintained by dbt Labs, to help AI coding agents work more effectively with dbt.
 - [dbt-streamdeck](https://github.com/nicholasyager/dbt-streamdeck) - Stream Deck plugin enables you to view the status of models and jobs as actions in your Stream Deck.
 - [Auto Alert - diqu](https://diqu.iflambda.com/latest/) - Automate and streamline the alerting/ notification process for dbt test results using this versatile CLI companion tool. Receive detailed alerts & test metadata seamlessly on various platforms, promoting improved collaboration on dbt project issues 🐞🚀.
 - [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
