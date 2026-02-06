@@ -77,6 +77,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
+- [ingestr](https://github.com/bruin-data/ingestr) - CLI tool to copy data from any source to any destination with a single command. Load data into your warehouse before dbt transforms it. Supports 50+ sources including Postgres, MongoDB, Salesforce, Shopify.
 - [dbt-cli-mcp](https://github.com/MammothGrowth/dbt-cli-mcp) - MCP for dbt CLI.
 - [dbt MCP Server](https://github.com/dbt-labs/dbt-mcp/tree/main) - MCP tools to interact with dbt.
 - [dbt-agent-skills](https://github.com/dbt-labs/dbt-agent-skills/tree/main) - A curated collection of agent skills, built and maintained by dbt Labs, to help AI coding agents work more effectively with dbt.
