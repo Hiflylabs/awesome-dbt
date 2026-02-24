@@ -164,7 +164,8 @@ Resources to manage and maintain dependencies in modern data pipelines.
 - [Auto-generating an Airflow DAG using the dbt manifest](https://engineering.autotrader.co.uk/2021/09/15/auto-generated-airflow-dag-for-dbt.html) - Yet another article on extracting value from the manifest file.
 - [Building a robust data pipeline with the dAG stack: dbt, Airflow, Great Expectations](https://airflowsummit.org/sessions/2021/building-a-robust-data-pipeline-with-the-dag-stack/) - Demonstration of a data orchestration project with Airflow.
 - [Run dbt in Azure Data Factory](https://medium.com/@guangx/run-dbt-in-azure-data-factory-a-clean-solution-for-azure-cloud-edddf0c85849) - Primer about dbt on Azure Data Stack.
-
+- [ModelDock](https://modeldock.run) - Hosted dbt-core scheduler. Connect your repo, pick dbt-core vertsion and adapter version, set a cron, run dbt-core in isolated Docker containers. No Airflow to manage.
+- 
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer workflow.
