@@ -9,6 +9,7 @@ Any kind of contribution is greatly encouraged and appreciated. For making a con
 
 Happy contributing!
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for dbt data transformation workflow orchestration, automated analytics pipeline management, and multi-agent coordination. MIT licensed.
 ## Contents
 - [Get Started](#get-started)
 - [How To](#how-to)
