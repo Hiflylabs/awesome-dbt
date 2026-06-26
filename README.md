@@ -235,6 +235,7 @@ Useful tools and extensions to bump up your analytics engineer workflow.
 - [dbt-Workbench](https://github.com/rezer-bleede/dbt-Workbench) - An open UI for dbt providing model browsing, lineage visualization, run orchestration, documentation, environment management — without vendor lock-in. Designed for local, on‑prem, and air‑gapped deployments.
 - [metadv](https://github.com/data-diving/metadv) - Python library for generating models from a declarative YAML configuration. It supports multiple data modeling approaches including Data Vault 2.0, Anchor Modeling, and Dimensional Modeling, with template packages for popular dbt libraries.
 - [dbt-ui](https://github.com/data-diving/dbt-ui) - A modern web-based user interface for dbt-core projects
+- [Lunapad](https://lunapad.dev/) - Open-source notebook for running, exploring, and debugging dbt projects with interactive data analysis.
 
 ## Packages
 
