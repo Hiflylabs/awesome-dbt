@@ -130,6 +130,7 @@ Use-cases and user stories implemented by the community members using components
 
 Best-practices and extensions of the testing framework.
 
+- [Misata](https://github.com/rasinmuhammed/misata) - Generate known-answer seed and test data for dbt models: declare the expected aggregates (revenue curves, rates, rollups) and assert your models return them exactly.
 - [dq-tools](https://github.com/infinitelambda/dq-tools) - Make simple storing test results and visualisation of these in a BI dashboard leveraging 6 Data Quality KPIs.
 - [BigQuery Stale data detection](https://eponkratova.medium.com/stale-data-detection-with-dbt-and-bigquery-dataset-metadata-662196cf9370) - Stale data detection with dbt and BigQuery dataset metadata.
 - [Elementary](https://github.com/elementary-data/elementary) - A dbt package that provides data anomaly detection as dbt tests.
