@@ -138,6 +138,7 @@ Best-practices and extensions of the testing framework.
 - [dbt-expectations](https://github.com/calogica/dbt-expectations) - Port between dbt and great_expectations to extend out-of-the-box tests.
 - [re_data](https://www.getre.io/) - A dbt package for montioring metrics and detect anomalies.
 - [Scherlok](https://github.com/rbmuller/scherlok) - Zero-config data quality CLI that complements `dbt test` with auto-detected anomalies (volume, schema drift, freshness, distribution, cardinality) on every materialized model after `dbt run`.
+- [data-contract-validator](https://github.com/OGsiji/data-contract-validator) - Fails the pull request when a model stops producing what a downstream consumer expects. Reads columns from `catalog.json`/`manifest.json` (falling back to a sqlglot parse of the SQL) and compares them against reverse-ETL destinations such as HubSpot CRM and against FastAPI/Pydantic services, in CI or pre-commit.
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149) - Suggestions on testing your data powered by the community.
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/) - Unit test using source defer and generic custom tests.
 - [DataKitchen Open Source Data Observability](https://github.com/DataKitchen/data-observability-installer) - Data breaks. Servers break. dbt and other tools break. Observability and alerting across and down your data estate. Save time with simple, fast data quality test generation and execution. 
