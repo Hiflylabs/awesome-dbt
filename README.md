@@ -176,6 +176,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer workflow.
+- [sqllens](https://github.com/NiclasOlofsson/sqllens) - TypeScript SQL parser and static analyzer: type inference, schema diagnostics, and column-level lineage. Reads Jinja-templated SQL (dbt models) natively, without rendering.
 - [dbt-doctor](https://github.com/joachimhodana/dbt-doctor) - CLI health check and linter for dbt projects (SQL, YAML, Jinja): 190+ custom rules, optional SQLFluff, 0–100 score, GitHub Actions CI, and coding-agent skills.
 - [dlin](https://github.com/eitsupi/dlin) - Gives coding agents instant dbt lineage: no dbt compile, no Python, no grep. Fast model-level lineage CLI parsing SQL files directly (or a `manifest.json`), with experimental column-level lineage too.
 - [Altimate Code](https://github.com/AltimateAI/altimate-code) - Open-source data engineering harness with 100+ deterministic tools for building, validating, optimizing, and shipping data products — usable from any LLM, across your warehouses. Ranked #1 on ADE-Bench (78%).
