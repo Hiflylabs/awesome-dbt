@@ -81,7 +81,7 @@ Collection of known data integrations with dbt
 - [dbt-cli-mcp](https://github.com/MammothGrowth/dbt-cli-mcp) - MCP for dbt CLI.
 - [dbt MCP Server](https://github.com/dbt-labs/dbt-mcp/tree/main) - MCP tools to interact with dbt.
 - [dbt-agent-skills](https://github.com/dbt-labs/dbt-agent-skills/tree/main) - A curated collection of agent skills, built and maintained by dbt Labs, to help AI coding agents work more effectively with dbt.
-- [Bonnard](https://github.com/bonnard-data/bonnard) - Open-source agentic schema for reliable data outputs with native dbt integration. Go from dbt model to agent-ready metrics via CLI.
+- [Bonnard](https://bonnard.dev) - Governed, multi-tenant MCP access to customer data. Turn your dbt models into a secure, per-customer MCP for AI agents.
 - [dbt-streamdeck](https://github.com/nicholasyager/dbt-streamdeck) - Stream Deck plugin enables you to view the status of models and jobs as actions in your Stream Deck.
 - [Auto Alert - diqu](https://diqu.iflambda.com/latest/) - Automate and streamline the alerting/ notification process for dbt test results using this versatile CLI companion tool. Receive detailed alerts & test metadata seamlessly on various platforms, promoting improved collaboration on dbt project issues 🐞🚀.
 - [Tabula](https://docs.tabula.io/) - Tabula is an end-to-end automation platform for data management tasks.
@@ -130,6 +130,7 @@ Use-cases and user stories implemented by the community members using components
 
 Best-practices and extensions of the testing framework.
 
+- [Misata](https://github.com/rasinmuhammed/misata) - Generate known-answer seed and test data for dbt models: declare the expected aggregates (revenue curves, rates, rollups) and assert your models return them exactly.
 - [dq-tools](https://github.com/infinitelambda/dq-tools) - Make simple storing test results and visualisation of these in a BI dashboard leveraging 6 Data Quality KPIs.
 - [BigQuery Stale data detection](https://eponkratova.medium.com/stale-data-detection-with-dbt-and-bigquery-dataset-metadata-662196cf9370) - Stale data detection with dbt and BigQuery dataset metadata.
 - [Elementary](https://github.com/elementary-data/elementary) - A dbt package that provides data anomaly detection as dbt tests.
@@ -137,10 +138,12 @@ Best-practices and extensions of the testing framework.
 - [dbt-expectations](https://github.com/calogica/dbt-expectations) - Port between dbt and great_expectations to extend out-of-the-box tests.
 - [re_data](https://www.getre.io/) - A dbt package for montioring metrics and detect anomalies.
 - [Scherlok](https://github.com/rbmuller/scherlok) - Zero-config data quality CLI that complements `dbt test` with auto-detected anomalies (volume, schema drift, freshness, distribution, cardinality) on every materialized model after `dbt run`.
+- [data-contract-validator](https://github.com/OGsiji/data-contract-validator) - Fails the pull request when a model stops producing what a downstream consumer expects. Reads columns from `catalog.json`/`manifest.json` (falling back to a sqlglot parse of the SQL) and compares them against reverse-ETL destinations such as HubSpot CRM and against FastAPI/Pydantic services, in CI or pre-commit.
 - [How do you test your data](https://discourse.getdbt.com/t/how-do-you-test-your-data/149) - Suggestions on testing your data powered by the community.
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/) - Unit test using source defer and generic custom tests.
 - [DataKitchen Open Source Data Observability](https://github.com/DataKitchen/data-observability-installer) - Data breaks. Servers break. dbt and other tools break. Observability and alerting across and down your data estate. Save time with simple, fast data quality test generation and execution. 
- 
+- [Aegis DQ](https://github.com/aegis-dq/aegis-dq) - Agentic data quality framework that runs YAML rules against your warehouse (DuckDB, BigQuery, Snowflake, Databricks, Athena, Postgres), then uses LLMs to diagnose failures, trace root causes, and propose SQL fixes. Pairs naturally with dbt models as the validation layer after `dbt run`.
+
 ## CI/CD
 
 Make the best out of your product quality and seamless delivery.
@@ -174,12 +177,15 @@ Resources to manage and maintain dependencies in modern data pipelines.
 
 Useful tools and extensions to bump up your analytics engineer workflow.
 - [sqllens](https://github.com/NiclasOlofsson/sqllens) - TypeScript SQL parser and static analyzer: type inference, schema diagnostics, and column-level lineage. Reads Jinja-templated SQL (dbt models) natively, without rendering.
+- [dbt-doctor](https://github.com/joachimhodana/dbt-doctor) - CLI health check and linter for dbt projects (SQL, YAML, Jinja): 190+ custom rules, optional SQLFluff, 0–100 score, GitHub Actions CI, and coding-agent skills.
+- [dlin](https://github.com/eitsupi/dlin) - Gives coding agents instant dbt lineage: no dbt compile, no Python, no grep. Fast model-level lineage CLI parsing SQL files directly (or a `manifest.json`), with experimental column-level lineage too.
+- [Altimate Code](https://github.com/AltimateAI/altimate-code) - Open-source data engineering harness with 100+ deterministic tools for building, validating, optimizing, and shipping data products — usable from any LLM, across your warehouses. Ranked #1 on ADE-Bench (78%).
 - [ERD Studio](https://github.com/liam-machine/erd-studio) - VS Code extension that puts a visual ERD designer inside your dbt repo. Two-stage (logical/physical) canvas, drift detection against `manifest.json`, auto-generated `selectors.yml`, and AI-readable semantic models (YAML/JSON) with a built-in harness for Claude, Copilot, Gemini, and Codex.
 - [dbtective](https://github.com/feliblo/dbtective) Rust-powered 'detective'/linter for dbt project/metadata best practices
 - [docbt](https://github.com/aleenprd/docbt) - Documentation Build Tool - Generate YAML documentation for dbt models with optional AI assistance. Built with Streamlit for an intuitive and familiar web interface.
 - [dbt-colibri]([https://github.com/godatadriven/dbt-bouncer](https://github.com/b-ned/dbt-colibri)) - Self hostable column-level lineage for dbt core projects.
 - [dbt-bouncer](https://github.com/godatadriven/dbt-bouncer) - Tool to configure and enforce conventions for your dbt project. 
-- [dbt-column-lineage](https://github.com/tomoki-takahashi-oisix/dbt-column-lineage) - Tool to visualize the column level lineage of dbt models.
+- [dbt-column-lineage](https://github.com/Oisix/dbt-column-lineage) - Tool to visualize the column level lineage of dbt models.
 - [metaplane cli](https://github.com/metaplane/cli) - Various tools for working with data stacks.
 - [dbt-column-lineage-extractor](https://github.com/canva-public/dbt-column-lineage-extractor) - Extract column level linage from dbt projects.
 - [tdb](https://github.com/gwenwindflower/tbd) - A sweet and speedy code generator for dbt.
@@ -236,11 +242,13 @@ Useful tools and extensions to bump up your analytics engineer workflow.
 - [dbt-Workbench](https://github.com/rezer-bleede/dbt-Workbench) - An open UI for dbt providing model browsing, lineage visualization, run orchestration, documentation, environment management — without vendor lock-in. Designed for local, on‑prem, and air‑gapped deployments.
 - [metadv](https://github.com/data-diving/metadv) - Python library for generating models from a declarative YAML configuration. It supports multiple data modeling approaches including Data Vault 2.0, Anchor Modeling, and Dimensional Modeling, with template packages for popular dbt libraries.
 - [dbt-ui](https://github.com/data-diving/dbt-ui) - A modern web-based user interface for dbt-core projects
+- [Lunapad](https://lunapad.dev/) - Open-source notebook for running, exploring, and debugging dbt projects with interactive data analysis.
 
 ## Packages
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-unirate](https://github.com/UniRate-API/dbt-unirate) - Currency exchange rate macros and models for dbt, powered by the UniRate API.
 - [dbt_semantic_view/](https://hub.getdbt.com/Snowflake-Labs/dbt_semantic_view/) This package lets you materialize Semantic Views via dbt and reference them from downstream models.
 - [dbt-ml-inline-preprocessing](https://github.com/Matts52/dbt-ml-inline-preprocessing) - Feature Engineering in dbt.
 - [dbt-snow-mask](https://github.com/entechlog/dbt-snow-mask) - A dbt package for Snowflake Dynamic Data Masking.
