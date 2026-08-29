@@ -176,6 +176,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer workflow.
+- [Datanika](https://github.com/datanika-io/datanika-core) - Open-source platform that runs dbt-core transformations alongside dlt-powered extract and load, with 36 connectors, cron scheduling, and run history in one web UI. AGPL-3.0, self-hostable with Docker Compose or Helm.
 - [backfill](https://github.com/shyamsivakumar/backfill) - Terminal footer that pays you while dbt runs - one sponsored line on the bottom row during long commands (dbt Core and dbt Cloud CLI), 50% ad revenue share. Open-source Go CLI; never reads your code, queries, or output.
 - [sqllens](https://github.com/NiclasOlofsson/sqllens) - TypeScript SQL parser and static analyzer: type inference, schema diagnostics, and column-level lineage. Reads Jinja-templated SQL (dbt models) natively, without rendering.
 - [dbt-doctor](https://github.com/joachimhodana/dbt-doctor) - CLI health check and linter for dbt projects (SQL, YAML, Jinja): 190+ custom rules, optional SQLFluff, 0–100 score, GitHub Actions CI, and coding-agent skills.
