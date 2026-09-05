@@ -160,6 +160,7 @@ Make the best out of your product quality and seamless delivery.
 - [Guide to Running DBT in Production](https://jaehyeon.me/blog/2024-09-13-dbt-guide/) - A guide to implementing a complete CI/CD process for a *dbt* project. The **defer** feature (for slim CI) and **unit tests** are used for continous integration (CI). For continuous delivery (CD), automatic deployment is advised in lower environments, and the [Write-Audit-Publish](https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/) pattern using the **dbt clone** feature is introduced for higher environments. 
 - [dbt-beyond-the-basics](https://github.com/pgoslatara/dbt-beyond-the-basics) - Showcase of advanced options when running CI for dbt.
 - [dbt-cloud-download-artifacts-action](https://github.com/pgoslatara/dbt-cloud-download-artifacts-action) - A GitHub action for downloading dbt artifacts from dbt Cloud CI jobs.
+- [dbt-plan](https://github.com/PresentJay/dbt-plan) - `terraform plan` for dbt: diffs compiled SQL between two revisions to predict the DDL `dbt run` would emit. Names the columns an `on_schema_change: sync_all_columns` model will drop, the downstream models and data tests that drop breaks, and enforced-contract violations. Reads files only -- no warehouse connection -- so it runs locally before `dbt run` and on fork pull requests, where warehouse-connected checks cannot.
 
 ## Orchestration
 
