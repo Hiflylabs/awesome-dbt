@@ -143,6 +143,7 @@ Best-practices and extensions of the testing framework.
 - [How to unit test sql transforms in dbt](https://www.startdataengineering.com/post/how-to-test-sql-using-dbt/) - Unit test using source defer and generic custom tests.
 - [DataKitchen Open Source Data Observability](https://github.com/DataKitchen/data-observability-installer) - Data breaks. Servers break. dbt and other tools break. Observability and alerting across and down your data estate. Save time with simple, fast data quality test generation and execution. 
 - [Aegis DQ](https://github.com/aegis-dq/aegis-dq) - Agentic data quality framework that runs YAML rules against your warehouse (DuckDB, BigQuery, Snowflake, Databricks, Athena, Postgres), then uses LLMs to diagnose failures, trace root causes, and propose SQL fixes. Pairs naturally with dbt models as the validation layer after `dbt run`.
+- [DataOps TestGen](https://github.com/DataKitchen/dataops-testgen) - Open-source data quality tool that complements `dbt test`: profiles the tables your models build and the sources they read, generates tests from the profiling results, and monitors freshness, volume, and schema, with a web UI.
 
 ## CI/CD
 
