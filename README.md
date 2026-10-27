@@ -77,6 +77,7 @@ Helping hand on setting up integrations and implementing best practices.
 
 Collection of known data integrations with dbt
 
+- [Dot](https://www.getdot.ai/integrations/dbt) - AI data analyst for Slack, Microsoft Teams and the web. Syncs your dbt project (model and column docs, SQL, lineage) to write more accurate SQL, and exports its dashboards back to dbt as exposures.
 - [ingestr](https://github.com/bruin-data/ingestr) - CLI tool to copy data from any source to any destination with a single command. Load data into your warehouse before dbt transforms it. Supports 50+ sources including Postgres, MongoDB, Salesforce, Shopify.
 - [dbt-cli-mcp](https://github.com/MammothGrowth/dbt-cli-mcp) - MCP for dbt CLI.
 - [dbt MCP Server](https://github.com/dbt-labs/dbt-mcp/tree/main) - MCP tools to interact with dbt.
@@ -130,6 +131,7 @@ Use-cases and user stories implemented by the community members using components
 
 Best-practices and extensions of the testing framework.
 
+- [grainguard](https://github.com/rohitchaurasia195-web/GRAINGUARD) - Static checker that flags SUM, COUNT and AVG computed after joins that can repeat rows (fan outs and chasm traps). Infers the grain of every model from unique tests and the SQL itself, with no warehouse connection, so it runs in CI or pre-commit.
 - [Misata](https://github.com/rasinmuhammed/misata) - Generate known-answer seed and test data for dbt models: declare the expected aggregates (revenue curves, rates, rollups) and assert your models return them exactly.
 - [dq-tools](https://github.com/infinitelambda/dq-tools) - Make simple storing test results and visualisation of these in a BI dashboard leveraging 6 Data Quality KPIs.
 - [BigQuery Stale data detection](https://eponkratova.medium.com/stale-data-detection-with-dbt-and-bigquery-dataset-metadata-662196cf9370) - Stale data detection with dbt and BigQuery dataset metadata.
@@ -144,6 +146,7 @@ Best-practices and extensions of the testing framework.
 - [DataKitchen Open Source Data Observability](https://github.com/DataKitchen/data-observability-installer) - Data breaks. Servers break. dbt and other tools break. Observability and alerting across and down your data estate. Save time with simple, fast data quality test generation and execution. 
 - [Aegis DQ](https://github.com/aegis-dq/aegis-dq) - Agentic data quality framework that runs YAML rules against your warehouse (DuckDB, BigQuery, Snowflake, Databricks, Athena, Postgres), then uses LLMs to diagnose failures, trace root causes, and propose SQL fixes. Pairs naturally with dbt models as the validation layer after `dbt run`.
 - [DataOps TestGen](https://github.com/DataKitchen/dataops-testgen) - Open-source data quality tool that complements `dbt test`: profiles the tables your models build and the sources they read, generates tests from the profiling results, and monitors freshness, volume, and schema, with a web UI.
+- [Upstrace](https://github.com/ashg2099/upstrace) - Column-level drift detection and lineage-based root-cause analysis for dbt projects.
 
 ## CI/CD
 
