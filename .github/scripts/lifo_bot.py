@@ -21,6 +21,7 @@ import re
 import sys
 from collections import Counter
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 
 MARKER = "<!-- lifo-bot -->"
 HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
@@ -85,9 +86,28 @@ def parse(markdown: str) -> list[Entry]:
     return entries
 
 
-def find_problems(base: list[Entry], head: list[Entry]) -> dict[str, list]:
+def added_entries(base: list[Entry], head: list[Entry]) -> list[Entry]:
+    """Entries the PR adds, as opposed to entries it moves, edits or swaps in place.
+
+    An entry that takes the exact spot of a removed one (a dead link replaced by its
+    successor, a renamed project) is an edit, even though its name and URL are new.
+    """
     base_keys = set().union(*(entry.keys for entry in base))
-    added = [entry for entry in head if not entry.keys & base_keys]
+    unknown = [entry for entry in head if not entry.keys & base_keys]
+
+    def identity(entry: Entry) -> str:
+        return normalize_url(entry.url) if entry.url else entry.text.lower()
+
+    swapped = set()
+    matcher = SequenceMatcher(None, [identity(e) for e in base], [identity(e) for e in head], autojunk=False)
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        if tag == "replace":
+            swapped.update(entry.line for entry in head[j1 : j1 + min(i2 - i1, j2 - j1)])
+    return [entry for entry in unknown if entry.line not in swapped]
+
+
+def find_problems(base: list[Entry], head: list[Entry]) -> dict[str, list]:
+    added = added_entries(base, head)
     added_lines = {entry.line for entry in added}
 
     misplaced = []

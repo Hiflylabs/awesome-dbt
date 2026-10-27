@@ -68,6 +68,21 @@ class LifoTest(unittest.TestCase):
         head = BASE.replace("calogica/dbt-expectations) - Great", "metaplane/dbt-expectations) - Maintained fork of Great")
         self.assertFalse(any(check(head).values()))
 
+    def test_swapping_a_dead_entry_for_its_successor_is_an_edit(self):
+        head = BASE.replace(
+            "- [Elementary](https://github.com/elementary-data/elementary) - Anomaly detection as dbt tests.",
+            "- [Sentinel](https://github.com/example/sentinel) - Successor of a dead project.",
+        )
+        self.assertFalse(any(check(head).values()))
+
+    def test_a_swap_does_not_hide_an_addition_elsewhere(self):
+        head = BASE.replace(
+            "- [Elementary](https://github.com/elementary-data/elementary) - Anomaly detection as dbt tests.",
+            "- [Sentinel](https://github.com/example/sentinel) - Successor of a dead project.",
+        )
+        head = add("- [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter.\n", NEW, head)
+        self.assertEqual([new.name for new, _ in check(head)["misplaced"]], ["dbt-score"])
+
     def test_new_section_passes(self):
         head = BASE + "\n## AI\n\n" + NEW + "\n"
         self.assertFalse(any(check(head).values()))
