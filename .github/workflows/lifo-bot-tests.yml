@@ -1,0 +1,22 @@
+name: LIFO bot tests
+
+on:
+  pull_request:
+    paths: [.github/scripts/**, .github/workflows/lifo-bot*.yml]
+  push:
+    branches: [main]
+    paths: [.github/scripts/**, .github/workflows/lifo-bot*.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s .github/scripts -v
