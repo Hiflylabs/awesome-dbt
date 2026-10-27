@@ -1,0 +1,12 @@
+# Link checker settings, shared by CI and local runs:
+#   lychee --config .github/lychee.toml README.md
+
+max_concurrency = 16
+max_retries = 2
+timeout = 25
+max_redirects = 10
+user_agent = "Mozilla/5.0 (compatible; awesome-dbt link check; +https://github.com/Hiflylabs/awesome-dbt)"
+
+# 403 and 429 mean the site blocks or rate limits bots (Medium, Udemy, Reddit, ...),
+# not that the page is gone.
+accept = ["200..=299", "403", "429"]

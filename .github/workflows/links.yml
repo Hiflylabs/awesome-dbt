@@ -1,0 +1,75 @@
+name: Links
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Pull requests only check the links they add, so contributors aren't blocked by
+  # link rot elsewhere in the list. The weekly scan below takes care of that.
+  added-links:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Collect the lines this PR adds
+        id: diff
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git diff --unified=0 "origin/$BASE_REF...HEAD" -- '*.md' | { grep '^+[^+]' || true; } | cut -c2- > added-lines.md
+          echo "links=$(grep -c 'https\?://' added-lines.md || true)" >> "$GITHUB_OUTPUT"
+      - name: Check the added links
+        if: steps.diff.outputs.links != '0'
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: --config .github/lychee.toml added-lines.md
+          fail: true
+
+  # Every link, weekly. Broken ones are reported in a single "link-rot" issue that is
+  # updated on each run and closed once everything is green again.
+  all-links:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check every link
+        id: lychee
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: --config .github/lychee.toml README.md
+          output: lychee/report.md
+          fail: false
+      - name: Update the link rot issue
+        env:
+          BROKEN: ${{ steps.lychee.outputs.exit_code != '0' }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          issue=$(gh issue list --state open --label link-rot --json number --jq '.[0].number')
+          if [ "$BROKEN" = true ]; then
+            printf '\n---\nFound by the [weekly link check](%s). Fix or remove the entries above; this issue closes itself once every link works.\n' "$RUN_URL" >> lychee/report.md
+            if [ -n "$issue" ]; then
+              gh issue edit "$issue" --body-file lychee/report.md
+            else
+              gh label create link-rot --color B60205 --description "Broken links found by the weekly check" --force
+              gh issue create --title "Broken links" --label link-rot --body-file lychee/report.md
+            fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment "All links work again ($RUN_URL)."
+          fi
