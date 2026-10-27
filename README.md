@@ -44,6 +44,8 @@ Courses from where you can get started with Analytics Engineering.
 
 Helping hand on setting up integrations and implementing best practices.
 
+- [Run dbt on Snowflake and DuckDB with shared Iceberg tables](https://www.greybeam.ai/blog/run-dbt-on-snowflake-and-duckdb) - One dbt project that runs some models on Snowflake and others on DuckDB, both reading and writing the same Iceberg tables through Snowflake's Horizon catalog, with no S3 bucket or IAM setup.
+- [dbt Docs on Databricks Apps](https://apps-cookbook.dev/gallery/dbt-docs-on-databricks-apps) - Serve the site from `dbt docs generate` as a Databricks App, with a small Python server that handles the docs' client-side routing.
 - [Best Practices for Leveraging Amazon Redshift and dbt](https://d1.awsstatic.com/products/Redshift/Amazon-Redshift-dBT-Best-Practices_paper.pdf) - An overivew of best practices on how to integrate dbt with Redshift, that includes information about performance tunning and dbt code optimizations.
 - [dbt Jinja Functions Cheat Sheet - Datacoves](https://datacoves.com/post/dbt-jinja-functions-cheat-sheet) - Jinja Functions Cheat Sheet that covers the Jinja additions in dbt Core.
 - [Discovery API use-cases](https://docs.getdbt.com/docs/dbt-cloud-apis/discovery-use-cases-and-examples) - Use-cases and examples for the dbt Cloud Discovery API.
@@ -180,6 +182,7 @@ Resources to manage and maintain dependencies in modern data pipelines.
 ## Utilities
 
 Useful tools and extensions to bump up your analytics engineer workflow.
+- [quickdbd-cli](https://github.com/MarkPhamm/quickdbd-cli) - Interactive ER diagrams from a dbt `manifest.json` (keys and relationships inferred from tests) or QuickDBD/DBML text, readable at 200+ tables, with schema diffs as PR comments and a VS Code extension.
 - [Dex](https://github.com/exmergo/dex) - Agent skills (Claude Code, Codex) that author dbt models, tests, and MetricFlow semantic models as reviewable diffs, profile source warehouses read-only, and detect schema, grain, and semantic drift. Apache-2.0.
 - [Datanika](https://github.com/datanika-io/datanika-core) - Open-source platform that runs dbt-core transformations alongside dlt-powered extract and load, with 36 connectors, cron scheduling, and run history in one web UI. AGPL-3.0, self-hostable with Docker Compose or Helm.
 - [backfill](https://github.com/shyamsivakumar/backfill) - Terminal footer that pays you while dbt runs - one sponsored line on the bottom row during long commands (dbt Core and dbt Cloud CLI), 50% ad revenue share. Open-source Go CLI; never reads your code, queries, or output.
@@ -255,6 +258,7 @@ Useful tools and extensions to bump up your analytics engineer workflow.
 
 Community-developed packages to extend default macros and toolset.
 
+- [dbt-scd2-utils](https://github.com/henryupton/dbt-scd2-utils) - Materializations for SCD Type 0, 1 and 2 tables on Snowflake with shared audit columns, soft-delete handling, a metadata-preserving full refresh and an `scd2_join` macro for temporal joins.
 - [dbt-unirate](https://github.com/UniRate-API/dbt-unirate) - Currency exchange rate macros and models for dbt, powered by the UniRate API.
 - [dbt_semantic_view/](https://hub.getdbt.com/Snowflake-Labs/dbt_semantic_view/) This package lets you materialize Semantic Views via dbt and reference them from downstream models.
 - [dbt-ml-inline-preprocessing](https://github.com/Matts52/dbt-ml-inline-preprocessing) - Feature Engineering in dbt.
