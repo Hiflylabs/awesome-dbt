@@ -9,7 +9,7 @@ name: LIFO bot
 # Maintainers can also run it by hand on an open PR (Actions > LIFO bot > Run workflow),
 # e.g. for PRs opened before the bot existed: gh workflow run lifo-bot.yml -f pr=123
 
-run-name: LIFO bot on #${{ github.event.pull_request.number || inputs.pr }}
+run-name: "LIFO bot on #${{ github.event.pull_request.number || inputs.pr }}"
 
 on:
   pull_request_target:
