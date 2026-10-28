@@ -1,0 +1,20 @@
+name: Bot tests
+
+on:
+  pull_request:
+    paths: [.github/scripts/**, .github/workflows/lifo-bot.yml, .github/workflows/ai-review.yml, .github/workflows/bot-tests.yml, pyproject.toml, uv.lock]
+  push:
+    branches: [main]
+    paths: [.github/scripts/**, .github/workflows/lifo-bot.yml, .github/workflows/ai-review.yml, .github/workflows/bot-tests.yml, pyproject.toml, uv.lock]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - run: uv run --locked python -m unittest discover -s .github/scripts -v
