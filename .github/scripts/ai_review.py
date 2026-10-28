@@ -90,8 +90,9 @@ run dbt, ship as a dbt package or adapter, or are built for dbt projects. Articl
 and talks need to be about working with dbt. Answer "yes", "unclear", or the reason it isn't:
    - not_data_stack: it has nothing to do with data engineering, analytics or the modern \
 data stack.
-   - no_dbt_integration: it is a data tool or data content, but it doesn't work with dbt \
-or teach it, for example a database or a general SQL tutorial.
+   - no_dbt_integration: it is a data tool or data content with no dbt integration at all: \
+it doesn't work with dbt or teach it in any way, for example a database or a general SQL \
+tutorial.
 2. The best section for it, from the list of sections. The list is organized by topic, not \
 by format: a blog post about CI belongs in CI/CD, a package that tests data in Testing & \
 Data Quality. Learning is for general material, Packages for general-purpose packages that \
