@@ -82,6 +82,7 @@ FLAGS = {
     "already_listed": "Already listed",
     "other": "Other",
 }
+OFF_TOPIC = "Off topic"  # shown with the flags, but it comes from dbt_related, not a flag the model picks
 
 INSTRUCTIONS = """\
 You review new entries for Awesome dbt, a curated list of resources for users of dbt, the \
@@ -380,52 +381,55 @@ def report(reviews: list[Review], model: str = "") -> str:
     out = [MARKER, "### 🤖 Review bot", ""]
     if not reviews:
         return "\n".join([*out, "No new entries to review."]) + "\n"
-    flagged = [r for r in reviews if r.needs_look]
-    if not flagged:
+    if not any(r.needs_look for r in reviews):
         noun = "entry follows" if len(reviews) == 1 else f"{len(reviews)} entries follow"
-        out += [f"✅ The new {noun} the {guidelines}: about dbt, in the right section, nothing to flag.", "", *footer]
-        return "\n".join(out) + "\n"
-
-    out += [f"Automatic review of the new entries against the {guidelines}. Suggestions only: a maintainer makes the final call.", ""]
-    out += ["| Entry | About dbt | Section | Description | Flags |", "| --- | --- | --- | --- | --- |"]
-    for r in reviews:
-        if r.error:
-            out.append(f"| {lifo_bot.label(r.entry)} | ❔ | ❔ | ❔ | review unavailable |")
-            continue
-        v = r.verdict
-        dbt = {"yes": "✅", "no": "❌ no", "unclear": "❔ unclear"}[v["dbt_related"]]
-        if v["dbt_related"] == "no":
-            section = "–"  # no section fits a resource that isn't about dbt
-        elif v["best_section"] == r.section:
-            section = "✅"
-        else:
-            section = f"➡️ {plain(v['best_section'])}"
-        description = "✅" if v["description_ok"] else "✏️ rewrite"
-        flags = ", ".join(FLAGS[f["kind"]] for f in v["flags"]) or "–"
-        out.append(f"| {lifo_bot.label(r.entry)} | {dbt} | {section} | {description} | {flags} |")
-    out.append("")
-
-    for r in flagged:
-        out += [f"<details><summary>{summary(r.entry.name or r.entry.text)}</summary>", ""]
-        if r.error:
-            out += [f"AI review unavailable: {plain(r.error)}", "", "</details>", ""]
-            continue
-        v = r.verdict
-        out.append(f"- **What it is:** {plain(v['summary'])}")
-        out.append(f"- **About dbt:** {v['dbt_related']}. {plain(v['dbt_reason'])}")
-        if v["dbt_related"] != "no":
-            if v["best_section"] == r.section:
-                out.append(f"- **Section:** fits {plain(r.section)}. {plain(v['section_reason'])}")
+        out += [f"✅ The new {noun} the {guidelines}: about dbt, in the right section, nothing to flag.", ""]
+    else:
+        out += [f"Automatic review of the new entries against the {guidelines}. Suggestions only: a maintainer makes the final call.", ""]
+        out += ["| Entry | About dbt | Section | Description | Flags |", "| --- | --- | --- | --- | --- |"]
+        for r in reviews:
+            if r.error:
+                out.append(f"| {lifo_bot.label(r.entry)} | ❔ | ❔ | ❔ | review unavailable |")
+                continue
+            v = r.verdict
+            off_topic = v["dbt_related"] == "no"
+            dbt = {"yes": "✅", "no": "❌ no", "unclear": "❔ unclear"}[v["dbt_related"]]
+            if off_topic:
+                section = description = "–"  # no section or wording fixes an entry that doesn't belong
             else:
-                out.append(f"- **Section:** better in **{plain(v['best_section'])}** than {plain(r.section)}. {plain(v['section_reason'])}")
+                section = "✅" if v["best_section"] == r.section else f"➡️ {plain(v['best_section'])}"
+                description = "✅" if v["description_ok"] else "✏️ rewrite"
+            flags = ", ".join([OFF_TOPIC] * off_topic + [FLAGS[f["kind"]] for f in v["flags"]]) or "–"
+            out.append(f"| {lifo_bot.label(r.entry)} | {dbt} | {section} | {description} | {flags} |")
+        out.append("")
+
+    for r in reviews:
+        out += details(r)
+    return "\n".join([*out, *footer]) + "\n"
+
+
+def details(r: Review) -> list[str]:
+    """A collapsed block with the reasons behind one entry's verdict."""
+    out = [f"<details><summary>{summary(r.entry.name or r.entry.text)}</summary>", ""]
+    if r.error:
+        return [*out, f"AI review unavailable: {plain(r.error)}", "", "</details>", ""]
+    v = r.verdict
+    out.append(f"- **What it is:** {plain(v['summary'])}")
+    if v["dbt_related"] == "no":
+        out.append(f"- **{OFF_TOPIC}:** {plain(v['dbt_reason'])}")
+    else:
+        out.append(f"- **About dbt:** {v['dbt_related']}. {plain(v['dbt_reason'])}")
+        if v["best_section"] == r.section:
+            out.append(f"- **Section:** fits {plain(r.section)}. {plain(v['section_reason'])}")
+        else:
+            out.append(f"- **Section:** better in **{plain(v['best_section'])}** than {plain(r.section)}. {plain(v['section_reason'])}")
         if not v["description_ok"]:
             if v["suggested_description"]:
                 out.append(f"- **Suggested description:** {code(v['suggested_description'], 300)}")
             else:
                 out.append("- **Description:** doesn't follow the contribution guidelines.")
-        out += [f"- **{FLAGS[f['kind']]}:** {plain(f['evidence'])}" for f in v["flags"]]
-        out += ["", "</details>", ""]
-    return "\n".join([*out, *footer]) + "\n"
+    out += [f"- **{FLAGS[f['kind']]}:** {plain(f['evidence'])}" for f in v["flags"]]
+    return [*out, "", "</details>", ""]
 
 
 # --- Command line ------------------------------------------------------------------------
