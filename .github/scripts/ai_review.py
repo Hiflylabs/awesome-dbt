@@ -82,7 +82,13 @@ FLAGS = {
     "already_listed": "Already listed",
     "other": "Other",
 }
-OFF_TOPIC = "Off topic"  # shown with the flags, but it comes from dbt_related, not a flag the model picks
+# Why an entry isn't about dbt. The model answers one of these in place of "no", and it shows
+# with the flags, so the about-dbt answer and the flags can't disagree.
+OFF_TOPIC = {
+    "not_data_stack": "Not modern data stack",
+    "no_dbt_integration": "No dbt integration",
+    "dbt_in_passing": "dbt only in passing",
+}
 
 INSTRUCTIONS = """\
 You review new entries for Awesome dbt, a curated list of resources for users of dbt, the \
@@ -93,8 +99,13 @@ For the entry you are given, judge:
 
 1. Whether it is about dbt. Tools need a real dbt integration: they read dbt artifacts, \
 run dbt, ship as a dbt package or adapter, or are built for dbt projects. Articles, courses \
-and talks need to be about working with dbt. A generic data tool that lists dbt as one \
-integration among many, or whose output "can be used in dbt", is "no" or "unclear".
+and talks need to be about working with dbt. Answer "yes", "unclear", or the reason it isn't:
+   - not_data_stack: it has nothing to do with data engineering, analytics or the modern \
+data stack.
+   - no_dbt_integration: it is a data tool or data content, but it doesn't work with dbt \
+or teach it, for example a database or a general SQL tutorial.
+   - dbt_in_passing: it mentions dbt, lists it as one integration among many, or says its \
+output "can be used in dbt", but it isn't about working with dbt.
 2. The best section for it, from the list of sections. The list is organized by topic, not \
 by format: a blog post about CI belongs in CI/CD, a package that tests data in Testing & \
 Data Quality. Learning is for general material, Packages for general-purpose packages that \
@@ -136,7 +147,7 @@ def verdict_model(section_list: list[str]) -> type[BaseModel]:
         "Verdict",
         summary=(str, Field(description="What the resource is, in one sentence.")),
         dbt_reason=(str, Field(description="Why it is or isn't about dbt.")),
-        dbt_related=(Literal["yes", "no", "unclear"], ...),
+        dbt_related=(Literal["yes", "unclear", *OFF_TOPIC], ...),
         section_reason=(str, Field(description="Why the best section fits it.")),
         best_section=(Literal[tuple(section_list)], ...),  # type: ignore[valid-type]
         description_ok=(bool, Field(description="True when the current description follows the guidelines.")),
@@ -392,14 +403,14 @@ def report(reviews: list[Review], model: str = "") -> str:
                 out.append(f"| {lifo_bot.label(r.entry)} | ❔ | ❔ | ❔ | review unavailable |")
                 continue
             v = r.verdict
-            off_topic = v["dbt_related"] == "no"
-            dbt = {"yes": "✅", "no": "❌ no", "unclear": "❔ unclear"}[v["dbt_related"]]
+            off_topic = OFF_TOPIC.get(v["dbt_related"])
+            dbt = "❌ no" if off_topic else {"yes": "✅", "unclear": "❔ unclear"}[v["dbt_related"]]
             if off_topic:
                 section = description = "–"  # no section or wording fixes an entry that doesn't belong
             else:
                 section = "✅" if v["best_section"] == r.section else f"➡️ {plain(v['best_section'])}"
                 description = "✅" if v["description_ok"] else "✏️ rewrite"
-            flags = ", ".join([OFF_TOPIC] * off_topic + [FLAGS[f["kind"]] for f in v["flags"]]) or "–"
+            flags = ", ".join([off_topic] * bool(off_topic) + [FLAGS[f["kind"]] for f in v["flags"]]) or "–"
             out.append(f"| {lifo_bot.label(r.entry)} | {dbt} | {section} | {description} | {flags} |")
         out.append("")
 
@@ -415,8 +426,8 @@ def details(r: Review) -> list[str]:
         return [*out, f"AI review unavailable: {plain(r.error)}", "", "</details>", ""]
     v = r.verdict
     out.append(f"- **What it is:** {plain(v['summary'])}")
-    if v["dbt_related"] == "no":
-        out.append(f"- **{OFF_TOPIC}:** {plain(v['dbt_reason'])}")
+    if v["dbt_related"] in OFF_TOPIC:
+        out.append(f"- **{OFF_TOPIC[v['dbt_related']]}:** {plain(v['dbt_reason'])}")
     else:
         out.append(f"- **About dbt:** {v['dbt_related']}. {plain(v['dbt_reason'])}")
         if v["best_section"] == r.section:

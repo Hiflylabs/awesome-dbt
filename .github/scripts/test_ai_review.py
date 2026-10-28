@@ -133,6 +133,9 @@ class ReviewTests(unittest.TestCase):
         schema = json.dumps(info.output_tools[0].parameters_json_schema)
         for section in ai_review.sections(BASE):
             self.assertIn(section, schema)
+        for reason in ai_review.OFF_TOPIC:
+            self.assertIn(reason, schema)
+            self.assertIn(reason, info.instructions)
 
     def test_reasoning_effort(self):
         sections = ai_review.sections(BASE)
@@ -188,9 +191,9 @@ class ReportTests(unittest.TestCase):
             self.assertIn(expected, text)
 
     def test_off_topic_entry_gets_no_section_or_description_verdict(self):
-        text = ai_review.report([self.review_of(dbt_related="no", dbt_reason="A generic database.", description_ok=False, suggested_description="A database.", flags=[{"kind": "marketing_language", "evidence": "the best choice ever!"}])])
-        self.assertIn("| `New Tool` | ❌ no | – | – | Off topic, Marketing language |", text)
-        self.assertIn("- **Off topic:** A generic database.", text)
+        text = ai_review.report([self.review_of(dbt_related="no_dbt_integration", dbt_reason="A generic database.", description_ok=False, suggested_description="A database.", flags=[{"kind": "marketing_language", "evidence": "the best choice ever!"}])])
+        self.assertIn("| `New Tool` | ❌ no | – | – | No dbt integration, Marketing language |", text)
+        self.assertIn("- **No dbt integration:** A generic database.", text)
         for unexpected in ("**About dbt:**", "**Section:**", "**Suggested description:**", "**Description:**"):
             self.assertNotIn(unexpected, text)
 
