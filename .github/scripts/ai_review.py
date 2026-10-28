@@ -373,19 +373,20 @@ def summary(text: str, limit: int = 80) -> str:
 
 
 def report(reviews: list[Review], model: str = "") -> str:
-    out = [MARKER, "### 🤖 AI review", ""]
+    repo = os.environ.get("GITHUB_REPOSITORY", "Hiflylabs/awesome-dbt")
+    guidelines = f"[contribution guidelines](https://github.com/{repo}/blob/main/contributing.md)"
+    model = PROVIDER_PREFIX.sub("", model, count=1)  # "openai-chat:" says how we reach it, not what it is
+    footer = [f"<sub>Model: {code(model, 60)}</sub>"] if model else []
+    out = [MARKER, "### 🤖 Review bot", ""]
     if not reviews:
         return "\n".join([*out, "No new entries to review."]) + "\n"
-    model = PROVIDER_PREFIX.sub("", model, count=1)  # "openai-chat:" says how we reach it, not what it is
-    by = f" by {code(model, 60)}" if model else ""
     flagged = [r for r in reviews if r.needs_look]
     if not flagged:
-        noun = "entry looks" if len(reviews) == 1 else f"{len(reviews)} entries look"
-        out.append(f"✅ The new {noun} good: about dbt, in the right section, nothing to flag. _Reviewed{by}._")
+        noun = "entry follows" if len(reviews) == 1 else f"{len(reviews)} entries follow"
+        out += [f"✅ The new {noun} the {guidelines}: about dbt, in the right section, nothing to flag.", "", *footer]
         return "\n".join(out) + "\n"
 
-    source = f" from {code(model, 60)}" if model else ""
-    out += [f"Suggestions on the new entries{source}. A maintainer makes the final call.", ""]
+    out += [f"Automatic review of the new entries against the {guidelines}. Suggestions only: a maintainer makes the final call.", ""]
     out += ["| Entry | About dbt | Section | Description | Flags |", "| --- | --- | --- | --- | --- |"]
     for r in reviews:
         if r.error:
@@ -424,7 +425,7 @@ def report(reviews: list[Review], model: str = "") -> str:
                 out.append("- **Description:** doesn't follow the contribution guidelines.")
         out += [f"- **{FLAGS[f['kind']]}:** {plain(f['evidence'])}" for f in v["flags"]]
         out += ["", "</details>", ""]
-    return "\n".join(out) + "\n"
+    return "\n".join([*out, *footer]) + "\n"
 
 
 # --- Command line ------------------------------------------------------------------------
