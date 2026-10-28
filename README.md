@@ -158,6 +158,7 @@ Scaffold projects and generate models, sources and YAML.
 
 Smaller helpers for day-to-day dbt work.
 
+- [dbt Fusion engine](https://github.com/dbt-labs/dbt-fusion) - The Rust-based engine from dbt Labs that parses projects faster and understands the SQL it compiles.
 - [backfill](https://github.com/shyamsivakumar/backfill) - Terminal footer that pays you while dbt runs - one sponsored line on the bottom row during long commands (dbt Core and dbt Cloud CLI), 50% ad revenue share. Open-source Go CLI; never reads your code, queries, or output.
 - [dbt-ibis](https://github.com/binste/dbt-ibis) - Write your dbt models using [Ibis](https://ibis-project.org/), the portable Python dataframe library.
 - [fst: flow state tool](https://github.com/sungchun12/fst) - A tool to help you stay in flow state while developing dbt models.
@@ -203,6 +204,7 @@ Test your models and keep an eye on the data they produce.
 
 Testing frameworks, packages and guides, from unit tests to data contracts.
 
+- [PostgreSQL](https://www.postgresql.org/) - The world's most advanced open source database, the best choice ever!
 - [SQL Data Checks](https://www.arcodash.com/tools/sql-data-checks/) - Free browser tool that writes copy-ready SQL for freshness, row count, null rate, duplicate key and job heartbeat checks across 10 dialects.
 - [grainguard](https://github.com/rohitchaurasia195-web/GRAINGUARD) - Static checker that flags SUM, COUNT and AVG computed after joins that can repeat rows (fan outs and chasm traps). Infers the grain of every model from unique tests and the SQL itself, with no warehouse connection, so it runs in CI or pre-commit.
 - [data-contract-validator](https://github.com/OGsiji/data-contract-validator) - Fails the pull request when a model stops producing what a downstream consumer expects. Reads columns from `catalog.json`/`manifest.json` (falling back to a sqlglot parse of the SQL) and compares them against reverse-ETL destinations such as HubSpot CRM and against FastAPI/Pydantic services, in CI or pre-commit.
@@ -334,6 +336,7 @@ Masking, tagging and anonymizing sensitive data.
 
 Metrics, semantic layers and BI tools that build on dbt models.
 
+- [The Tuva Project](https://github.com/tuva-health/tuva) - A dbt package of healthcare data models and terminology.
 - [Cube](https://cube.dev/blog/introducing-dbt-integration) - Semantic layer that turns every dbt model into a governed cube with dimensions, measures, joins and descriptions. Re-syncs from CI or on every push by parsing your project, without touching the warehouse.
 - [MetricFlow](https://github.com/dbt-labs/metricflow) - Define metrics in code and generate the SQL to compute them. Powers the dbt Semantic Layer and replaces the deprecated dbt_metrics package.
 - [dbt_semantic_view](https://hub.getdbt.com/Snowflake-Labs/dbt_semantic_view/) - Materialize Snowflake Semantic Views with dbt and reference them from downstream models.
