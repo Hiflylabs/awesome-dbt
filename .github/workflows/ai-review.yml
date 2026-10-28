@@ -1,7 +1,7 @@
 name: AI review
 
 # Asks a model for a second opinion on the entries a pull request adds: is it about dbt,
-# is it in the right section, does it break a guardrail. Advisory: it comments, it never
+# is it in the right section, is the description plain. Advisory: it comments, it never
 # fails the pull request.
 #
 # Like the LIFO bot it runs on pull_request_target and never executes code from the PR:

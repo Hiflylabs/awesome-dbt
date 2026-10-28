@@ -57,7 +57,6 @@ def verdict(**overrides) -> dict:
         "best_section": "CI/CD",
         "description_ok": True,
         "suggested_description": "",
-        "flags": [],
     }
     return answer | overrides
 
@@ -133,6 +132,10 @@ class ReviewTests(unittest.TestCase):
         schema = json.dumps(info.output_tools[0].parameters_json_schema)
         for section in ai_review.sections(BASE):
             self.assertIn(section, schema)
+        for reason in ai_review.OFF_TOPIC:
+            self.assertIn(reason, schema)
+            self.assertIn(reason, info.instructions)
+        self.assertNotIn("flags", schema)
 
     def test_reasoning_effort(self):
         sections = ai_review.sections(BASE)
@@ -159,7 +162,7 @@ class ReviewTests(unittest.TestCase):
         self.assertIn("review unavailable", ai_review.report([item]))
 
     def test_needs_look(self):
-        for overrides in ({"dbt_related": "unclear"}, {"best_section": "Testing & Data Quality > Testing"}, {"description_ok": False}, {"flags": [{"kind": "marketing_language", "evidence": "best ever"}]}):
+        for overrides in ({"dbt_related": "unclear"}, {"best_section": "Testing & Data Quality > Testing"}, {"description_ok": False}):
             with self.subTest(overrides=overrides):
                 [item] = self.run_review(verdict(**overrides))
                 self.assertTrue(item.needs_look)
@@ -170,7 +173,7 @@ class ReportTests(unittest.TestCase):
         entry = ai_review.new_entries(BASE, with_new_entry(BASE, "## CI/CD\n"))[0]
         return ai_review.Review(entry, "CI/CD", verdict(**overrides))
 
-    def test_report_explains_the_flags(self):
+    def test_report_explains_the_verdict(self):
         text = ai_review.report(
             [
                 self.review_of(
@@ -178,31 +181,30 @@ class ReportTests(unittest.TestCase):
                     best_section="Testing & Data Quality > Testing",
                     description_ok=False,
                     suggested_description="Runs dbt tests in CI.",
-                    flags=[{"kind": "undisclosed_affiliation", "evidence": "The author owns the repository."}],
                 )
             ],
             "bedrock:eu.anthropic.claude-haiku-5-5",
         )
         self.assertTrue(text.startswith(ai_review.MARKER))
-        for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "Looks affiliated, not disclosed", "`Runs dbt tests in CI.`", "### 🤖 Review bot", "Automatic review of the new entries against the [contribution guidelines](https://github.com/", "<sub>Model: `eu.anthropic.claude-haiku-5-5`</sub>"):
+        for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "`Runs dbt tests in CI.`", "### 🤖 Review bot", "Automatic review of the new entries against the [contribution guidelines](https://github.com/", "<sub>Model: `eu.anthropic.claude-haiku-5-5`</sub>"):
             self.assertIn(expected, text)
 
     def test_off_topic_entry_gets_no_section_or_description_verdict(self):
-        text = ai_review.report([self.review_of(dbt_related="no", dbt_reason="A generic database.", description_ok=False, suggested_description="A database.", flags=[{"kind": "marketing_language", "evidence": "the best choice ever!"}])])
-        self.assertIn("| `New Tool` | ❌ no | – | – | Off topic, Marketing language |", text)
-        self.assertIn("- **Off topic:** A generic database.", text)
-        for unexpected in ("**About dbt:**", "**Section:**", "**Suggested description:**", "**Description:**"):
+        text = ai_review.report([self.review_of(dbt_related="no_dbt_integration", dbt_reason="A generic database.", description_ok=False, suggested_description="A database.")])
+        self.assertIn("| `New Tool` | ❌ No dbt integration | – | – |", text)
+        self.assertIn("- **No dbt integration:** A generic database.", text)
+        for unexpected in ("**Relevance:**", "**Section:**", "**Suggested description:**", "**Description:**"):
             self.assertNotIn(unexpected, text)
 
     def test_every_entry_gets_details(self):
         clean, flagged = self.review_of(), self.review_of(dbt_related="unclear")
         text = ai_review.report([clean, flagged])
         self.assertEqual(text.count("<details><summary>New Tool</summary>"), 2)
-        self.assertIn("- **About dbt:** yes. It parses manifest.json.", text)
+        self.assertIn("- **Relevance:** yes. It parses manifest.json.", text)
 
     def test_model_text_cannot_mention_link_or_inject_markup(self):
         injected = "Ping @octocat, see [this](https://evil.example) <img src=x> | ``` `"
-        text = ai_review.report([self.review_of(dbt_related="unclear", dbt_reason=injected, flags=[{"kind": "other", "evidence": injected}])])
+        text = ai_review.report([self.review_of(dbt_related="unclear", dbt_reason=injected, section_reason=injected)])
         self.assertNotIn("@octocat", text)
         self.assertNotIn("https://evil.example", text)
         self.assertNotRegex(text, r"(?<!\\)<img")  # an escaped \<img renders as text
