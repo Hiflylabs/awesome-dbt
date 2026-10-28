@@ -193,14 +193,14 @@ class ReportTests(unittest.TestCase):
         text = ai_review.report([self.review_of(dbt_related="no_dbt_integration", dbt_reason="A generic database.", description_ok=False, suggested_description="A database.")])
         self.assertIn("| `New Tool` | ❌ No dbt integration | – | – |", text)
         self.assertIn("- **No dbt integration:** A generic database.", text)
-        for unexpected in ("**About dbt:**", "**Section:**", "**Suggested description:**", "**Description:**"):
+        for unexpected in ("**Relevance:**", "**Section:**", "**Suggested description:**", "**Description:**"):
             self.assertNotIn(unexpected, text)
 
     def test_every_entry_gets_details(self):
         clean, flagged = self.review_of(), self.review_of(dbt_related="unclear")
         text = ai_review.report([clean, flagged])
         self.assertEqual(text.count("<details><summary>New Tool</summary>"), 2)
-        self.assertIn("- **About dbt:** yes. It parses manifest.json.", text)
+        self.assertIn("- **Relevance:** yes. It parses manifest.json.", text)
 
     def test_model_text_cannot_mention_link_or_inject_markup(self):
         injected = "Ping @octocat, see [this](https://evil.example) <img src=x> | ``` `"

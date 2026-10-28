@@ -366,7 +366,7 @@ def report(reviews: list[Review], model: str = "") -> str:
         out += [f"✅ The new {noun} the {guidelines}: about dbt, in the right section, with a plain description.", ""]
     else:
         out += [f"Automatic review of the new entries against the {guidelines}. Suggestions only: a maintainer makes the final call.", ""]
-        out += ["| Entry | About dbt | Section | Description |", "| --- | --- | --- | --- |"]
+        out += ["| Entry | Relevance | Section | Description |", "| --- | --- | --- | --- |"]
         for r in reviews:
             if r.error:
                 out.append(f"| {lifo_bot.label(r.entry)} | ❔ review unavailable | ❔ | ❔ |")
@@ -397,7 +397,7 @@ def details(r: Review) -> list[str]:
     if v["dbt_related"] in OFF_TOPIC:
         out.append(f"- **{OFF_TOPIC[v['dbt_related']]}:** {plain(v['dbt_reason'])}")
     else:
-        out.append(f"- **About dbt:** {v['dbt_related']}. {plain(v['dbt_reason'])}")
+        out.append(f"- **Relevance:** {v['dbt_related']}. {plain(v['dbt_reason'])}")
         if v["best_section"] == r.section:
             out.append(f"- **Section:** fits {plain(r.section)}. {plain(v['section_reason'])}")
         else:
