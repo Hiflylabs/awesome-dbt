@@ -181,7 +181,7 @@ class ReportTests(unittest.TestCase):
             "bedrock:eu.anthropic.claude-haiku-5-5",
         )
         self.assertTrue(text.startswith(ai_review.MARKER))
-        for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "Looks affiliated, not disclosed", "`Runs dbt tests in CI.`", "`bedrock:eu.anthropic.claude-haiku-5-5`"):
+        for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "Looks affiliated, not disclosed", "`Runs dbt tests in CI.`", "Suggestions on the new entries from `eu.anthropic.claude-haiku-5-5`. A maintainer makes the final call."):
             self.assertIn(expected, text)
 
     def test_off_topic_entry_gets_no_section_verdict(self):

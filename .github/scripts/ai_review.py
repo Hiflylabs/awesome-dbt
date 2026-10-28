@@ -376,6 +376,7 @@ def report(reviews: list[Review], model: str = "") -> str:
     out = [MARKER, "### 🤖 AI review", ""]
     if not reviews:
         return "\n".join([*out, "No new entries to review."]) + "\n"
+    model = PROVIDER_PREFIX.sub("", model, count=1)  # "openai-chat:" says how we reach it, not what it is
     by = f" by {code(model, 60)}" if model else ""
     flagged = [r for r in reviews if r.needs_look]
     if not flagged:
@@ -383,7 +384,8 @@ def report(reviews: list[Review], model: str = "") -> str:
         out.append(f"✅ The new {noun} good: about dbt, in the right section, nothing to flag. _Reviewed{by}._")
         return "\n".join(out) + "\n"
 
-    out += [f"A second opinion for the maintainers, reviewed{by}. Advisory only: a maintainer makes the final call.", ""]
+    source = f" from {code(model, 60)}" if model else ""
+    out += [f"Suggestions on the new entries{source}. A maintainer makes the final call.", ""]
     out += ["| Entry | About dbt | Section | Description | Flags |", "| --- | --- | --- | --- | --- |"]
     for r in reviews:
         if r.error:
