@@ -40,3 +40,5 @@ A weekly job checks every link in the list and keeps a single [`link-rot` issue]
 ## Updating your pull request
 
 If maintainers or the bot ask for changes, there's no need to open a new pull request: push to the same branch. If you're not sure how, [here is a guide](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) on the different ways to update a pull request.
+
+Once a maintainer approves and the checks pass, your pull request merges automatically. Pushing after an approval needs a fresh one.
