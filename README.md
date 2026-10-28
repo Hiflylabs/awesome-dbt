@@ -334,13 +334,13 @@ Masking, tagging and anonymizing sensitive data.
 
 Metrics, semantic layers and BI tools that build on dbt models.
 
+- [Cube](https://cube.dev/blog/introducing-dbt-integration) - Semantic layer that turns every dbt model into a governed cube with dimensions, measures, joins and descriptions. Re-syncs from CI or on every push by parsing your project, without touching the warehouse.
 - [MetricFlow](https://github.com/dbt-labs/metricflow) - Define metrics in code and generate the SQL to compute them. Powers the dbt Semantic Layer and replaces the deprecated dbt_metrics package.
 - [dbt_semantic_view](https://hub.getdbt.com/Snowflake-Labs/dbt_semantic_view/) - Materialize Snowflake Semantic Views with dbt and reference them from downstream models.
 - [dal](https://github.com/coterahq/dal) - Build a GraphQL API on top of your dbt project.
 - ["Semantic-free" is the future of Business Intelligence](https://towardsdatascience.com/semantic-free-is-the-future-of-business-intelligence-27aae1d11563) - How to leverage dbt as a data catalog and semantic layer (joins, synonyms, etc.) that BI tools can just plug into.
 - [How HomeToGo connected dbt and Superset to make metadata more accessible and reduce analytical overhead](https://engineering.hometogo.com/how-hometogo-connected-dbt-and-superset-to-make-metadata-more-accessible-and-reduce-analytical-2223af539cc6) - A dbt<>Superset connector that leverages Superset's API capabilities and dbt's manifest.
 - [looker-gen](https://github.com/aaronbannin/looker-gen) - Generate LookML from dbt.
-- [Cube](https://cube.dev/blog/dbt-metrics-meet-cube?ref=awesome-dbt) - Semantic layer with APIs, caching and access control on top of your dbt models.
 - [Business Intelligence Standards](https://github.com/flexanalytics/dbt-business-intelligence) - Best practices in Business Intelligence standards for integrating with dbt.
 - [FlexIt Analytics](https://learn.flexitanalytics.com/docs/dbt/) - Business Intelligence platform with deep dbt Cloud and CLI integration.
 - [Self-service Business Intelligence](https://medium.com/modern-business-intelligence/self-service-business-intelligence-powered-by-dbt-3b7e24a92e27) - Eliminate the need for a data modeling semantic layer in BI.
