@@ -76,7 +76,6 @@ PROVIDER_PREFIX = re.compile(r"^[a-z][a-z0-9-]*:")  # "bedrock:...", not "openai
 OFF_TOPIC = {
     "not_data_stack": "Not modern data stack",
     "no_dbt_integration": "No dbt integration",
-    "dbt_in_passing": "dbt only in passing",
 }
 
 INSTRUCTIONS = """\
@@ -93,8 +92,6 @@ and talks need to be about working with dbt. Answer "yes", "unclear", or the rea
 data stack.
    - no_dbt_integration: it is a data tool or data content, but it doesn't work with dbt \
 or teach it, for example a database or a general SQL tutorial.
-   - dbt_in_passing: it mentions dbt, lists it as one integration among many, or says its \
-output "can be used in dbt", but it isn't about working with dbt.
 2. The best section for it, from the list of sections. The list is organized by topic, not \
 by format: a blog post about CI belongs in CI/CD, a package that tests data in Testing & \
 Data Quality. Learning is for general material, Packages for general-purpose packages that \
