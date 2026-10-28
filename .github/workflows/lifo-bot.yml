@@ -13,8 +13,9 @@ run-name: "LIFO bot on #${{ github.event.pull_request.number || inputs.pr }}"
 
 on:
   pull_request_target:
+    # No paths filter: the check is required on main, so it has to report on every PR.
+    # PRs that don't touch the README pass straight away.
     types: [opened, reopened, synchronize]
-    paths: [README.md]
   workflow_dispatch:
     inputs:
       pr:

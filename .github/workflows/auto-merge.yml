@@ -1,0 +1,28 @@
+name: Auto-merge
+
+# Turns on auto-merge for every pull request, so GitHub squash-merges it as soon as a
+# maintainer approves and the required checks pass. Branch protection on main decides
+# when that is: one approval, given after the last push, plus green checks.
+#
+# pull_request_target runs with a token that can do this for fork PRs too. It never
+# checks out or runs code from the PR.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  enable:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable auto-merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: gh pr merge "$PR" --repo "$REPO" --auto --squash
