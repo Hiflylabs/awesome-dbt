@@ -326,7 +326,6 @@ Documentation sites, ERDs and data catalogs built from dbt metadata.
 Masking, tagging and anonymizing sensitive data.
 
 - [dbt-snow-mask](https://github.com/entechlog/dbt-snow-mask) - A dbt package for Snowflake Dynamic Data Masking.
-- [Privacy Dynamics](https://www.privacydynamics.io) - Anonymize data in your dbt project.
 - [dbt-privacy](https://github.com/pvcy/dbt-privacy) - Macros to make it easier to protect your customers' data.
 - [dbt-tags](https://github.com/infinitelambda/dbt-tags) - Tag-based masking policies management in Snowflake.
 
