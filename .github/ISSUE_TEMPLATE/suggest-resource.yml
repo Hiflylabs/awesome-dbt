@@ -1,0 +1,29 @@
+name: Suggest a resource
+description: Suggest a tool, package, article or course for the list.
+labels: [suggestion]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://github.com/...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What is it, and why is it useful to dbt users?
+      description: One or two sentences. This becomes the description in the list.
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Which section does it belong in?
+      placeholder: e.g. Testing & Data Quality > Testing
+  - type: checkboxes
+    id: affiliation
+    attributes:
+      label: Affiliation
+      options:
+        - label: I build, sell or work on this resource.
