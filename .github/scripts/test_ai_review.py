@@ -117,7 +117,10 @@ class ReviewTests(unittest.TestCase):
         [item] = self.run_review(verdict())
         self.assertEqual(item.section, "CI/CD")
         self.assertFalse(item.needs_look)
-        self.assertIn("✅ The new entry follows the [contribution guidelines]", ai_review.report([item]))
+        text = ai_review.report([item])
+        self.assertIn("✅ The new entry follows the [contribution guidelines]", text)
+        self.assertIn("<details><summary>New Tool</summary>", text)
+        self.assertIn("- **Section:** fits CI/CD. It runs in CI.", text)
 
     def test_prompt_and_schema(self):
         seen = []
@@ -184,11 +187,18 @@ class ReportTests(unittest.TestCase):
         for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "Looks affiliated, not disclosed", "`Runs dbt tests in CI.`", "### 🤖 Review bot", "Automatic review of the new entries against the [contribution guidelines](https://github.com/", "<sub>Model: `eu.anthropic.claude-haiku-5-5`</sub>"):
             self.assertIn(expected, text)
 
-    def test_off_topic_entry_gets_no_section_verdict(self):
-        text = ai_review.report([self.review_of(dbt_related="no", description_ok=False, flags=[{"kind": "marketing_language", "evidence": "the best choice ever!"}])])
-        self.assertIn("| `New Tool` | ❌ no | – | ✏️ rewrite | Marketing language |", text)
-        self.assertNotIn("**Section:**", text)
-        self.assertIn("**Description:** doesn't follow the contribution guidelines.", text)
+    def test_off_topic_entry_gets_no_section_or_description_verdict(self):
+        text = ai_review.report([self.review_of(dbt_related="no", dbt_reason="A generic database.", description_ok=False, suggested_description="A database.", flags=[{"kind": "marketing_language", "evidence": "the best choice ever!"}])])
+        self.assertIn("| `New Tool` | ❌ no | – | – | Off topic, Marketing language |", text)
+        self.assertIn("- **Off topic:** A generic database.", text)
+        for unexpected in ("**About dbt:**", "**Section:**", "**Suggested description:**", "**Description:**"):
+            self.assertNotIn(unexpected, text)
+
+    def test_every_entry_gets_details(self):
+        clean, flagged = self.review_of(), self.review_of(dbt_related="unclear")
+        text = ai_review.report([clean, flagged])
+        self.assertEqual(text.count("<details><summary>New Tool</summary>"), 2)
+        self.assertIn("- **About dbt:** yes. It parses manifest.json.", text)
 
     def test_model_text_cannot_mention_link_or_inject_markup(self):
         injected = "Ping @octocat, see [this](https://evil.example) <img src=x> | ``` `"
