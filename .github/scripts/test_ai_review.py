@@ -117,7 +117,7 @@ class ReviewTests(unittest.TestCase):
         [item] = self.run_review(verdict())
         self.assertEqual(item.section, "CI/CD")
         self.assertFalse(item.needs_look)
-        self.assertIn("✅ The new entry looks good", ai_review.report([item]))
+        self.assertIn("✅ The new entry follows the [contribution guidelines]", ai_review.report([item]))
 
     def test_prompt_and_schema(self):
         seen = []
@@ -181,7 +181,7 @@ class ReportTests(unittest.TestCase):
             "bedrock:eu.anthropic.claude-haiku-5-5",
         )
         self.assertTrue(text.startswith(ai_review.MARKER))
-        for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "Looks affiliated, not disclosed", "`Runs dbt tests in CI.`", "`bedrock:eu.anthropic.claude-haiku-5-5`"):
+        for expected in ("❔ unclear", "➡️ Testing & Data Quality \\> Testing", "✏️ rewrite", "Looks affiliated, not disclosed", "`Runs dbt tests in CI.`", "### 🤖 Review bot", "Automatic review of the new entries against the [contribution guidelines](https://github.com/", "<sub>Model: `eu.anthropic.claude-haiku-5-5`</sub>"):
             self.assertIn(expected, text)
 
     def test_off_topic_entry_gets_no_section_verdict(self):
@@ -194,7 +194,7 @@ class ReportTests(unittest.TestCase):
         injected = "Ping @octocat, see [this](https://evil.example) <img src=x> | ``` `"
         text = ai_review.report([self.review_of(dbt_related="unclear", dbt_reason=injected, flags=[{"kind": "other", "evidence": injected}])])
         self.assertNotIn("@octocat", text)
-        self.assertNotIn("](https://", text)
+        self.assertNotIn("https://evil.example", text)
         self.assertNotRegex(text, r"(?<!\\)<img")  # an escaped \<img renders as text
         self.assertNotIn("```", text)
 
