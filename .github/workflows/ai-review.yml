@@ -1,0 +1,103 @@
+name: AI review
+
+# Asks a model for a second opinion on the entries a pull request adds: is it about dbt,
+# is it in the right section, is the description plain. Advisory: it comments, it never
+# fails the pull request.
+#
+# Like the LIFO bot it runs on pull_request_target and never executes code from the PR:
+# it checks out the base branch and reads the PR's README through the API as plain data.
+#
+# Setup, in Settings > Secrets and variables > Actions:
+#   variable AI_REVIEW_MODEL     e.g. openai-chat:gpt-oss-120b or bedrock:openai.gpt-oss-120b-1:0 (off without it)
+#   secret   AWS_BEARER_TOKEN_BEDROCK, ANTHROPIC_API_KEY or OPENAI_API_KEY, matching the model
+#   variable AWS_ROLE_ARN        optional: assume this role through OIDC instead of a Bedrock API key
+#   variable AWS_REGION          optional, default eu-central-1
+#   variable OPENAI_BASE_URL     for openai-chat: models, e.g. the LiteLLM proxy
+#   variable AI_REVIEW_COMMENTS  "true" to comment on PRs; until then it only writes the job summary
+
+run-name: "AI review on #${{ github.event.pull_request.number || inputs.pr }}"
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths: [README.md]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number
+        required: true
+        type: number
+
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write # only used when AWS_ROLE_ARN is set
+
+concurrency:
+  group: ai-review-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    if: vars.AI_REVIEW_MODEL != ''
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      PR: ${{ github.event.pull_request.number || inputs.pr }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@v10.2.0
+
+      - name: Fetch the README before and after the PR
+        id: pr
+        run: |
+          read -r base_ref head_sha author < <(gh api "repos/$REPO/pulls/$PR" --jq '"\(.base.ref) \(.head.sha) \(.user.login)"')
+          merge_base=$(gh api "repos/$REPO/compare/$base_ref...$head_sha" --jq .merge_base_commit.sha)
+          gh api "repos/$REPO/contents/README.md?ref=$merge_base" -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/base.md"
+          gh api "repos/$REPO/contents/README.md?ref=$head_sha" -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/head.md"
+          gh api "repos/$REPO/pulls/$PR" --jq '.body // ""' > "$RUNNER_TEMP/pr-body.md"
+          echo "author=$author" >> "$GITHUB_OUTPUT"
+
+      - name: Assume the AWS role
+        if: vars.AWS_ROLE_ARN != ''
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION || 'eu-central-1' }}
+
+      - name: Review new entries
+        id: review
+        env:
+          AI_REVIEW_MODEL: ${{ vars.AI_REVIEW_MODEL }}
+          AWS_REGION: ${{ vars.AWS_REGION || 'eu-central-1' }}
+          AWS_BEARER_TOKEN_BEDROCK: ${{ secrets.AWS_BEARER_TOKEN_BEDROCK }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+          AUTHOR: ${{ steps.pr.outputs.author }}
+        run: |
+          status=0
+          uv run --locked .github/scripts/ai_review.py \
+            --base "$RUNNER_TEMP/base.md" --head "$RUNNER_TEMP/head.md" \
+            --pr-body "$RUNNER_TEMP/pr-body.md" --pr-author "$AUTHOR" > "$RUNNER_TEMP/report.md" || status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      # One sticky comment per PR, posted only when there's something to look at and
+      # updated on every push after that.
+      - name: Comment on the PR
+        if: vars.AI_REVIEW_COMMENTS == 'true' && (steps.review.outputs.status == '0' || steps.review.outputs.status == '1')
+        env:
+          STATUS: ${{ steps.review.outputs.status }}
+        run: |
+          comment=$(gh api "repos/$REPO/issues/$PR/comments" --paginate \
+            --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- ai-review -->"))) | .id' | head -n 1)
+          if [ -n "$comment" ]; then
+            gh api -X PATCH "repos/$REPO/issues/comments/$comment" -F "body=@$RUNNER_TEMP/report.md" > /dev/null
+          elif [ "$STATUS" = 1 ]; then
+            gh api "repos/$REPO/issues/$PR/comments" -F "body=@$RUNNER_TEMP/report.md" > /dev/null
+          fi

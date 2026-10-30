@@ -1,0 +1,12 @@
+# Tooling for the bots in .github/scripts. The list itself is README.md.
+[project]
+name = "awesome-dbt-bots"
+version = "0.0.0"
+description = "Bots that review pull requests to Awesome dbt."
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-ai-slim[anthropic,bedrock,openai]>=2.63,<3",
+]
+
+[tool.uv]
+package = false

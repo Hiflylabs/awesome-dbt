@@ -1,0 +1,85 @@
+name: LIFO bot
+
+# Comments on pull requests whose new entries aren't at the top of their section.
+#
+# pull_request_target runs with a token that can comment on fork PRs, so this workflow
+# must never execute code from the PR: it checks out the base branch only and reads the
+# PR's README through the API as plain data.
+#
+# Maintainers can also run it by hand on an open PR (Actions > LIFO bot > Run workflow),
+# e.g. for PRs opened before the bot existed: gh workflow run lifo-bot.yml -f pr=123
+
+run-name: "LIFO bot on #${{ github.event.pull_request.number || inputs.pr }}"
+
+on:
+  pull_request_target:
+    # No paths filter: the check is required on main, so it has to report on every PR.
+    # PRs that don't touch the README pass straight away.
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number
+        required: true
+        type: number
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: lifo-bot-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
+jobs:
+  lifo:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      PR: ${{ github.event.pull_request.number || inputs.pr }}
+      BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Fetch the README before and after the PR
+        run: |
+          if [ -z "$HEAD_SHA" ]; then
+            # Started by hand: compare the PR's current head with its base branch.
+            read -r BASE_SHA HEAD_SHA < <(gh api "repos/$REPO/pulls/$PR" --jq '"\(.base.ref) \(.head.sha)"')
+          fi
+          merge_base=$(gh api "repos/$REPO/compare/$BASE_SHA...$HEAD_SHA" --jq .merge_base_commit.sha)
+          gh api "repos/$REPO/contents/README.md?ref=$merge_base" -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/base.md"
+          gh api "repos/$REPO/contents/README.md?ref=$HEAD_SHA" -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/head.md"
+
+      - name: Check new entries
+        id: check
+        run: |
+          status=0
+          python3 .github/scripts/lifo_bot.py "$RUNNER_TEMP/base.md" "$RUNNER_TEMP/head.md" > "$RUNNER_TEMP/report.md" || status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      # One sticky comment per PR: created on the first problem, updated on every push,
+      # and turned into a thumbs-up once the problems are fixed.
+      - name: Comment on the PR
+        if: steps.check.outputs.status == '0' || steps.check.outputs.status == '1'
+        env:
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          comment=$(gh api "repos/$REPO/issues/$PR/comments" --paginate \
+            --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- lifo-bot -->"))) | .id' | head -n 1)
+          if [ -n "$comment" ]; then
+            gh api -X PATCH "repos/$REPO/issues/comments/$comment" -F "body=@$RUNNER_TEMP/report.md" > /dev/null
+          elif [ "$STATUS" = 1 ]; then
+            gh api "repos/$REPO/issues/$PR/comments" -F "body=@$RUNNER_TEMP/report.md" > /dev/null
+          fi
+
+      - name: Fail when entries need fixing
+        if: steps.check.outputs.status != '0'
+        run: |
+          echo "::error::See the LIFO bot comment on the pull request."
+          exit 1
