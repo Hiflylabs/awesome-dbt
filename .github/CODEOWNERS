@@ -1,0 +1,3 @@
+# Requests a review from these people on every pull request. Branch protection doesn't
+# require code owner reviews, so any maintainer's approval still merges.
+* @zsombor-flds
