@@ -177,6 +177,7 @@ Generative AI for dbt: giving agents access to your project, and LLM-powered too
 
 MCP servers, agent skills and harnesses that let coding agents and assistants work with dbt.
 
+- [schemagate](https://github.com/ashishsinha1602/schemagate) - Imports dbt semantic models (`semantic_manifest.json`) so an MCP server or LangChain retriever gives the LLM only the tables a question needs: about 91% fewer schema tokens on text-to-SQL, #1 on the BIRD Mini-Dev leaderboard.
 - [dbprint](https://github.com/jakubro/dbprint) - Snapshots each warehouse table's DDL, joins and column values (value lists, null shares, ranges) into files committed to your repo, which coding agents read through an MCP server or a skill instead of querying the warehouse. Reads column lineage from a compiled dbt manifest, so a note on a source column reaches the model columns built from it.
 - [Dex](https://github.com/exmergo/dex) - Agent skills (Claude Code, Codex) that author dbt models, tests, and MetricFlow semantic models as reviewable diffs, profile source warehouses read-only, and detect schema, grain, and semantic drift. Apache-2.0.
 - [dlin](https://github.com/eitsupi/dlin) - Gives coding agents instant dbt lineage: no dbt compile, no Python, no grep. Fast model-level lineage CLI parsing SQL files directly (or a `manifest.json`), with experimental column-level lineage too.
