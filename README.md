@@ -239,7 +239,7 @@ Monitoring, anomaly detection and alerting on the data your models build.
 ## CI/CD
 
 Ship changes safely: slim CI, data diffs, deployment patterns and pull request workflows.
-
+- [speedrunner](https://github.com/anthonyGosme/speedrunner) - Makes every dbt command start faster by keeping dbt preloaded in a background daemon and forking it per call, with no configuration. Measured: `dbt ls` 3.9 s to 1.2 s, `dbt --help` 2.7 s to 30 ms, same output as plain dbt.
 - [reladiff](https://github.com/erezsh/reladiff) - Diff large datasets within or across databases. Maintained continuation of Datafold's data-diff, which is archived.
 - [dbt-plan](https://github.com/PresentJay/dbt-plan) - `terraform plan` for dbt: diffs compiled SQL between two revisions to predict the DDL `dbt run` would emit. Names the columns an `on_schema_change: sync_all_columns` model will drop, the downstream models and data tests that drop breaks, and enforced-contract violations. Reads files only -- no warehouse connection -- so it runs locally before `dbt run` and on fork pull requests, where warehouse-connected checks cannot.
 - [Guide to Running DBT in Production](https://jaehyeon.me/blog/2024-09-13-dbt-guide/) - A complete CI/CD process for a dbt project: defer (slim CI) and unit tests for CI, automatic deployment to lower environments, and [Write-Audit-Publish](https://lakefs.io/blog/data-engineering-patterns-write-audit-publish/) with dbt clone for production.
