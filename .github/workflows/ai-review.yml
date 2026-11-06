@@ -87,17 +87,15 @@ jobs:
           echo "status=$status" >> "$GITHUB_OUTPUT"
           cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
 
-      # One sticky comment per PR, posted only when there's something to look at and
-      # updated on every push after that.
+      # One sticky comment per PR, posted on the first run, all clear or not, and updated
+      # on every push after that.
       - name: Comment on the PR
         if: vars.AI_REVIEW_COMMENTS == 'true' && (steps.review.outputs.status == '0' || steps.review.outputs.status == '1')
-        env:
-          STATUS: ${{ steps.review.outputs.status }}
         run: |
           comment=$(gh api "repos/$REPO/issues/$PR/comments" --paginate \
             --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- ai-review -->"))) | .id' | head -n 1)
           if [ -n "$comment" ]; then
             gh api -X PATCH "repos/$REPO/issues/comments/$comment" -F "body=@$RUNNER_TEMP/report.md" > /dev/null
-          elif [ "$STATUS" = 1 ]; then
+          else
             gh api "repos/$REPO/issues/$PR/comments" -F "body=@$RUNNER_TEMP/report.md" > /dev/null
           fi
