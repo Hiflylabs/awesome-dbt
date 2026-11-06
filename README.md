@@ -205,6 +205,7 @@ Test your models and keep an eye on the data they produce.
 
 Testing frameworks, packages and guides, from unit tests to data contracts.
 
+- [Data Contract CLI](https://cli.datacontract.com/dbt) - Generates dbt tests and model metadata from data contracts in the Open Data Contract Standard (ODCS) and runs them, so a contract stays the source of truth for your models.
 - [SQL Data Checks](https://www.arcodash.com/tools/sql-data-checks/) - Free browser tool that writes copy-ready SQL for freshness, row count, null rate, duplicate key and job heartbeat checks across 10 dialects.
 - [grainguard](https://github.com/rohitchaurasia195-web/GRAINGUARD) - Static checker that flags SUM, COUNT and AVG computed after joins that can repeat rows (fan outs and chasm traps). Infers the grain of every model from unique tests and the SQL itself, with no warehouse connection, so it runs in CI or pre-commit.
 - [data-contract-validator](https://github.com/OGsiji/data-contract-validator) - Fails the pull request when a model stops producing what a downstream consumer expects. Reads columns from `catalog.json`/`manifest.json` (falling back to a sqlglot parse of the SQL) and compares them against reverse-ETL destinations such as HubSpot CRM and against FastAPI/Pydantic services, in CI or pre-commit.
