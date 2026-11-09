@@ -126,6 +126,7 @@ Editor extensions and local web UIs for working on dbt projects.
 - [Turntable VS Code extension](https://www.turntable.so/extension) - Docs composer and column-level lineage in VS Code.
 - [dbtpal](https://github.com/PedramNavid/dbtpal) - A Neovim plugin for dbt model editing.
 - [dbt Power User](https://github.com/AltimateAI/vscode-dbt-power-user) - VS Code extension for dbt: model lineage, query preview, autocompletion and documentation.
+- [cte-diff](https://github.com/MarkPhamm/cte-diff) - VS Code extension to preview and compare dbt CTEs on both sides of a diff.
 
 ### Linting & Conventions
 
