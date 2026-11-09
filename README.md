@@ -389,6 +389,7 @@ Run metadata, warehouse cost and query performance.
 - [dbt-dag-monitoring](https://github.com/techindicium/dbt-dag-monitoring) - A dbt package for monitoring Airflow DAGs and tasks.
 - [dbt_otel_export](https://github.com/irvingpop/dbt_otel_export) - Takes dbt runs and turns them into OpenTelemetry traces.
 - [BigQuery Ingestion-Time Partitioning and Partition Copy With dbt](https://medium.com/teads-engineering/bigquery-ingestion-time-partitioning-and-partition-copy-with-dbt-cc8a00f373e3) - Combining ingestion-time partitioning and partition copy is a great way to achieve better performance for your models.
+- [dbt-cost-optimization](https://github.com/dbt-labs/dbt-cost-optimization) - Package by dbt Labs that analyzes warehouse compute, storage and query patterns and recommends clustering, materialization and warehouse sizing changes. GA on Snowflake, beta on Databricks, BigQuery and Redshift.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Package by dbt Labs to monitor Snowflake usage.
 - [usagedata](https://github.com/anjane-tech/usagedata) - Database- and table-level usage insights from Snowflake.
 - [dbt-snowflake-monitoring](https://github.com/get-select/dbt-snowflake-monitoring) - A dbt package to help you monitor Snowflake performance and costs.
