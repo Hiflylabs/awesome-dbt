@@ -383,13 +383,13 @@ Repository layout, multi-project setups and dbt Mesh.
 
 Run metadata, warehouse cost and query performance.
 
+- [dbt-cost-optimization](https://github.com/dbt-labs/dbt-cost-optimization) - Package by dbt Labs that analyzes warehouse compute, storage and query patterns and recommends clustering, materialization and warehouse sizing changes. GA on Snowflake, beta on Databricks, BigQuery and Redshift.
 - [dbt-hodor](https://github.com/alaturqua/dbt-hodor) - Reuses unchanged models and rebuilds only when their code or upstream data changed, cutting run time and warehouse cost. A free, self-hosted alternative to dbt State.
 - [dbt-query-tags](https://github.com/get-select/dbt-query-tags) - Automatically tag dbt-issued queries with informative metadata, on multiple warehouses (successor of dbt-snowflake-query-tags).
 - [dbt_artifacts](https://github.com/brooklyn-data/dbt_artifacts) - Builds a mart of tables from dbt artifacts in your warehouse, to monitor runs, models and tests over time.
 - [dbt-dag-monitoring](https://github.com/techindicium/dbt-dag-monitoring) - A dbt package for monitoring Airflow DAGs and tasks.
 - [dbt_otel_export](https://github.com/irvingpop/dbt_otel_export) - Takes dbt runs and turns them into OpenTelemetry traces.
 - [BigQuery Ingestion-Time Partitioning and Partition Copy With dbt](https://medium.com/teads-engineering/bigquery-ingestion-time-partitioning-and-partition-copy-with-dbt-cc8a00f373e3) - Combining ingestion-time partitioning and partition copy is a great way to achieve better performance for your models.
-- [dbt-cost-optimization](https://github.com/dbt-labs/dbt-cost-optimization) - Package by dbt Labs that analyzes warehouse compute, storage and query patterns and recommends clustering, materialization and warehouse sizing changes. GA on Snowflake, beta on Databricks, BigQuery and Redshift.
 - [snowflake-resource-monitoring](https://github.com/dbt-labs/snowflake-resource-monitoring) - Package by dbt Labs to monitor Snowflake usage.
 - [usagedata](https://github.com/anjane-tech/usagedata) - Database- and table-level usage insights from Snowflake.
 - [dbt-snowflake-monitoring](https://github.com/get-select/dbt-snowflake-monitoring) - A dbt package to help you monitor Snowflake performance and costs.
