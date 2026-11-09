@@ -383,6 +383,7 @@ Repository layout, multi-project setups and dbt Mesh.
 
 Run metadata, warehouse cost and query performance.
 
+- [dbt-cost-optimization](https://github.com/dbt-labs/dbt-cost-optimization) - Package by dbt Labs that analyzes warehouse compute, storage and query patterns and recommends clustering, materialization and warehouse sizing changes. GA on Snowflake, beta on Databricks, BigQuery and Redshift.
 - [dbt-hodor](https://github.com/alaturqua/dbt-hodor) - Reuses unchanged models and rebuilds only when their code or upstream data changed, cutting run time and warehouse cost. A free, self-hosted alternative to dbt State.
 - [dbt-query-tags](https://github.com/get-select/dbt-query-tags) - Automatically tag dbt-issued queries with informative metadata, on multiple warehouses (successor of dbt-snowflake-query-tags).
 - [dbt_artifacts](https://github.com/brooklyn-data/dbt_artifacts) - Builds a mart of tables from dbt artifacts in your warehouse, to monitor runs, models and tests over time.
