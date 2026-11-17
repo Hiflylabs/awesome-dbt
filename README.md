@@ -413,6 +413,7 @@ API clients, integrations and automation for dbt Cloud.
 
 General-purpose dbt packages. Packages for a specific topic are listed in that topic's section.
 
+- [dbt_llm_prices](https://github.com/Mattbusel/dbt_llm_prices) - A dated price table of 146 LLM models and a `cost()` macro that turns token counts in your usage tables into dollars, including cache and batch pricing, tested on DuckDB and Postgres.
 - [dbt-unirate](https://github.com/UniRate-API/dbt-unirate) - Currency exchange rate macros and models for dbt, powered by the UniRate API.
 - [dbt_diving](https://github.com/data-diving/dbt_diving) - A free to use dbt package with helper macros.
 - [dbt-incremental-stream](https://github.com/arnoN7/dbt-incremental-stream) - A dbt package for Snowflake Streams.
