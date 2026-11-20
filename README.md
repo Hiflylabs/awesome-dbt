@@ -57,6 +57,7 @@ General material to learn dbt and analytics engineering. Topic-specific guides l
 
 Structured courses, free and paid.
 
+- [The Work Gym dbt course](https://theworkgym.com/dbt/) - Practice in a browser IDE modeled on dbt: models, sources, tests, Jinja, incremental models and snapshots, with 342 checked exercises and five projects. First unit free, the rest paid.
 - [Advanced dbt](https://uplimit.com/course/advanced-dbt) - Paid Uplimit course on advanced dbt topics.
 - [Mastering dbt: Beginner to Pro](https://www.udemy.com/course/mastering-dbt-data-build-tool-bootcamp/) - Paid Udemy course that covers theory, building a dbt project from scratch, and deploying to dbt Cloud.
 - [Zero to Hero dbt](https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-learn-dbt/) - Complete course covering both theory & practice through real-world Airbnb use-case.
