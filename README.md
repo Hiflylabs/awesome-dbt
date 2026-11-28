@@ -228,6 +228,7 @@ Testing frameworks, packages and guides, from unit tests to data contracts.
 
 Monitoring, anomaly detection and alerting on the data your models build.
 
+- [Nullwake](https://github.com/akhilp-prog/nullwake) - Self-hosted monitor that imports the tests from your dbt manifest and runs them on a schedule, alongside freshness, volume and schema checks, with one incident per owned table.
 - [DataOps TestGen](https://github.com/DataKitchen/dataops-testgen) - Open-source data quality tool that complements `dbt test`: profiles the tables your models build and the sources they read, generates tests from the profiling results, and monitors freshness, volume, and schema, with a web UI.
 - [Upstrace](https://github.com/ashg2099/upstrace) - Column-level drift detection and lineage-based root-cause analysis for dbt projects.
 - [Aegis DQ](https://github.com/aegis-dq/aegis-dq) - Agentic data quality framework that runs YAML rules against your warehouse (DuckDB, BigQuery, Snowflake, Databricks, Athena, PostgreSQL), then uses LLMs to diagnose failures, trace root causes, and propose SQL fixes. Pairs naturally with dbt models as the validation layer after `dbt run`.
